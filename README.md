@@ -14,6 +14,8 @@ atlases, target-prioritisation outputs, docking outputs and result tables.
   nonessential labelled classes.
 - `models/`: one deployment ensemble and a JSON manifest for each species.
 - `scripts/`: training and prediction entry points.
+- `docs/FORMAL_MODEL_PROTOCOL.md`: distinction between the formal manuscript
+  evaluation protocol and the public deployment models.
 
 ## Quick use
 
@@ -30,5 +32,8 @@ python scripts/predict_with_release_model.py \
 The supplied release models are refit on all labelled records using a
 three-fold out-of-fold stacked LightGBM/CatBoost ensemble. They are deployment
 artifacts, not the held-out models used to calculate manuscript performance.
+The formal manuscript model used a locked OOF stack with LightGBM, CatBoost,
+species-aware expert and species-prior branches; see
+`docs/FORMAL_MODEL_PROTOCOL.md` for the protocol boundary.
 Do not interpret a predicted class as experimental validation of gene
 essentiality.
