@@ -30,10 +30,12 @@ python scripts/predict_with_release_model.py \
 ```
 
 The supplied release models are refit on all labelled records using a
-three-fold out-of-fold stacked LightGBM/CatBoost ensemble. They are deployment
-artifacts, not the held-out models used to calculate manuscript performance.
-The formal manuscript model used a locked OOF stack with LightGBM, CatBoost,
-species-aware expert and species-prior branches; see
-`docs/FORMAL_MODEL_PROTOCOL.md` for the protocol boundary.
+three-fold out-of-fold stacked LightGBM/CatBoost deployment ensemble. They are
+deployment artifacts, not the held-out models used to calculate manuscript
+performance. The manuscript's locked formal OOF stack used LightGBM, CatBoost,
+a species-aware expert, a fold-local prevalence branch and a compact Transformer
+feature-integration branch, followed by an L2 logistic meta-learner. The
+practical release models deliberately do not reproduce those held-out metrics;
+see `docs/FORMAL_MODEL_PROTOCOL.md` for this boundary.
 Do not interpret a predicted class as experimental validation of gene
 essentiality.

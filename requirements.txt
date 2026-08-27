@@ -1,5 +1,12 @@
 numpy
+pandas
+scipy
 scikit-learn
 lightgbm
 catboost
+torch
 joblib
+matplotlib
+openpyxl
+python-docx
+statsmodels
