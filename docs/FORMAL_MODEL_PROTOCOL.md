@@ -24,19 +24,22 @@ branch. Their out-of-fold probabilities were combined by L2-regularised logistic
 regression. Thresholds were selected on validation data and applied once to the
 held-out test data.
 
-The formal representation contained 582 static sequence, annotation and
-protein-language-model features, 9 label-free STRING summary features, a
-species indicator, 21 fold-local MMseqs2 neighbourhood features and 15
-fold-local STRING/PPI neighbourhood features. Dynamic homology and interaction
-features were recomputed within each formal split, so validation and test labels
-could not enter feature construction.
+The formal representation contained 591 fixed molecular columns: 128 ESM2,
+128 ProtT5, 31 basic sequence descriptors, 128 annotation, 128 k-mer/graph,
+15 MMseqs30, 15 MMseqs50, and 18 label-free STRING descriptors (nine network
+and nine structural-context columns). In a species-matched analysis this was
+combined with one species indicator, 21 fold-local MMseqs2 neighbourhood
+features and 15 fold-local STRING/PPI-neighbourhood features, giving 628
+columns. Dynamic homology and interaction features were recomputed within each
+formal split, so validation and test labels could not enter feature construction.
 
 ## Transformer branch
 
-The compact Transformer branch was the fifth probability input to the
-confidential formal OOF manuscript stack. The public release distributes
-practical tree-based deployment models instead; it must not be used to
-recalculate held-out manuscript metrics or five-branch atlas scores.
+The compact Transformer branch was the fifth probability input to the locked
+formal OOF manuscript stack. It used feature-group tokens, a two-layer encoder,
+four attention heads and batch size 64. The public release distributes practical
+tree-based deployment models instead; it must not be used to recalculate
+held-out manuscript metrics or five-branch atlas scores.
 
 ## Public deployment models
 

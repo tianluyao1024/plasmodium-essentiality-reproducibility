@@ -39,3 +39,14 @@ practical release models deliberately do not reproduce those held-out metrics;
 see `docs/FORMAL_MODEL_PROTOCOL.md` for this boundary.
 Do not interpret a predicted class as experimental validation of gene
 essentiality.
+
+## Formal-analysis code access
+
+For peer review, the submission provides a source-only archive containing the
+canonical five-branch OOF entry point, fixed split manifests and fold-local
+feature-construction scripts. It recreates the formal five-column OOF matrix
+with random seed 42 and Transformer batch size 64; the tree-only four-branch
+model is emitted only as an ablation/control. The archive excludes unpublished
+genome-wide rankings, target-prioritisation outputs and docking results. The
+public release will be expanded with the formal-analysis source after editorial
+handling, while this repository remains the stable deployment and reuse package.
