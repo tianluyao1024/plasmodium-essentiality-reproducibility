@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this resource, please cite the software release and the original data sources described in DATA_NOTICE.md."
 title: "Plasmodium species-specific essentiality reproducibility resource"
-version: "1.0.1"
+version: "1.0.2"
 date-released: 2026-09-02
 authors:
   - family-names: "Tian"
