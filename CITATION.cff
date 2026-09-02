@@ -1,11 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this resource, please cite the software release and the original data sources described in DATA_NOTICE.md."
 title: "Plasmodium species-specific essentiality reproducibility resource"
-version: "1.0.0"
-date-released: 2026-08-13
+version: "1.0.1"
+date-released: 2026-09-02
 authors:
   - family-names: "Tian"
     given-names: "Lu-Yao"
     orcid: "https://orcid.org/0009-0006-7097-8604"
   - family-names: "Ye"
     given-names: "Yuan-Nong"
+    orcid: "https://orcid.org/0000-0002-2029-4558"
+  - family-names: "Qiu"
+    given-names: "Ying"
+    orcid: "https://orcid.org/0009-0005-8328-3492"
+  - family-names: "Lei"
+    given-names: "Lu"
+    orcid: "https://orcid.org/0009-0002-8728-2436"
+  - family-names: "Guo"
+    given-names: "Peng"
+    orcid: "https://orcid.org/0009-0008-8981-3310"

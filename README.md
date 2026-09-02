@@ -130,13 +130,14 @@ compact Transformer and L2 logistic meta-learning. Dynamic features, threshold
 selection and preprocessing were restricted to fitting partitions. The practical
 models in this repository are deliberately simpler public deployment artefacts.
 
-The submission's editor/reviewer source archive contains the canonical formal
-entry point, frozen manifests and fold-local feature-construction code. It
-recreates the five-column OOF matrix with random seed 42 and Transformer batch
-size 64; the four-branch tree-only model is included solely as an
-ablation/control. The formal archive excludes unpublished atlas, target and
-docking outputs. See [docs/FORMAL_MODEL_PROTOCOL.md](docs/FORMAL_MODEL_PROTOCOL.md)
-for the full boundary.
+The complete formal-analysis source package is supplied for editorial and peer
+review and will be deposited in the public Zenodo release on publication. It
+contains the canonical entry point, fixed split manifests and fold-local
+feature-construction code required to reconstruct the five-branch OOF analysis.
+The public repository intentionally remains a streamlined deployment and reuse
+resource. See [docs/FORMAL_MODEL_PROTOCOL.md](docs/FORMAL_MODEL_PROTOCOL.md)
+and [docs/PUBLIC_RELEASE_V48_1.md](docs/PUBLIC_RELEASE_V48_1.md) for the
+boundary between the two releases.
 
 ## Data provenance and responsible use
 
