@@ -1,57 +1,53 @@
-# Plasmodium Essentiality Reproducibility Resource
+# ProtoEss Atlas reproducibility resource
 
-Public inputs, frozen deployment models and reuse scripts for species-matched
-*Plasmodium* essentiality scoring.
+Public code, processed labelled inputs and frozen deployment models for species-aware apicomplexan essentiality scoring.
 
 **Website:** [ProtoEss Atlas](https://www.protoessatlas.com)
 
-**Archived release:** [Zenodo record](https://doi.org/10.5281/zenodo.21915268)
-**License:** MIT for the code; see [DATA_NOTICE.md](DATA_NOTICE.md) for source-data terms.
+**Archive:** [Zenodo concept record](https://doi.org/10.5281/zenodo.21915268)
+**License:** MIT for code; see [DATA_NOTICE.md](DATA_NOTICE.md) for source-data terms.
 
-## Purpose and scope
+## Scope
 
-This repository supports transparent reuse of the three practical deployment
-models used by ProtoEss Atlas:
+The release contains reusable materials for four source-labelled species:
 
-| Species | Release model | Processed training inputs |
+| Species | Public role | Deployment artefact |
 |---|---|---|
-| *Plasmodium falciparum* 3D7 | `models/Plasmodium_falciparum_release_model.joblib` | `data/Plasmodium_falciparum/` |
-| *Plasmodium berghei* ANKA | `models/Plasmodium_berghei_release_model.joblib` | `data/Plasmodium_berghei/` |
-| *Plasmodium knowlesi* H | `models/Plasmodium_knowlesi_release_model.joblib` | `data/Plasmodium_knowlesi/` |
+| *Plasmodium falciparum* 3D7 | matched-species malaria scoring | `models/Plasmodium_falciparum_release_model.joblib` |
+| *Plasmodium berghei* ANKA | matched-species malaria scoring | `models/Plasmodium_berghei_release_model.joblib` |
+| *Plasmodium knowlesi* H | matched-species malaria scoring | `models/Plasmodium_knowlesi_release_model.joblib` |
+| *Toxoplasma gondii* GT1 | distant-apicomplexan source and held-out transfer reproducibility | `models/Toxoplasma_gondii_release_model.joblib` |
 
-Each deployment model is a practical LightGBM/CatBoost out-of-fold ensemble
-refit on the corresponding public labelled matrix. It returns a computational
-essentiality score and a thresholded class call. It is not experimental
-validation of gene essentiality or druggability.
+Each deployment artefact is a practical LightGBM/CatBoost three-fold OOF ensemble refit on its public processed labelled matrix. It returns a computational essentiality score and a thresholded class call. It is not an experimental assertion of essentiality or druggability. The formal manuscript evaluation used a separate five-branch OOF stack; its complete source code is included in [`formal_reproduction/`](formal_reproduction/).
 
-## What is included
+## Included materials
 
 ```text
 data/<species>/
-  all_labeled_features.npz       complete processed labelled matrix
-  essential_features.npz         class-specific processed matrix
-  nonessential_features.npz      class-specific processed matrix
-  labels.tsv                     processed record identifiers and labels
+  all_labeled_features.npz       processed labelled matrix and split labels
+  essential_features.npz         class-specific matrix
+  nonessential_features.npz      class-specific matrix
+  labels.tsv                     processed identifiers, label provenance and split
 
 cds/<species>/
-  essential.cds.fasta            labelled essential CDS sequences
-  nonessential.cds.fasta         labelled non-essential CDS sequences
+  essential.cds.fasta            essential-labelled CDS records
+  nonessential.cds.fasta         nonessential-labelled CDS records
 
 models/
-  *_release_model.joblib         frozen deployment ensemble
-  *_release_model.json           feature order, threshold and model manifest
+  *_release_model.joblib         frozen practical deployment ensemble
+  *_release_model.json           model manifest, threshold and feature order
+
+formal_reproduction/
+  code/                           five-branch OOF, LOSO and robustness source
+  config/                         formal path template
+  run_reproduction.py             formal stage launcher
 
 scripts/
-  train_release_models.py        rebuild a deployment ensemble from a public matrix
-  predict_with_release_model.py  score a prepared feature matrix
-
-docs/
-  FORMAL_MODEL_PROTOCOL.md       formal manuscript versus deployment-model boundary
+  train_release_models.py        rebuild a practical deployment model
+  predict_with_release_model.py  score a prepared numeric matrix
 ```
 
-The repository deliberately does **not** contain the manuscript, genome-scale
-prediction atlas, target-prioritisation records, docking outputs, figure source
-data or unpublished result tables.
+This repository deliberately excludes the manuscript, genome-scale atlas calls, target-prioritisation records, docking outputs, figure source data and unpublished result tables.
 
 ## Installation
 
@@ -63,11 +59,7 @@ cd plasmodium-essentiality-reproducibility
 python -m pip install -r requirements.txt
 ```
 
-## Quick start: score a prepared matrix
-
-The local command-line scorer accepts a numeric NumPy `.npy` matrix. Rows
-correspond to genes or transcripts; columns must exactly follow the
-`feature_names` array in the matching model JSON file.
+## Score a prepared matrix
 
 ```bash
 python scripts/predict_with_release_model.py \
@@ -76,83 +68,19 @@ python scripts/predict_with_release_model.py \
   --output predictions.tsv
 ```
 
-The output is a tab-separated table with:
-
-| Column | Meaning |
-|---|---|
-| `row_index` | Input row index |
-| `essentiality_score` | Deployment-ensemble probability-like score |
-| `threshold` | Model-specific out-of-fold MCC threshold |
-| `predicted_essential` | Score at or above the frozen threshold |
-
-### Input representation
-
-Each release model expects **628 columns** in its frozen order:
-
-- 128 ESM2 protein-language-model dimensions;
-- 128 ProtT5 dimensions;
-- 31 sequence-composition and physicochemical descriptors;
-- 128 encoded annotation dimensions;
-- 128 k-mer/graph sequence dimensions;
-- 15 MMseqs30 and 15 MMseqs50 static homology summaries;
-- 18 label-free STRING descriptors;
-- one species indicator, 21 dynamic MMseqs2-neighbourhood features and 15
-  dynamic STRING/PPI-neighbourhood features.
-
-The exact machine-readable column order is stored in
-`models/<species>_release_model.json`. Do not reorder, subset or mix feature
-schemas between species. For CDS FASTA-based prediction and optional feature
-construction, use [ProtoEss Atlas](https://www.protoessatlas.com), which guides
-the required inputs and records missing optional layers.
+The numeric input matrix must preserve the exact `feature_names` order in the matching JSON manifest. The current release models expect 628 columns: static sequence, ESM2, ProtT5, annotation and label-free network features plus frozen-reference homology/PPI summaries. The ProtoEss Atlas website provides CDS- and protein-FASTA workflows for supported feature-availability profiles.
 
 ## Rebuild a public deployment model
 
-The deployment ensemble can be retrained from the public processed matrix:
-
 ```bash
 python scripts/train_release_models.py \
-  --data data/Plasmodium_falciparum/all_labeled_features.npz \
-  --species Plasmodium_falciparum \
-  --output models/Plasmodium_falciparum_retrained.joblib
+  --data data/Toxoplasma_gondii/all_labeled_features.npz \
+  --species Toxoplasma_gondii \
+  --output models/Toxoplasma_gondii_retrained.joblib
 ```
 
-The script uses three stratified folds to obtain LightGBM and CatBoost
-out-of-fold probabilities, then fits an L2-regularised logistic meta-learner.
-Its threshold is selected by out-of-fold MCC maximisation. Retraining is useful
-for reuse and sensitivity analyses; it will not reproduce the locked manuscript
-held-out metrics unless the complete formal protocol and split manifests are used.
+A retrained public deployment model is a reuse/sensitivity artefact. It will not reproduce locked manuscript metrics without the fixed formal split manifests and fold-local dynamic features. See [docs/FORMAL_MODEL_PROTOCOL.md](docs/FORMAL_MODEL_PROTOCOL.md).
 
-## Formal manuscript model versus deployment models
+## Citation and responsible use
 
-The manuscript's central evaluation used a separate locked **five-branch OOF
-stack**: LightGBM, CatBoost, species-aware expert, fold-local prevalence,
-compact Transformer and L2 logistic meta-learning. Dynamic features, threshold
-selection and preprocessing were restricted to fitting partitions. The practical
-models in this repository are deliberately simpler public deployment artefacts.
-
-The complete formal-analysis source package is supplied for editorial and peer
-review and will be deposited in the public Zenodo release on publication. It
-contains the canonical entry point, fixed split manifests and fold-local
-feature-construction code required to reconstruct the five-branch OOF analysis.
-The public repository intentionally remains a streamlined deployment and reuse
-resource. See [docs/FORMAL_MODEL_PROTOCOL.md](docs/FORMAL_MODEL_PROTOCOL.md)
-and [docs/PUBLIC_RELEASE_V48_1.md](docs/PUBLIC_RELEASE_V48_1.md) for the
-boundary between the two releases.
-
-## Data provenance and responsible use
-
-The public matrices and class-separated CDS records were derived from public
-VEuPathDB/PlasmoDB genome and annotation resources plus published genetic-screen
-data. Original providers retain their respective licences and attribution
-requirements. See [DATA_NOTICE.md](DATA_NOTICE.md).
-
-Essentiality depends on species, strain, life stage, assay design and threshold.
-Scores should therefore be interpreted as ranked computational hypotheses for
-comparative follow-up, not as clinical safety, host selectivity or direct drug
-target evidence.
-
-## Citation
-
-Please cite the Zenodo release and the original data sources listed in
-[DATA_NOTICE.md](DATA_NOTICE.md). Citation metadata are available in
-[CITATION.cff](CITATION.cff).
+Cite this versioned release and the original genetic-screen sources in [DATA_NOTICE.md](DATA_NOTICE.md). Essentiality depends on species, strain, life stage, assay and phenotype threshold; all scores are computational hypotheses for comparative follow-up.
