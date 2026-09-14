@@ -1,0 +1,64 @@
+name: Complete Zenodo archive
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Download and verify release assets, then complete draft
+        env:
+          ZENODO_TOKEN: ${{ secrets.PROTOESS_ZENODO_UPLOAD }}
+        run: |
+          python3 - <<'PY'
+          import os, json, hashlib, urllib.request, time
+          from pathlib import Path
+          import requests
+          root = Path('assets'); root.mkdir()
+          base = 'https://github.com/tianluyao1024/plasmodium-essentiality-reproducibility/releases/download/v1.1.0/'
+          expected = {
+            'ProtoEss_source_v1.1.0.zip': '860f21f3bccc8dfe33b07db987f6dae82aa60778c7a1583eae45d0d7ac242f3a',
+            'ProtoEss_formal_inputs_v1.1.0.zip': '6d978f39dd9cfc4054f96e5b71e5ab32ab01739df7dc2704416179085b5147e8',
+            'ProtoEss_reference_results_v1.1.0.zip': '5fd47d6b5c181ae036ca51a722933e8cf62f312121daec8ebda5846657592f2e',
+            'SHA256SUMS.json': 'f5d35cb51a6bccc928e2614cb9702c1134c643285a254aedf2414a6ac875d4dd',
+          }
+          s = requests.Session()
+          s.headers['Authorization'] = 'Bearer ' + os.environ['ZENODO_TOKEN']
+          url = 'https://zenodo.org/api/deposit/depositions/22751063'
+          def api(method, endpoint, **kwargs):
+              r = s.request(method, endpoint, timeout=(60, 1800), **kwargs)
+              if not r.ok:
+                  raise RuntimeError('Zenodo HTTP ' + str(r.status_code))
+              return r.json()
+          draft = api('GET', url)
+          if draft.get('submitted'):
+              raise RuntimeError('Draft already published; refusing changes')
+          for name, sha in expected.items():
+              p = root / name
+              print('Downloading', name, flush=True)
+              urllib.request.urlretrieve(base + name, p)
+              with p.open('rb') as f:
+                  assert hashlib.file_digest(f, 'sha256').hexdigest() == sha, name
+              with p.open('rb') as f:
+                  md5 = hashlib.file_digest(f, 'md5').hexdigest()
+              for attempt in range(4):
+                  draft = api('GET', url)
+                  existing = next((x for x in draft['files'] if x['filename'] == name), None)
+                  if existing and int(existing['filesize']) == p.stat().st_size and existing['checksum'].removeprefix('md5:') == md5:
+                      print('Verified', name, sha, flush=True)
+                      break
+                  try:
+                      print('Uploading', name, 'attempt', attempt + 1, flush=True)
+                      with p.open('rb') as f:
+                          api('PUT', draft['links']['bucket'] + '/' + name, data=f)
+                  except Exception as exc:
+                      print('Transfer retry', type(exc).__name__, flush=True)
+                      time.sleep(15)
+              draft = api('GET', url)
+              entry = next(x for x in draft['files'] if x['filename'] == name)
+              assert int(entry['filesize']) == p.stat().st_size
+              assert entry['checksum'].removeprefix('md5:') == md5
+          print('All four assets verified. Draft retained for publication.', flush=True)
+          PY
