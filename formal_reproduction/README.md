@@ -1,7 +1,5 @@
-# Formal five-branch manuscript analysis source
+# Formal manuscript reproduction
 
-This directory contains the source code used for the locked five-branch out-of-fold (OOF) analyses reported in the accompanying manuscript: LightGBM, CatBoost, species-aware expert, fold-local prevalence and a compact Transformer branch, followed by an L2 logistic meta-learner. It includes the matched-species, four-species LOSO, Tg source-composition, family-blocked homology baseline, label-uncertainty, orthology, directionality and pharmacology-concordance entry points.
+This release includes the five-branch model, LOSO, source-composition, robustness, atlas, directionality and pharmacology analysis source. The separately attached ProtoEss_formal_inputs_v1.1.0.zip provides the frozen processed input tree. Extract it and point config/formal_paths.yaml to the extracted directory; set output_root to a writable directory.
 
-The code is public. The exact fixed formal input bundle, including confidential reviewer manifests and all intermediate matrices, is supplied to editors and reviewers during peer review and will be deposited upon publication. The public `data/`, `cds/` and `models/` directories are the reusable four-species deployment materials; their tree-based deployment models are intentionally distinct from the locked formal manuscript stack.
-
-Run `python run_reproduction.py --help` after installing `requirements.txt`, then copy `config/formal_paths.example.yaml` to `config/formal_paths.yaml` and set the input/output roots.
+Run python run_reproduction.py --config config/formal_paths.yaml --stage all --dry-run to inspect the configured commands, then omit --dry-run to execute. Full retraining has not been rerun as part of packaging. Public deployment models and the formal manuscript stack are separate model families.

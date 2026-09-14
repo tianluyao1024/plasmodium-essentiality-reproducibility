@@ -152,7 +152,9 @@ def main() -> None:
             for registry_species, gene in zip(held.registry_species.astype(str), held.gene_id.astype(str))
         ]
         target_scores = held.loc[held.known_target_registry, "score"]
-        for top_fraction in (0.10, 0.20, 0.30):
+        # Report the complete cumulative-recovery curve rather than a single
+        # arbitrary cut-off. This is a ranking audit, not a thresholded call.
+        for top_fraction in np.arange(0.10, 1.01, 0.10):
             cutoff = held.score.quantile(1 - top_fraction)
             selected = held.score.ge(cutoff)
             hits = int((selected & held.known_target_registry).sum())
