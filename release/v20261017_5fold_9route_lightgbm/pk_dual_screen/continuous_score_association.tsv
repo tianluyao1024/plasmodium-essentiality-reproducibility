@@ -1,0 +1,2 @@
+n	spearman_rho_same_direction_essentiality_scores	bootstrap_ci95_low	bootstrap_ci95_high	bootstrap_replicates	seed	interpretation
+4525	0.7439248765492782	0.7300582197956563	0.7565003368000782	2000	20261016	HMS and MIS+ both increase toward dispensability; positive association is concordant.

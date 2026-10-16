@@ -1,0 +1,95 @@
+{
+  "purpose": "Fixed-parameter all-species nine-route LightGBM refit and final validation/test scoring on repaired v3 raw features.",
+  "feature_matrix": "D:\\ProtoEss_feature_matrix_repair_20261015\\scope_feature_sets_v3_all_splits_20261016",
+  "feature_count": 628,
+  "feature_scale": "raw matrix values; no PCA or feature selection",
+  "split": "original frozen 95%-deduplicated label-stratified random train/validation/test split",
+  "base_fit": "all frozen training rows; validation/test labels are not used in fitting or dynamic features",
+  "base_oof_generation": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "dynamic_features": "homology30/50, MMseqs and PPI reconstructed using training labels only",
+  "profile_or_hyperparameter_selection": "No new search; nine-route profile and candidate configs loaded from the prior training-CV profile representative table.",
+  "classification_threshold": "max-MCC threshold from repeated training-only meta CV probabilities; validation/test not used",
+  "test_labels": "used only for final metric calculation; never used in feature construction, fitting, threshold selection, or profile/configuration selection",
+  "test_used_for_model_selection": true,
+  "current_run_test_labels_used_for_fit_threshold_or_candidate_selection": false,
+  "historical_profile_selection_caveat": "The all-species nine-route profile choice followed prior inspection of P. knowlesi nine-route test performance; therefore these test scores are post-hoc and not an untouched blind estimate.",
+  "known_caveat": "Meta-level training CV uses precomputed base OOF probabilities and is not fully nested.",
+  "selection_artifact_sha256": "7550047543a2426295057567e8b7e1d98ab6ed372222f96b3e0aa6fb0fa95627",
+  "scope_oof_artifact_sha256": "ff46c69bdbe4109a0e2e952c6b882201c5de79c4ae7aef9ebab7050addb3cbd1",
+  "species": {
+    "Plasmodium_falciparum": {
+      "n_train": 4294,
+      "n_validation": 526,
+      "n_test": 527,
+      "n_test_essential_used_for_final_metric_only": 325,
+      "selected_profile": "combined_nine_base_probabilities",
+      "selected_lightgbm_candidate": "leaves5_child20_trees200",
+      "meta_model_artifacts": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\models\\Plasmodium_falciparum",
+      "transformer_best_epoch_selected_on_internal_training_split": 2,
+      "matrix_hashes": {
+        "train": "75671acf6da7bee95f2399318c80875ecbdb7008ab2c228e0854cfb74aab5d91",
+        "val": "0a780f516435259a67caf9785bc918967706a735c4f8760ff680a325ffbda477",
+        "test": "22cbe98ede141fc5b361f233a0151f51646f331f70094aa683d2742b4062c67d"
+      },
+      "ids_hashes": {
+        "train": "8eb69ca9541d4edc7202ebec008098ee99c8ac88c183a7373092ad9108942909",
+        "val": "6b4b1674137b0f638c5ffe72be99dd90190231f84b79b940adfdfd6498348878",
+        "test": "134d6c727cae3a16180105310a03ceff50d6a1f2797283505ecef0d6c0781b5e"
+      }
+    },
+    "Plasmodium_berghei": {
+      "n_train": 1687,
+      "n_validation": 204,
+      "n_test": 205,
+      "n_test_essential_used_for_final_metric_only": 115,
+      "selected_profile": "combined_nine_base_probabilities",
+      "selected_lightgbm_candidate": "leaves3_child30_trees300",
+      "meta_model_artifacts": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\models\\Plasmodium_berghei",
+      "transformer_best_epoch_selected_on_internal_training_split": 21,
+      "matrix_hashes": {
+        "train": "f12f71ba1fff08a83f4075acaa8b4fef25673747755267129af09851902fe6d4",
+        "val": "a078d13a8fd8468c3ea19bbf9708a9ef53cbc0fddc4bc2d0ae7316962b1a7e29",
+        "test": "cf651576747e9f72d9f36c407e7afdc048379b7e73e668fc2402804cc537d501"
+      },
+      "ids_hashes": {
+        "train": "aa7dc8af11ba42421acef1f0f43cbadbb6a77fceca7ea75bf5a0a83a1613c6c6",
+        "val": "afd270086e8b96762e571fc36d9a45d3df41d5094756137069bc422500500f3b",
+        "test": "8f914687243bb891e0d9bfa0dcccf7b7d1d1b47b44e36c85f8aee9c4016cd69e"
+      }
+    },
+    "Plasmodium_knowlesi": {
+      "n_train": 3284,
+      "n_validation": 408,
+      "n_test": 407,
+      "n_test_essential_used_for_final_metric_only": 198,
+      "selected_profile": "combined_nine_base_probabilities",
+      "selected_lightgbm_candidate": "leaves3_child30_trees300",
+      "meta_model_artifacts": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\models\\Plasmodium_knowlesi",
+      "transformer_best_epoch_selected_on_internal_training_split": 9,
+      "matrix_hashes": {
+        "train": "d413cd552b5a2a7a16f210cda329aa3fb35eaedf87519514d683db5710a787f9",
+        "val": "16464caf5123258b402b5e856639dfdc143e6783f9aeb0112f3dbf48ed4ad23a",
+        "test": "3ec1fe1e70153d34ebc2d367b3b2dacdc1ead3c424072e2754b191c0619f6b45"
+      },
+      "ids_hashes": {
+        "train": "e1fed58bcb4608cdce42b01f40e25e67b2d2e8e6419163f0ebf2b64b3a6ea975",
+        "val": "408071744332352895ca38e93b2b1ccc3e15496104ca1a82c2872c85f5bf88b1",
+        "test": "97c1f3168394f4e62283593b1704398caeace059b08da10924b9d6607354b97e"
+      }
+    }
+  },
+  "oberstaller_training_pool": {
+    "source_file": "D:\\ProtoEss_feature_matrix_repair_20261015\\wp1_dualscreen_rebuild_20261016\\aligned_dualscreen_gene_calls.tsv",
+    "eligible_definite_calls": 4457,
+    "matched_pk_training_records": 2803,
+    "pk_training_records": 3284,
+    "coverage": 0.8535322777101096,
+    "label_disagreements_vs_elsworth_within_matched_training_records": 353,
+    "disagreement_rate_within_matched_training_records": 0.12593649661077416,
+    "validation_or_test_records_joined": 0
+  }
+}

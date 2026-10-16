@@ -1,0 +1,225 @@
+{
+  "release_id": "v20261017_5fold_9route_lightgbm",
+  "created_utc": "2026-10-16T17:28:20.157438+00:00",
+  "main_model": "five-fold nine-route LightGBM",
+  "feature_count": 628,
+  "feature_policy": "raw matrix values; no PCA or manual removal of homology30/50",
+  "split_policy": "original 95%-deduplicated label-stratified random train/validation/test split",
+  "test_boundary": "used only for final metric calculation; never used in feature construction, fitting, threshold selection, or profile/configuration selection",
+  "historical_non_blind_caveat": "The all-species nine-route profile choice followed prior inspection of P. knowlesi nine-route test performance; therefore these test scores are post-hoc and not an untouched blind estimate.",
+  "meta_cv_caveat": "Meta-level training CV uses precomputed base OOF probabilities and is not fully nested.",
+  "main_species": {
+    "Plasmodium_falciparum": {
+      "n_train": 4294,
+      "n_validation": 526,
+      "n_test": 527,
+      "n_test_essential_used_for_final_metric_only": 325,
+      "selected_profile": "combined_nine_base_probabilities",
+      "selected_lightgbm_candidate": "leaves5_child20_trees200",
+      "meta_model_artifacts": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\models\\Plasmodium_falciparum",
+      "transformer_best_epoch_selected_on_internal_training_split": 2,
+      "matrix_hashes": {
+        "train": "75671acf6da7bee95f2399318c80875ecbdb7008ab2c228e0854cfb74aab5d91",
+        "val": "0a780f516435259a67caf9785bc918967706a735c4f8760ff680a325ffbda477",
+        "test": "22cbe98ede141fc5b361f233a0151f51646f331f70094aa683d2742b4062c67d"
+      },
+      "ids_hashes": {
+        "train": "8eb69ca9541d4edc7202ebec008098ee99c8ac88c183a7373092ad9108942909",
+        "val": "6b4b1674137b0f638c5ffe72be99dd90190231f84b79b940adfdfd6498348878",
+        "test": "134d6c727cae3a16180105310a03ceff50d6a1f2797283505ecef0d6c0781b5e"
+      }
+    },
+    "Plasmodium_berghei": {
+      "n_train": 1687,
+      "n_validation": 204,
+      "n_test": 205,
+      "n_test_essential_used_for_final_metric_only": 115,
+      "selected_profile": "combined_nine_base_probabilities",
+      "selected_lightgbm_candidate": "leaves3_child30_trees300",
+      "meta_model_artifacts": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\models\\Plasmodium_berghei",
+      "transformer_best_epoch_selected_on_internal_training_split": 21,
+      "matrix_hashes": {
+        "train": "f12f71ba1fff08a83f4075acaa8b4fef25673747755267129af09851902fe6d4",
+        "val": "a078d13a8fd8468c3ea19bbf9708a9ef53cbc0fddc4bc2d0ae7316962b1a7e29",
+        "test": "cf651576747e9f72d9f36c407e7afdc048379b7e73e668fc2402804cc537d501"
+      },
+      "ids_hashes": {
+        "train": "aa7dc8af11ba42421acef1f0f43cbadbb6a77fceca7ea75bf5a0a83a1613c6c6",
+        "val": "afd270086e8b96762e571fc36d9a45d3df41d5094756137069bc422500500f3b",
+        "test": "8f914687243bb891e0d9bfa0dcccf7b7d1d1b47b44e36c85f8aee9c4016cd69e"
+      }
+    },
+    "Plasmodium_knowlesi": {
+      "n_train": 3284,
+      "n_validation": 408,
+      "n_test": 407,
+      "n_test_essential_used_for_final_metric_only": 198,
+      "selected_profile": "combined_nine_base_probabilities",
+      "selected_lightgbm_candidate": "leaves3_child30_trees300",
+      "meta_model_artifacts": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\models\\Plasmodium_knowlesi",
+      "transformer_best_epoch_selected_on_internal_training_split": 9,
+      "matrix_hashes": {
+        "train": "d413cd552b5a2a7a16f210cda329aa3fb35eaedf87519514d683db5710a787f9",
+        "val": "16464caf5123258b402b5e856639dfdc143e6783f9aeb0112f3dbf48ed4ad23a",
+        "test": "3ec1fe1e70153d34ebc2d367b3b2dacdc1ead3c424072e2754b191c0619f6b45"
+      },
+      "ids_hashes": {
+        "train": "e1fed58bcb4608cdce42b01f40e25e67b2d2e8e6419163f0ebf2b64b3a6ea975",
+        "val": "408071744332352895ca38e93b2b1ccc3e15496104ca1a82c2872c85f5bf88b1",
+        "test": "97c1f3168394f4e62283593b1704398caeace059b08da10924b9d6607354b97e"
+      }
+    }
+  },
+  "pk_condition_analysis": {
+    "label": "retrospective external-condition validation",
+    "human_rbc_sequence_level_features_available": false,
+    "interpretation": "ortholog-mapped condition analysis; not exact A1H sequence-level prediction",
+    "source_manifest": {
+      "analysis": "WP1 P. knowlesi dual-screen label concordance rebuild",
+      "source_files": {
+        "project_pk_labels": "C:\\Users\\tly\\Desktop\\植物\\水稻日本\\plasmodium-essentiality-reproducibility\\data\\Plasmodium_knowlesi\\labels.tsv",
+        "elsworth_supplement": "C:\\Users\\tly\\Downloads\\NIHMS2082619-supplement-Data_S3.xlsx",
+        "oberstaller_supplement": "C:\\Users\\tly\\Downloads\\NIHMS2081632-supplement-table_S2.xlsx",
+        "essentiality_atlas_source": "D:\\ProtoEss_NatureCommunications_v62_tables\\ProtoEss_NatureCommunications_v62_tables\\Upload_Files\\06_Supplementary_Data_S2_essentiality_atlas.xlsx"
+      },
+      "output_dir": "D:\\ProtoEss_feature_matrix_repair_20261015\\wp1_dualscreen_rebuild_20261016",
+      "seed": 20261016,
+      "bootstrap_replicates": 2000,
+      "project_label_parity": {
+        "project_label_rows": 5266,
+        "elsworth_rows": 5266,
+        "outer_join_rows": 5266,
+        "matched_ids": 5266,
+        "id_only_project": 0,
+        "id_only_elsworth": 0,
+        "label_disagreements_among_matched": 0
+      },
+      "mapping_audit": {
+        "ober_rows": 5408,
+        "ober_sheet": "tableS2",
+        "protein_coding_rows": 4934,
+        "rows_with_exactly_one_ortholog_token": 4648,
+        "single_target_tokens_matching_PKNH_pattern": 4648,
+        "unique_PKNH_targets_before_reverse_uniqueness": 4631,
+        "rows_in_non_unique_reverse_mappings_excluded": 30,
+        "one_to_one_pairs": 4618,
+        "one_to_one_targets_absent_from_project_and_Elsworth": 80
+      },
+      "cross_species_audit": {
+        "atlas_xlsx": "D:\\ProtoEss_NatureCommunications_v62_tables\\ProtoEss_NatureCommunications_v62_tables\\Upload_Files\\06_Supplementary_Data_S2_essentiality_atlas.xlsx",
+        "exact_triplets_rows": 4183,
+        "complete_binary_observed_triplets": 1492,
+        "matched_non_tentative_pk_screen_triplets": 1389,
+        "label_alias_audit": {
+          "Pf": {
+            "label_rows": 5399,
+            "gene_aliases": 5399,
+            "conflicting_aliases_excluded": 0
+          },
+          "Pb": {
+            "label_rows": 2573,
+            "gene_aliases": 2585,
+            "conflicting_aliases_excluded": 0
+          },
+          "Pk": {
+            "label_rows": 5266,
+            "gene_aliases": 5266,
+            "conflicting_aliases_excluded": 0
+          }
+        }
+      },
+      "definitions": {
+        "Elsworth categorical calls": "Category1 essential / dispensable; intermediate excluded from binary concordance.",
+        "Oberstaller categorical calls": "pk.mutabilityInCDS nonmutable -> essential; mutable -> nonessential; not_determined excluded.",
+        "primary_set": "One-to-one protein-coding PkH ortholog pairs, binary definite calls in both screens, excluding rows flagged tentative.",
+        "scope_limit": "This is cross-screen disagreement across different host RBCs, parasite strains and experimental pipelines, not a pure technical-noise estimate.",
+        "model_claims": "No model prediction is treated as an experimental label; LOSO margin/calibration values are not reconstructed by this script.",
+        "threshold_sensitivity": "MIS+ thresholds are exploratory and not official Oberstaller categorical labels."
+      }
+    }
+  },
+  "loso_species_included": [
+    "Plasmodium_falciparum",
+    "Plasmodium_berghei",
+    "Plasmodium_knowlesi",
+    "Toxoplasma_gondii"
+  ],
+  "loso_note": "Toxoplasma gondii is included as the fourth held-out species in the companion clade-LOSO analysis.",
+  "published_files_sha256": {
+    "old_manuscript_text.txt": "bcad3036ca97760fc457e536a1c542075d5e6e1f94725406182e21bd1c671ea5",
+    "README.md": "d340824b90a31b2f2b34d38f822bd4ab38c9c9a7d9c1e56941ec380944fa6331",
+    "figures/Figure_1_workflow.pdf": "f2fd45bed8225193594610b7833f5d256edca05566c6d25898cd693fcad760c4",
+    "figures/Figure_1_workflow.png": "7eb8b747b672f1fdddf8f9106991735a5f2fff598898fd990f2ed378632df71d",
+    "figures/Figure_1_workflow.svg": "9870ec2e203e861db0723c8af97ed40a1f52177536c3517e17fbac19e4922b28",
+    "figures/Figure_1_workflow.tiff": "037d2ae12a7b9b5280c5495188ae1616f492fa9abcfab789dd35574f9bb0e31e",
+    "figures/Figure_1_workflow_contract.json": "c62710497895271b024d4573a0c0093a03de3a293c466f569ff45f1c01bd3c09",
+    "figures/Figure_2_main_performance.pdf": "90e464ca78ed35edf679e7570daee2c72aa00a934825276bf9fe174c873c7b3e",
+    "figures/Figure_2_main_performance.png": "0defb6d25f6102339ac77d18efebcdbaf5e913375e150e14452e74269ee76d51",
+    "figures/Figure_2_main_performance.svg": "03000af8de2bb3628bde19591d9b2d55468fe50efbfa08c005c7096881faf366",
+    "figures/Figure_2_main_performance.tiff": "3067528f3e542514d924681fabf8925ff29930ea62a94492b2e97c78c6972602",
+    "figures/Figure_2_main_performance_contract.json": "ba8d8a25e0022b2724017f7d383fbf7b1ca6e4293b8e45ab0be2f30607dd37a5",
+    "figures/Figure_3_loso_four_species.pdf": "34cea447d6e6353886116f94f20871eb797d32de080b6307629860a477a8cc77",
+    "figures/Figure_3_loso_four_species.png": "18fbb9cd559cc63364be9789e1f384a56681a42179c5092c40f0f3faa72c4f31",
+    "figures/Figure_3_loso_four_species.svg": "2c29c8150f3d32bcf4f6667159b308881e71ea0e1b75e26cce933eb4d56a4cc9",
+    "figures/Figure_3_loso_four_species.tiff": "240cf7c36eaf5f6479317a206f241e9126919107d27fcf90bc32e6bff235c55f",
+    "figures/Figure_3_loso_four_species_contract.json": "082baa79e1f6ecd2218fcd52c926c3b2f82a98ffaac242be36a35f329c4b56a1",
+    "figures/Figure_4_genomewide_application.pdf": "0c832b59966e5cd509aba8a8f7b0aa1f3ca8b3b40152ad9b88508691c216461c",
+    "figures/Figure_4_genomewide_application.png": "1f5b07aac1f7ccc66559107864e8588e7a58dc28eee5a886e56ecfb542979092",
+    "figures/Figure_4_genomewide_application.svg": "6c2a7be680e9ce871261a8331813a7e647c5af80b9b0010120bc1bb291948334",
+    "figures/Figure_4_genomewide_application.tiff": "e3c86e46a3314568a5200177b75ffc647b63d1fdeb9e2eae504a68b6fbeb9bd5",
+    "figures/Figure_4_genomewide_application_contract.json": "0ae41c98eb763e10d82292bfeda7d637ab389309ee8e055d7197b7ebb465ae4d",
+    "figures/Figure_5_pk_dual_screen.pdf": "0c9ac8576b809b51c75371303dff96df923d1324661c7a2b10176b09da209da8",
+    "figures/Figure_5_pk_dual_screen.png": "4d2654a38c4dbf8d7a38d5ba18b4cabf78792aef23a6d9b26d27b1c7ea87a287",
+    "figures/Figure_5_pk_dual_screen.svg": "edde93d042f61f5a89bceee9f6ff39c1853d3d0db4890e34d3ef0baaee67b903",
+    "figures/Figure_5_pk_dual_screen.tiff": "fd0e4c59ede9f39433c64696abfb6852bfd6281dd73617bbbf5107faf3ec3c0f",
+    "figures/Figure_5_pk_dual_screen_contract.json": "ae6d5a42ee5a47b2af58df1efe178c69a5c9277bd37d90a3ed62563d1ec2a50d",
+    "figures/Figure_6_species_condition_contrast.pdf": "0f8e75ebedad254fd689c7727e69ad4bdf6a5670645ac7732154a069b6a9bdbc",
+    "figures/Figure_6_species_condition_contrast.png": "05536cad619ed00ac3d2dc54da12963494951647f97ee5766652fa56005fbcdb",
+    "figures/Figure_6_species_condition_contrast.svg": "25e3c2fde8ae8b8feb1a15ccf025fd6793e2fe4912b9a847f79022abe0647f3f",
+    "figures/Figure_6_species_condition_contrast.tiff": "f5f8a6ecf8dc3ad9d768ce18a31b819b0ba6cd81f62d5cdff94aa015ee8f3c55",
+    "figures/Figure_6_species_condition_contrast_contract.json": "79c31b1689a8b4b76fbaf1bb9f747f6bed9aedd4d4bc8dd62d408c0e9ddb97a9",
+    "loso/four_species_clade_loso_metrics.tsv": "6799ecf15c2230e69706ff046d8b19d22641780de78c8bd0e58e852865edcab3",
+    "loso/source_clade_loso_full_stack_metrics.tsv": "bf3febbab4e04f5bd6c9c36093425806e907a7404589a44b35784566d770b8c6",
+    "manifest/application_run_manifest.json": "5539df09e8db2a8902d2c498eeb02444662b562034b1a8571c6de8f779e02aca",
+    "manifest/fivefold_run_manifest.json": "ad92a87c6cc3d8fdd7f3769c4cfb373e79752bf2cac94ee79c5960012cf44f43",
+    "manifest/homology_scope_manifest.json": "3ed0653fec8efeb239da0149318fbfd53f4a8e32bfc9b3076d17483518d7361d",
+    "manuscript/Nature_Microbiology_replacement_manuscript.docx": "0c745fd9725bb174117dd0b95ddde0a048d1ac356606a24820f4ad4586594f76",
+    "manuscript/Nature_Microbiology_replacement_manuscript.md": "b4d276de428daeb06421967239ee088d3aba1194148c27c017e864982e200d09",
+    "manuscript/Nature_Microbiology_replacement_manuscript.pdf": "c08b6cbed8ee07d94ab556df08353e71e54bc83a25606de2c67a2a489591bb13",
+    "manuscript/rendered/page-1.png": "5a72ac832441e65d7e504fe621ca59eaa5e8bad0405209b80d5d164d1846ce39",
+    "manuscript/rendered/page-2.png": "b4f4fdd5628cbb1af6ce16b5e7b4fe4eec922f4becdafc9acd10271522dfe02f",
+    "manuscript/rendered/page-3.png": "e08e18e15675b900aaf786ddade11569403c709eb29f00265a22760d2acdc391",
+    "manuscript/rendered/page-4.png": "26baf8882f0f04e60d0bcf5ea0367054afed2d33d0dd784e959474943661418a",
+    "manuscript/rendered/page-5.png": "9554599f25204f02bece18b00ccc395126978dcfc2aa7f089abe2ffaad644425",
+    "manuscript/rendered/page-6.png": "fca69a81f17df3e7a8a43953093c6cc0cb6b82b6678eda9477736de937258510",
+    "manuscript/rendered/page-7.png": "2aeb90d24a0892a3661f2ea19a7071174f4658b021ab3eddc98c44c23527b3a5",
+    "manuscript/rendered2/page-1.png": "1a01a92094966a154a750b5c3abf0e2ed703a0bb44de9bd364bf0512f45d9290",
+    "manuscript/rendered2/page-2.png": "4feb9429d856ad7f9edf77de01a05ecd3790b832784d0e312746dc6a23db41ca",
+    "manuscript/rendered2/page-3.png": "749e7780ee439cfc1a92fa152b1ab2fe9f074259a5fc7d6884faa18ab980e837",
+    "manuscript/rendered2/page-4.png": "b3249e41857d5e990e0c31312b539941e1a57b068b5526e4171030423a53b14c",
+    "manuscript/rendered2/page-5.png": "fca69a81f17df3e7a8a43953093c6cc0cb6b82b6678eda9477736de937258510",
+    "manuscript/rendered2/page-6.png": "2aeb90d24a0892a3661f2ea19a7071174f4658b021ab3eddc98c44c23527b3a5",
+    "metrics/frozen_fivefold_nine_route_metrics.tsv": "9386e21e35bdc30c104010dd2fd46685da38a5a0758dab7157a5163cdb2b05c1",
+    "old_vs_new/old_vs_new_mapping.tsv": "a90e227816ebe6bd35037feddfdfac4eab852601402739cd93e1830ee967874e",
+    "predictions/all_three_species_nine_route_genomewide.tsv": "90e9958a8d8046afbd9dbcf3cd47f98483831161d2f5fda420f99d214c6846ac",
+    "predictions/frozen_stack_predictions.tsv": "bffdb2b7d2c97da2608c45c5191d05a8ba11936a49bc5d92e0da8e55a2aece70",
+    "predictions/standardized_genomewide_predictions.tsv": "3ffe6f5ea87bef7e6bd802ce1614b2372021b8ead35735ffe69b23e1b8b6d7ff",
+    "source_data/data_dictionary.tsv": "b2323fd36d120509f907446e66fffb211c428aa360099ce19fecc2665439e020",
+    "source_data/ProtoEss_NatureMicrobiology_source_data.xlsx": "ffcfd870de92e1e88e82140240a2275c0d43478a15f27755fb40d987d4eb8ba0",
+    "submission/Cover_Letter_Nature_Microbiology.md": "dfe67d91f4e81711cdc0a89c154c8855188c7585bffffc79f51ae185f2ad9e54",
+    "submission/Machine_Learning_Checklist.md": "6088144eebfbc072ebadba008f307fba06045e9f1fe92c340c0a118f62d33e3d",
+    "submission/Reporting_Summary.md": "9122e843b1112c2229aa49e90d7904e20bc7af7b86443b466003800a2d58cc40",
+    "supplementary_information/Supplementary_Information.docx": "6f66179ce6698f7b69b1cb7b903d8737fab791e754292c7abdcf6b520f9c31f7",
+    "supplementary_information/Supplementary_Information.md": "5c3ebcabdfd298c779e7a9125be9fb2a365a5a36cccd0039b397948ec8e7990d",
+    "wp1_dual_screen/aligned_dualscreen_gene_calls.tsv": "423228c2d3ba167fad6ea1385222730b47041873174935ed5eb2929b3047e737",
+    "wp1_dual_screen/categorical_concordance.tsv": "e057abbbd5b9dcd438056929ef013a271d61d975013fa6237cfcd56888f6088f",
+    "wp1_dual_screen/continuous_score_association.tsv": "c926e41aaf05eb4d1ad3125f6ecb946c77de856484c8bddb508925d45131bc0d",
+    "wp1_dual_screen/cross_species_observed_label_discordance.tsv": "0de04b3e36d12124867453ed39dc4be284c2cb3c440c7d27a37f329ffd14a54e",
+    "wp1_dual_screen/exact_triplets_observed_label_join.tsv": "3a148f362874af888e781cff0a727cc3ececf4f30f707ff5d5e58530ae7811cf",
+    "wp1_dual_screen/model_prediction_exact_triplets_summary.tsv": "b42dc82567aae685356416aa0474455559ae36b09b4b0b3ebe036fcf110dc8b8",
+    "wp1_dual_screen/ortholog_mapping_audit.tsv": "de0ef223fe860e4d9fd0dee2be477ce164f0c023b3ee4fa1ceb8abfac11fff40",
+    "wp1_dual_screen/paired_cross_vs_within_pk_comparison.tsv": "aaf18532405999ca91efd594968dc9c963dfbb3357ea91d8cf5a84a0b2561f02",
+    "wp1_dual_screen/run_manifest.json": "a11033c2109d0684e0a0a0a49fa8234e267c188133332f68c91bcef139778774",
+    "wp1_dual_screen/WP1_DUALSCREEN_VALIDATED_REPORT.md": "f829e61e56565661c4af03c348cc48ba5bedab050f2a5a0f769e2c1880ae1d2f"
+  }
+}

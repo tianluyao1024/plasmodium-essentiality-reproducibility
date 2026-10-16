@@ -1,0 +1,3 @@
+set	n	els_essential_ober_essential	els_essential_ober_nonessential	els_nonessential_ober_essential	els_nonessential_ober_nonessential	flips	flip_rate	flip_ci95_low	flip_ci95_high	els_essential_to_ober_nonessential	els_nonessential_to_ober_essential	exact_mcnemar_p
+primary_exclude_tentative	3501	1420	370	70	1641	440	0.12567837760639816	0.11510660917363333	0.13707069162732452	370	70	2.4064501844627113e-50
+sensitivity_include_tentative	3559	1470	370	78	1641	448	0.12587805563360493	0.11538188630539084	0.13718098218624922	370	78	1.5562558192219705e-46

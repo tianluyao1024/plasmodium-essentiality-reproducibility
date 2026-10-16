@@ -14,3 +14,9 @@ Extract the source and input archives. In formal_reproduction/config/formal_path
 The biological datasets are processed derivatives of the sources recorded in DATA_NOTICE.md and the input provenance. Their original attribution and terms continue to apply. The repository software licence does not supersede upstream data terms. The input tree preserves legacy path names where required by the analysis scripts.
 
 The live resource is https://www.protoessatlas.com/. Older v1.0.2 archives contain the earlier three-species deployment release; they do not contain this complete formal-analysis package.
+
+## 2026-10-17 Nature Microbiology replacement release
+
+The versioned `release/v20261017_5fold_9route_lightgbm/` directory contains the frozen five-fold nine-route LightGBM metrics, predictions, standardized genome-wide schema, four-species clade LOSO table and P. knowlesi dual-screen condition tables. The LOSO table explicitly includes P. falciparum, P. berghei, P. knowlesi and Toxoplasma gondii. The release uses the original 95%-deduplicated label-stratified random split and 628 raw features. The final freeze manifest records the historical non-blind evaluation caveat and SHA-256 hashes. The human-red-cell P. knowlesi analysis is an ortholog-mapped retrospective condition analysis, not an exact A1H sequence-level prediction.
+
+Rebuild the package and figures with `formal_reproduction/code/build_nature_microbiology_submission_20261017.py` and `formal_reproduction/code/generate_nature_microbiology_figures_20261017.py`. The separate `plasmodium-essentiality-host-risk-atlas` project is intentionally not modified.
