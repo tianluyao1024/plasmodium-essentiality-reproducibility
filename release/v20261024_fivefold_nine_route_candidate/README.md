@@ -13,6 +13,7 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 ## Contents
 
 - `atlas/`: standardized predictions, four-species LOSO, source-composition comparison, Pk pair-level results, S4 runs, model/data cards and upstream freeze manifest.
+- `figures/main/`: the six exact PNG images embedded in the current internal manuscript DOCX, with a figure export manifest recording dimensions, hashes and raster-source limitations. These are manuscript-matched figure assets, not author-approved final publication files; Fig. 1, Fig. 3 and Fig. 6 have no separately verified vector originals in the audited figure folders.
 - `source_data/`: panel-level source tables for Figs. 2-6 and the final Supplementary Fig. S1-S13 analyses. Only the named final S6 v3 and final frozen Fig. 4 source package are included; intermediate pilot/model files are excluded.
 - `supplementary_workbooks/`: current internal S1-S3 workbooks, included for candidate review and still subject to author approval.
 - `release_candidate_manifest.json`: status flags and SHA-256 for every payload file.

@@ -52,9 +52,37 @@
       "bytes": 2672,
       "sha256": "094038e3e9caa51698f432ed4466f1753c6c72e09f62fcdaad680c62663f4960"
     },
+    "figures/main/Fig1.png": {
+      "bytes": 322218,
+      "sha256": "7eb8b747b672f1fdddf8f9106991735a5f2fff598898fd990f2ed378632df71d"
+    },
+    "figures/main/Fig2.png": {
+      "bytes": 608715,
+      "sha256": "bc1eae9c0b7d6b116e524c2374f4aef575ccdcdd0f3b820560bc3812ef547acc"
+    },
+    "figures/main/Fig3.png": {
+      "bytes": 153768,
+      "sha256": "6945c09694e306e8d4bd2423dac9cb47ad8011eae49eb5e706282d63d29b51e8"
+    },
+    "figures/main/Fig4.png": {
+      "bytes": 395939,
+      "sha256": "ac9f90b4043b6d04a938104fd2c220575f80e9ba79123de17e065c52cd6e35d9"
+    },
+    "figures/main/Fig5.png": {
+      "bytes": 282863,
+      "sha256": "b405c0613b9e5731ea1dec2c213a74df264dc530c8a91ad48052df96c02c3305"
+    },
+    "figures/main/Fig6.png": {
+      "bytes": 302196,
+      "sha256": "dbb91787f4c80c22d367699d6d3d04e6fd2d10225616f12ffcf6b6de32497d1e"
+    },
+    "figures/main/figure_export_manifest.json": {
+      "bytes": 4893,
+      "sha256": "dac2ddf89193e33dee45d5866512b524a5d8e31dbf5f93d6673386dff613cc05"
+    },
     "README.md": {
-      "bytes": 2537,
-      "sha256": "4ecad62ced0c7b9e854245f9fc9989f883e4b4623325d00fdfc84a8e0852ea5a"
+      "bytes": 2913,
+      "sha256": "776c92140cf0a6772707e7eaf3caa719c32c7f9b3a2234c8e443d1d1f0f6c8c6"
     },
     "source_data/Fig2/F2a_performance.tsv": {
       "bytes": 941,
@@ -410,5 +438,6 @@
     "The candidate overlay passed deploy/rollback smoke testing on an isolated copy; live website compatibility remains unverified and no production files were changed."
   ],
   "production_website_deployment_process_verified": false,
-  "isolated_deploy_rollback_smoke_tested": true
+  "isolated_deploy_rollback_smoke_tested": true,
+  "updated_local_date": "2026-10-24"
 }
