@@ -19,4 +19,4 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 
 ## Limitations and release gates
 
-All gene calls and target priorities are computational hypotheses, not experimental validation. The historical v45 row-level transition data could not be verified and no transition statistic is reported. Corresponding-author approval, final declaration/reporting-summary review, archive DOI, and production website target verification remain outstanding. `public_release` is false.
+All gene calls and target priorities are computational hypotheses, not experimental validation. The historical v45 row-level transition data could not be verified and no transition statistic is reported. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The current production hostname is verified as `www.protoessatlas.com` via NATAPP to local port 8511, but the candidate deploy/rollback process is not verified. `public_release` is false.

@@ -5,7 +5,7 @@
   "public_release": false,
   "submission_ready": false,
   "archive_doi": null,
-  "production_website_target_verified": false,
+  "production_website_target_verified": true,
   "upstream_model_freeze_manifest_sha256": "6e5c2935ff8000fa520e1634165a41cf01173a9e7da948a0702e95928c778930",
   "payload_files": {
     "atlas/DATA_DICTIONARY.md": {
@@ -49,12 +49,12 @@
       "sha256": "cad44d0df09c7b9bb69054a4f474091d48532f0c80a188c27098f3f81fe38378"
     },
     "atlas/upstream_candidate_manifest.json": {
-      "bytes": 2539,
-      "sha256": "7926f0cd30c41950426559825188ace68bbbca36d98d412da57e2f8e10d8e495"
+      "bytes": 2672,
+      "sha256": "094038e3e9caa51698f432ed4466f1753c6c72e09f62fcdaad680c62663f4960"
     },
     "README.md": {
-      "bytes": 2417,
-      "sha256": "59c0196c3508da7a05aaca61cfb1e721760bdc2fe7adb87585cd8603f3540808"
+      "bytes": 2537,
+      "sha256": "4ecad62ced0c7b9e854245f9fc9989f883e4b4623325d00fdfc84a8e0852ea5a"
     },
     "source_data/Fig2/F2a_performance.tsv": {
       "bytes": 941,
@@ -220,10 +220,6 @@
       "bytes": 903507,
       "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c"
     },
-    "source_data/supplementary/Source_Data_Supplementary_Fig_S13.tsv": {
-      "bytes": 903507,
-      "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c"
-    },
     "source_data/Supplementary_Data_S3_frozen_nine_route_20261024/manifest.json": {
       "bytes": 2828,
       "sha256": "c4ce88dfeff5fc14c004954c64d37561a7bb3dcaf63229d60c1d045f5ce7d6a0"
@@ -264,6 +260,14 @@
       "bytes": 219,
       "sha256": "2666bb4f644b8bacfb7b8b471e61e98e69319ad7f011e0e0d22d24721a2575be"
     },
+    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/manifest.json": {
+      "bytes": 2306,
+      "sha256": "2add51dc7b3a0806d55a5eddf32f332539e2943d2ee022cfead6df76e3131a34"
+    },
+    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/S1_meta_route_gain_and_split_counts.tsv": {
+      "bytes": 4390,
+      "sha256": "fb15d0134a13347373c6e4c20be0954c81188590b275fc5c2f4fbcbc0453dc1f"
+    },
     "source_data/Supplementary_Fig_S10_final_20261023/independent_audit.json": {
       "bytes": 589,
       "sha256": "ecef4e9f76f905ba2584cc4d8ff00b95d33c3abeac5a0213810d56f9d064ae78"
@@ -295,14 +299,6 @@
     "source_data/Supplementary_Fig_S10_final_20261023/stable_directional_registry_null_summary.tsv": {
       "bytes": 1032,
       "sha256": "ab995f64d68795910a46facfc3cdcfed8ce8cbd0547dbdcd4bf1b4c7eb8ccc4e"
-    },
-    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/manifest.json": {
-      "bytes": 2306,
-      "sha256": "2add51dc7b3a0806d55a5eddf32f332539e2943d2ee022cfead6df76e3131a34"
-    },
-    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/S1_meta_route_gain_and_split_counts.tsv": {
-      "bytes": 4390,
-      "sha256": "fb15d0134a13347373c6e4c20be0954c81188590b275fc5c2f4fbcbc0453dc1f"
     },
     "source_data/Supplementary_Fig_S2_S5_frozen_20261024/manifest.json": {
       "bytes": 3562,
@@ -388,6 +384,10 @@
       "bytes": 253,
       "sha256": "a0dcd9c050ca632cce230e3469d2e0fa0841f9f8c661feaabf93a9d84027f161"
     },
+    "source_data/supplementary/Source_Data_Supplementary_Fig_S13.tsv": {
+      "bytes": 903507,
+      "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c"
+    },
     "supplementary_workbooks/Supplementary_Data_1_internal_v10.xlsx": {
       "bytes": 3574090,
       "sha256": "98d480532a77c11f300a426450775487ac921c8affb1431b87c4b606465000e1"
@@ -405,8 +405,9 @@
     "Author-level sign-off of all values and declarations is outstanding.",
     "Historical v45 row-level transition source data could not be verified.",
     "No final archive DOI has been minted.",
-    "The production website domain and deployment target require confirmation.",
+    "The current production hostname and port are identified; candidate deploy/rollback and public compatibility checks remain unverified.",
     "Historical Pk test-outcome exposure makes reported evaluations retrospective, not blind.",
     "Pk human-red-cell results are homolog-projected and not A1H sequence-level predictions."
-  ]
+  ],
+  "production_website_deployment_process_verified": false
 }

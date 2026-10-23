@@ -149,7 +149,7 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 
 ## Limitations and release gates
 
-All gene calls and target priorities are computational hypotheses, not experimental validation. The historical v45 row-level transition data could not be verified and no transition statistic is reported. Corresponding-author approval, final declaration/reporting-summary review, archive DOI, and production website target verification remain outstanding. `public_release` is false.
+All gene calls and target priorities are computational hypotheses, not experimental validation. The historical v45 row-level transition data could not be verified and no transition statistic is reported. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The current production hostname is verified as `www.protoessatlas.com` via NATAPP to local port 8511, but the candidate deploy/rollback process is not verified. `public_release` is false.
 """
     output.mkdir(parents=True, exist_ok=True)
     (output / "README.md").write_text(readme, encoding="utf-8")
@@ -162,7 +162,8 @@ All gene calls and target priorities are computational hypotheses, not experimen
         "public_release": False,
         "submission_ready": False,
         "archive_doi": None,
-        "production_website_target_verified": False,
+        "production_website_target_verified": True,
+        "production_website_deployment_process_verified": False,
         "upstream_model_freeze_manifest_sha256": sha256(web / "final_freeze_manifest.json"),
         "payload_files": {
             p.relative_to(output).as_posix(): {"bytes": p.stat().st_size, "sha256": sha256(p)}
@@ -172,7 +173,7 @@ All gene calls and target priorities are computational hypotheses, not experimen
             "Author-level sign-off of all values and declarations is outstanding.",
             "Historical v45 row-level transition source data could not be verified.",
             "No final archive DOI has been minted.",
-            "The production website domain and deployment target require confirmation.",
+            "The current production hostname and port are identified; candidate deploy/rollback and public compatibility checks remain unverified.",
             "Historical Pk test-outcome exposure makes reported evaluations retrospective, not blind.",
             "Pk human-red-cell results are homolog-projected and not A1H sequence-level predictions.",
         ],

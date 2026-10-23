@@ -42,12 +42,15 @@
     "source_composition_metrics.tsv": "cad44d0df09c7b9bb69054a4f474091d48532f0c80a188c27098f3f81fe38378"
   },
   "public_release": false,
-  "deployment_target_verified": false,
+  "deployment_target_verified": true,
   "archive_doi": null,
   "limitations": [
     "Historical Pk outcome exposure means the matched-species test estimates are not blind.",
     "LOSO and human-red-cell condition analyses are retrospective and not prospective external validation.",
     "The Pk projection uses homolog mapping without A1H-specific sequence features.",
     "Predictions and target priorities are computational hypotheses, not experimental validation."
-  ]
+  ],
+  "deployment_process_verified": false,
+  "production_hostname": "https://www.protoessatlas.com",
+  "production_local_port": 8511
 }
