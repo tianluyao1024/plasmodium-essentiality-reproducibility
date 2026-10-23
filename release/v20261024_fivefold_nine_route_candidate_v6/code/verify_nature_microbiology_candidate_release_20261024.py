@@ -240,6 +240,33 @@ def main() -> None:
         if actual_hash != expected_hash:
             errors.append(f"embedded figure hash mismatch: {figure}")
 
+    redraw_manifest_path = root / "reproduced_source_figures" / "figure_reproduction_manifest.json"
+    redraw_manifest = json.loads(redraw_manifest_path.read_text(encoding="utf-8"))
+    redraw_input_checks = 0
+    for item in redraw_manifest.get("input_files", []):
+        source = root / "source_data" / item["path"]
+        if not source.is_file():
+            errors.append(f"missing source-data redraw input: {item['path']}")
+            continue
+        if source.stat().st_size != item["bytes"] or sha256(source) != item["sha256"]:
+            errors.append(f"source-data redraw input hash mismatch: {item['path']}")
+        redraw_input_checks += 1
+    redraw_figure_checks = {}
+    for item in redraw_manifest.get("figures", []):
+        figure_path = root / "reproduced_source_figures" / item["file"]
+        actual_hash = sha256(figure_path) if figure_path.is_file() else None
+        redraw_figure_checks[item["file"]] = actual_hash
+        if actual_hash != item["sha256"]:
+            errors.append(f"source-data redraw figure hash mismatch: {item['file']}")
+        if figure_path.is_file() and figure_path.stat().st_size != item["bytes"]:
+            errors.append(f"source-data redraw figure size mismatch: {item['file']}")
+    if len(redraw_manifest.get("input_files", [])) != 21:
+        errors.append("expected 21 panel-level source tables for source-data redraw")
+    if len(redraw_figure_checks) != 6:
+        errors.append("expected six source-data-redrawn main figures")
+    if redraw_manifest.get("reproduction_scope") != "source-data figure regeneration; no model fitting or manuscript replacement":
+        errors.append("source-data redraw manifest has an unexpected scope")
+
     report = {
         "release_id": manifest["release_id"],
         "payload_count": len(manifest["payload_files"]),
@@ -268,6 +295,11 @@ def main() -> None:
             "interpretation": transition_meta.get("interpretation"),
         },
         "embedded_main_figure_hashes": figure_checks,
+        "source_data_figure_redraw": {
+            "input_table_count": redraw_input_checks,
+            "redrawn_figure_hashes": redraw_figure_checks,
+            "scope": redraw_manifest.get("reproduction_scope"),
+        },
         "errors": errors,
         "scope_note": "This verifies frozen release outputs and source tables; it does not refit the nine-route model from the full 628-feature matrices.",
     }

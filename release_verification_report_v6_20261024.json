@@ -1,0 +1,104 @@
+{
+  "release_id": "v20261024_fivefold_nine_route_candidate_v6",
+  "payload_count": 117,
+  "payload_hashes_and_portability": "passed",
+  "main_test_metrics": {
+    "Pf": {
+      "labelled": 5347,
+      "train": 4294,
+      "validation": 526,
+      "test": 527,
+      "test_auroc": 0.8205940594059405,
+      "test_auprc": 0.8728263805155563,
+      "test_essential": 325,
+      "test_nonessential": 202
+    },
+    "Pb": {
+      "labelled": 2096,
+      "train": 1687,
+      "validation": 204,
+      "test": 205,
+      "test_auroc": 0.8740096618357488,
+      "test_auprc": 0.8964012622941424,
+      "test_essential": 115,
+      "test_nonessential": 90
+    },
+    "Pk": {
+      "labelled": 4099,
+      "train": 3284,
+      "validation": 408,
+      "test": 407,
+      "test_auroc": 0.9151080179788313,
+      "test_auprc": 0.9209502849754176,
+      "test_essential": 198,
+      "test_nonessential": 209
+    }
+  },
+  "metrics_recomputed_from_test_only_predictions": true,
+  "four_species_loso": [
+    "Pb",
+    "Pf",
+    "Pk",
+    "Tg"
+  ],
+  "fig2d_allocation_count": 15,
+  "pk_dual_screen": {
+    "paired_genes": 3482,
+    "discordant": 435,
+    "fraction": 0.12492820218265364,
+    "wilson_95_ci": [
+      0.11435770072513073,
+      0.13632537512431597
+    ],
+    "continuous_spearman_rho": 0.7616021762228862
+  },
+  "refit_stable_groups": 184,
+  "s4_label_exchange_runs": 60,
+  "v45_to_frozen_nine_route_transitions": {
+    "matched_unique_record_ids": 15591,
+    "by_transition": {
+      "unchanged_nonessential": 5979,
+      "retained_predicted_essential": 7648,
+      "no_longer_predicted_essential": 1494,
+      "newly_predicted_essential": 470
+    },
+    "by_species_and_transition": {
+      "Pb:newly_predicted_essential": 285,
+      "Pb:no_longer_predicted_essential": 254,
+      "Pb:retained_predicted_essential": 2444,
+      "Pb:unchanged_nonessential": 1962,
+      "Pf:newly_predicted_essential": 83,
+      "Pf:no_longer_predicted_essential": 654,
+      "Pf:retained_predicted_essential": 3101,
+      "Pf:unchanged_nonessential": 1480,
+      "Pk:newly_predicted_essential": 102,
+      "Pk:no_longer_predicted_essential": 586,
+      "Pk:retained_predicted_essential": 2103,
+      "Pk:unchanged_nonessential": 2537
+    },
+    "source_archive_sha256": "97c66871058add2f12d1c6b17898686f89a1cf753d0eeb2236d82265f3f90e15",
+    "interpretation": "retrospective model-version context, not validation or experimental evidence"
+  },
+  "embedded_main_figure_hashes": {
+    "Fig1": "7eb8b747b672f1fdddf8f9106991735a5f2fff598898fd990f2ed378632df71d",
+    "Fig2": "bc1eae9c0b7d6b116e524c2374f4aef575ccdcdd0f3b820560bc3812ef547acc",
+    "Fig3": "6945c09694e306e8d4bd2423dac9cb47ad8011eae49eb5e706282d63d29b51e8",
+    "Fig4": "ac9f90b4043b6d04a938104fd2c220575f80e9ba79123de17e065c52cd6e35d9",
+    "Fig5": "b405c0613b9e5731ea1dec2c213a74df264dc530c8a91ad48052df96c02c3305",
+    "Fig6": "dbb91787f4c80c22d367699d6d3d04e6fd2d10225616f12ffcf6b6de32497d1e"
+  },
+  "source_data_figure_redraw": {
+    "input_table_count": 21,
+    "redrawn_figure_hashes": {
+      "Fig1.png": "d1389d085e6efc4aee66ed520a4c27e0fb32ffb8bf4aecfb558402fbc9144212",
+      "Fig2.png": "6e8a661f387a8a1067fbc438f1fc6b381cb5c162447a6ddee3e0e36d1bfc5424",
+      "Fig3.png": "5e50aa1fd98fe2a726be1bb4f22686226be4e66faff0648f85116956694eca95",
+      "Fig4.png": "0e18c8f150cc3fbe9dc256cd20439a8c103c2c90fa751cda9aaef11cc77e7663",
+      "Fig5.png": "644f013a2ad67eb768c4ee786d1fa40b0c4af56b9ef11574fcef7065321c51f9",
+      "Fig6.png": "d680acb27bd8b0ff1b18f86ac7dc179563834548760c9c28067bb87fb7b8d073"
+    },
+    "scope": "source-data figure regeneration; no model fitting or manuscript replacement"
+  },
+  "errors": [],
+  "scope_note": "This verifies frozen release outputs and source tables; it does not refit the nine-route model from the full 628-feature matrices."
+}

@@ -17,13 +17,14 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 - `figures/main/`: the six exact PNGs embedded in the current internal manuscript, plus a provenance manifest. Fig. 1, Fig. 3 and Fig. 6 do not have separately verified vector originals.
 - `code/verify_nature_microbiology_candidate_release_20261024.py`: independently checks payload hashes/portability and recomputes the headline frozen metrics, LOSO species, Fig. 2d allocation count, Pk discordance interval, refit-stable group count and S4 run count. This audits frozen outputs; it does not retrain the model from the full feature matrices.
 - `code/extract_and_verify_manuscript_figures.py`: extracts the exact six embedded image objects from a supplied manuscript DOCX and verifies them against the included figure manifest. This is image extraction, not recreation of vector plots; no separate vector originals are verified for Figs. 1, 3 and 6.
+- `code/reproduce_main_figures_from_source.py`: redraws six main figures from the 21 packaged panel-level source tables into `reproduced_source_figures/`. The output folder includes a runtime/input/output SHA-256 manifest. This is a source-data-driven redraw, not model fitting and not a replacement for the manuscript-matched PNGs in `figures/main/`; the exact embedded images remain unchanged.
 - `source_data/`: panel-level source tables for Figs. 2-6 and the final Supplementary Fig. S1-S13 analyses. Only the named final S6 v3 and final frozen Fig. 4 source package are included; intermediate pilot/model files are excluded.
 - `supplementary_workbooks/`: current internal S1-S3 workbooks, included for candidate review and still subject to author approval.
 - `release_candidate_manifest.json`: status flags and SHA-256 for every payload file.
 
 ## Reproduce the frozen package audit
 
-From this directory, run `python code/verify_nature_microbiology_candidate_release_20261024.py --release-dir .`. To re-extract the exact embedded figure images, supply the internal manuscript DOCX separately: `python code/extract_and_verify_manuscript_figures.py --docx PATH_TO_MANUSCRIPT.docx --figure-manifest figures/main/figure_export_manifest.json --output-dir FIGURE_EXPORTS`.
+From this directory, run `python code/verify_nature_microbiology_candidate_release_20261024.py --release-dir .`. To redraw figures from the packaged source tables, run `python code/reproduce_main_figures_from_source.py --release-dir . --output-dir reproduced_source_figures_check`; the verifier checks the committed redraws against their manifest and source-table hashes. To re-extract the exact embedded figure images, supply the internal manuscript DOCX separately: `python code/extract_and_verify_manuscript_figures.py --docx PATH_TO_MANUSCRIPT.docx --figure-manifest figures/main/figure_export_manifest.json --output-dir FIGURE_EXPORTS`.
 
 ## Limitations and release gates
 
