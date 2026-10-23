@@ -1,5 +1,5 @@
 field	value
-input_atlas	D:\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\05_Supplementary_Data_S3_post_score_evidence_context_INTERNAL_v10.xlsx
+input_atlas	Frozen v20261017 five-fold nine-route LightGBM genome-wide predictions
 model_version	fivefold_nine_route_lightgbm_20261016
 feature_count	628
 genes_scored	15591

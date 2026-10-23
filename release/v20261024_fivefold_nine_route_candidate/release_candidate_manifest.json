@@ -220,6 +220,10 @@
       "bytes": 903507,
       "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c"
     },
+    "source_data/supplementary/Source_Data_Supplementary_Fig_S13.tsv": {
+      "bytes": 903507,
+      "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c"
+    },
     "source_data/Supplementary_Data_S3_frozen_nine_route_20261024/manifest.json": {
       "bytes": 2828,
       "sha256": "c4ce88dfeff5fc14c004954c64d37561a7bb3dcaf63229d60c1d045f5ce7d6a0"
@@ -245,8 +249,8 @@
       "sha256": "558ee94a80ab43781a718c851d4b81d656f68e2995f7ad1a5515262f74e91c47"
     },
     "source_data/Supplementary_Data_S3_frozen_nine_route_20261024/S3_README.tsv": {
-      "bytes": 995,
-      "sha256": "a2328865ee372f03c1158edce908a413e37a224677455d07f9c43bbe162c23a2"
+      "bytes": 931,
+      "sha256": "44b6feb6c9c67de6c690051997063e8f77ebd6d5395bbb3e514e9603da208311"
     },
     "source_data/Supplementary_Data_S3_frozen_nine_route_20261024/S3_Shared_EEE_members.tsv": {
       "bytes": 5214299,
@@ -259,14 +263,6 @@
     "source_data/Supplementary_Data_S3_frozen_nine_route_20261024/S3_Target_validation.tsv": {
       "bytes": 219,
       "sha256": "2666bb4f644b8bacfb7b8b471e61e98e69319ad7f011e0e0d22d24721a2575be"
-    },
-    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/manifest.json": {
-      "bytes": 2306,
-      "sha256": "2add51dc7b3a0806d55a5eddf32f332539e2943d2ee022cfead6df76e3131a34"
-    },
-    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/S1_meta_route_gain_and_split_counts.tsv": {
-      "bytes": 4390,
-      "sha256": "fb15d0134a13347373c6e4c20be0954c81188590b275fc5c2f4fbcbc0453dc1f"
     },
     "source_data/Supplementary_Fig_S10_final_20261023/independent_audit.json": {
       "bytes": 589,
@@ -299,6 +295,14 @@
     "source_data/Supplementary_Fig_S10_final_20261023/stable_directional_registry_null_summary.tsv": {
       "bytes": 1032,
       "sha256": "ab995f64d68795910a46facfc3cdcfed8ce8cbd0547dbdcd4bf1b4c7eb8ccc4e"
+    },
+    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/manifest.json": {
+      "bytes": 2306,
+      "sha256": "2add51dc7b3a0806d55a5eddf32f332539e2943d2ee022cfead6df76e3131a34"
+    },
+    "source_data/Supplementary_Fig_S1_meta_route_gain_20261024/S1_meta_route_gain_and_split_counts.tsv": {
+      "bytes": 4390,
+      "sha256": "fb15d0134a13347373c6e4c20be0954c81188590b275fc5c2f4fbcbc0453dc1f"
     },
     "source_data/Supplementary_Fig_S2_S5_frozen_20261024/manifest.json": {
       "bytes": 3562,
@@ -384,10 +388,6 @@
       "bytes": 253,
       "sha256": "a0dcd9c050ca632cce230e3469d2e0fa0841f9f8c661feaabf93a9d84027f161"
     },
-    "source_data/supplementary/Source_Data_Supplementary_Fig_S13.tsv": {
-      "bytes": 903507,
-      "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c"
-    },
     "supplementary_workbooks/Supplementary_Data_1_internal_v10.xlsx": {
       "bytes": 3574090,
       "sha256": "98d480532a77c11f300a426450775487ac921c8affb1431b87c4b606465000e1"
@@ -405,9 +405,10 @@
     "Author-level sign-off of all values and declarations is outstanding.",
     "Historical v45 row-level transition source data could not be verified.",
     "No final archive DOI has been minted.",
-    "The current production hostname and port are identified; candidate deploy/rollback and public compatibility checks remain unverified.",
     "Historical Pk test-outcome exposure makes reported evaluations retrospective, not blind.",
-    "Pk human-red-cell results are homolog-projected and not A1H sequence-level predictions."
+    "Pk human-red-cell results are homolog-projected and not A1H sequence-level predictions.",
+    "The candidate overlay passed deploy/rollback smoke testing on an isolated copy; live website compatibility remains unverified and no production files were changed."
   ],
-  "production_website_deployment_process_verified": false
+  "production_website_deployment_process_verified": false,
+  "isolated_deploy_rollback_smoke_tested": true
 }
