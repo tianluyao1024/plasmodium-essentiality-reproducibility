@@ -1,0 +1,19 @@
+species	short_species	model	AUROC	AUPRC	note
+Plasmodium_falciparum	Pf	OOF stack	0.8205940594059405	0.8728263805155562	fixed five-fold nine-route LightGBM meta-model
+Plasmodium_falciparum	Pf	LightGBM	0.7555826351865955	0.8388205609757083	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_falciparum	Pf	CatBoost	0.7683320639756284	0.8455060968254171	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_falciparum	Pf	species-aware expert	0.7664432597105864	0.8421529690011185	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_falciparum	Pf	species prior	0.5	0.6166982922201139	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_falciparum	Pf	Transformer	0.7538156892612339	0.8267932065600676	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_berghei	Pb	OOF stack	0.8740096618357488	0.8964012622941426	fixed five-fold nine-route LightGBM meta-model
+Plasmodium_berghei	Pb	LightGBM	0.7464734299516909	0.814688809016691	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_berghei	Pb	CatBoost	0.7392270531400966	0.8000679113815331	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_berghei	Pb	species-aware expert	0.7416425120772947	0.8005163873515371	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_berghei	Pb	species prior	0.5	0.5609756097560976	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_berghei	Pb	Transformer	0.7106280193236716	0.7525558985149801	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_knowlesi	Pk	OOF stack	0.9151080179788316	0.9209502849754174	fixed five-fold nine-route LightGBM meta-model
+Plasmodium_knowlesi	Pk	LightGBM	0.8539703252621912	0.8549311206853135	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_knowlesi	Pk	CatBoost	0.8414044753757673	0.8411917078559188	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_knowlesi	Pk	species-aware expert	0.859673287902953	0.858114817550644	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_knowlesi	Pk	species prior	0.5	0.4864864864864865	same held-out test genes; direct component, not an ablated nine-route model
+Plasmodium_knowlesi	Pk	Transformer	0.8405345319220917	0.8303196810678226	same held-out test genes; direct component, not an ablated nine-route model

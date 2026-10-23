@@ -1,0 +1,53 @@
+{
+  "status": "post-score historical registry context; not experimental validation",
+  "input_sha256": {
+    "upstream/original_revision/provisional_figure4_annotation_exclusion/single_copy_groups_full_vs_annotation_excluded.tsv": "bc679faf63533b6e5abbba83c1b54359730fc1c111436f6c884b25406f490779",
+    "external_workspace/protozoa_human_sci_analysis/reviewer_revision/ncomms_submission_v34/Source_Data/Supplementary_FigS5a_v34_target_registry_members.tsv": "6ac92bd79292499ce293de8624b029a5944d2ba93a12eb98b7e8b5a0dbc37677",
+    "upstream/original_revision/provisional_figure4_working_20261019_v4/independent_audit.json": "3745bc61f1131270c343f23d0fdc8d98c2704a58e15362c53f217cc56f4bd67e"
+  },
+  "output_sha256": {
+    "s10_registry_null_draws.tsv": "01e2a2c7b0a990a5ef00e48bb1e7022da288ebd78b33af06af5472c927cb88f8",
+    "s10_registry_null_summary.tsv": "827308868f6c3e0277f6024a314c3b936ccfd7a5a59a7471da2912e96470f490",
+    "s10_triplet_eligibility_universe.tsv": "76222e42f22c3f1bddaf571c3e3fc2b313859f53c13c281bc3ec1a5459241e35"
+  },
+  "script_sha256": "1b43ee1c4ae31127576ef0a99ce37447a8b911a5d1fc3dfc7cd8de98ed8a5ea8",
+  "summary": {
+    "eligible_triplets": 4183,
+    "candidate_triplets": 1861,
+    "candidate_members": 5583,
+    "registry_supported_members_observed": 85,
+    "null_mean": 47.18238,
+    "null_sample_sd": 7.012801817354694,
+    "null_q025": 34.0,
+    "null_q975": 61.0,
+    "empirical_p_greater_equal": 9.99990000099999e-06,
+    "null_expectation_analytic": 47.158976810901265,
+    "null_sd_analytic": 7.016768202163332,
+    "permutations": 100000,
+    "seed": 20260831
+  },
+  "limitations": [
+    "Registry is the original v34 source, not a current comprehensive registry.",
+    "Whole-triplet uniform sampling preserves eligibility and group size but not other biological covariates.",
+    "Registry evidence is post-score and does not establish drug efficacy or causality.",
+    "Historical test exposure and Pk human-screen route caveats remain."
+  ],
+  "stable_directional_registry_sensitivity": {
+    "eligible_triplets": 4183,
+    "stable_groups": 184,
+    "members": 552,
+    "observed_supported_members": 3,
+    "null_mean": 4.65833,
+    "null_q025": 0.0,
+    "null_q975": 11.0,
+    "empirical_p_enrichment_greater_equal": 0.7510624893751062,
+    "draws": 100000,
+    "seed": 20261024,
+    "interpretation": "No evidence of additional enrichment in this limited registry snapshot; post-score context, not independent validation."
+  },
+  "stable_directional_registry_output_sha256": {
+    "stable_directional_registry_group_members.tsv": "bfbc48241d940f9f0fa83182d079b3f109eefce6dfd5b9985f11fe026d9bdf36",
+    "stable_directional_registry_null_draws.tsv": "1bad21b40e9a3b6b3e3554395190afdb1bf219a84ffbbe3d918617fa79e41ea5",
+    "stable_directional_registry_null_summary.tsv": "ab995f64d68795910a46facfc3cdcfed8ce8cbd0547dbdcd4bf1b4c7eb8ccc4e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "working draft; requires final submission-wide review",
+  "input_sha256": {
+    "upstream/original_revision/fivefold_loso/completed_fivefold_loso_audit.json": "72bbc5d6bed188be507b8b5797890c701ffd6c2284f16c47a560bf2e3da7aef4",
+    "upstream/original_revision/fivefold_loso/paired_source_composition_fivefold.tsv": "98b6f686fb798a2dd9956073aa64d65d8428655fa545ed9835ad3465cef03439"
+  },
+  "output_sha256": {
+    "Supplementary_FigS3_original_layout_WORKING.pdf": "486b961455143984b8338b373a76527d29767142369684b81fbb7a9df8b0904b",
+    "Supplementary_FigS3_original_layout_WORKING.png": "7a0cb7926c4c2d6e0b0a9c8c4de3e7ccbc2f341c29c1e89288ad25be6c9e3fbd",
+    "Supplementary_FigS3_original_layout_WORKING.svg": "bb06d6f0e3a4ed0e8b84d32163619d2f8dd60f285b771e220474f845b3a63f50",
+    "Supplementary_FigS3_original_layout_WORKING.tiff": "ef4931398fc0d46ce7eabf16b4418b51df3d064436f55a6ce5dec5516cf9b416"
+  },
+  "script_sha256": "700074c6ed74cc7f027e18f11a830fd0a8840d0bf13b9b0d729f2284c66f346a",
+  "intervals": "2,000 paired stratified bootstrap replicates from source table",
+  "limitations": [
+    "Historical outcome inspection precludes prospective-blind claims.",
+    "Global unlabelled sequence clusters include held-species proteins.",
+    "Source expert and prevalence routes use unseen-species fallbacks.",
+    "Source-composition differences are not causal estimates.",
+    "This plot check does not reproduce the bootstrap draws or prove leak-free features."
+  ]
+}

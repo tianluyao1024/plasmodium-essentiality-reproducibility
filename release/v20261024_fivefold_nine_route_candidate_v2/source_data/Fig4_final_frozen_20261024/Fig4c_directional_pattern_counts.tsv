@@ -1,0 +1,7 @@
+new_pattern	candidate_groups	stable_groups	median_recovery_frequency
+E/NE/NE	247	142	0.82
+E/NE/E	18	5	0.71
+NE/NE/E	3	0	0.7
+E/E/NE	73	8	0.57
+NE/E/E	56	18	0.735
+NE/E/NE	58	11	0.51

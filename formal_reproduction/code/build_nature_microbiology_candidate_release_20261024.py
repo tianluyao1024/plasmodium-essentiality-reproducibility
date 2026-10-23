@@ -3,12 +3,13 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 from datetime import date
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 
 
-RELEASE_ID = "v20261024_fivefold_nine_route_candidate"
+RELEASE_ID = "v20261024_fivefold_nine_route_candidate_v2"
 WEBSITE_FILES = [
     "predictions.tsv",
     "loso_metrics.tsv",
@@ -21,6 +22,8 @@ WEBSITE_FILES = [
     "DATA_DICTIONARY.md",
     "final_freeze_manifest.json",
 ]
+FIGURE_ROOT = "Figures_exported_from_current_manuscript_INTERNAL"
+FIGURE_FILES = [*(f"Fig{i}_as_embedded.png" for i in range(1, 7)), "figure_export_manifest.json"]
 SOURCE_GROUPS = {
     "Fig2": ["F2a_performance.tsv", "F2b_branch_benchmarks.tsv", "F2c_calibration.tsv", "manifest.json"],
     "Fig2d_sensitivity": ["F2d_five_allocation_summary.tsv", "F2d_per_allocation.tsv", "manifest.json"],
@@ -78,6 +81,51 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def portable_path(value: str) -> str:
+    path = PureWindowsPath(value)
+    parts = list(path.parts)
+    tail = parts[1:] if path.drive else parts
+    if tail and tail[0].startswith("ProtoEss_NatureMicrobiology_submission"):
+        prefix, tail = "package", tail[1:]
+    elif tail and tail[0].startswith("ProtoEss_original_structure_revision"):
+        prefix, tail = "upstream/original_revision", tail[1:]
+    elif tail and tail[0].startswith("ProtoEss_feature_matrix_repair"):
+        prefix, tail = "upstream/frozen_model", tail[1:]
+    elif len(tail) >= 5 and tail[:5] == ["Users", "tly", "Desktop", "植物", "水稻日本"]:
+        prefix, tail = "external_workspace", tail[5:]
+    else:
+        prefix, tail = "external", tail[-5:]
+    return PurePosixPath(prefix, *tail).as_posix()
+
+
+def portable_tree(value):
+    if isinstance(value, dict):
+        out = {}
+        for key, item in value.items():
+            new_key = portable_path(key) if isinstance(key, str) and PureWindowsPath(key).is_absolute() else key
+            out[new_key] = portable_tree(item)
+        return out
+    if isinstance(value, list):
+        return [portable_tree(item) for item in value]
+    if isinstance(value, str) and PureWindowsPath(value).is_absolute():
+        return portable_path(value)
+    return value
+
+
+def portable_text(text: str) -> str:
+    path_pattern = re.compile(r"(?<![A-Za-z0-9])([A-Za-z]:\\[^\s\"'<>|,;]+)")
+
+    def replace(match: re.Match[str]) -> str:
+        raw = match.group(1)
+        trailing = ""
+        while raw and raw[-1] in ").]}:":
+            trailing = raw[-1] + trailing
+            raw = raw[:-1]
+        return portable_path(raw) + trailing
+
+    return path_pattern.sub(replace, text)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Assemble the versioned Nature Microbiology release candidate.")
     parser.add_argument("--package-root", required=True, type=Path, help="Internal manuscript package root")
@@ -91,7 +139,9 @@ def main() -> None:
 
     source_root = package / "Source_Data"
     web = package / "Website_release_candidate_v20261024"
-    required = [web / name for name in WEBSITE_FILES] + [web / "release_candidate_manifest.json"]
+    required = [web / name for name in WEBSITE_FILES]
+    figure_root = package / FIGURE_ROOT
+    required.extend(figure_root / name for name in FIGURE_FILES)
     for group, names in SOURCE_GROUPS.items():
         folder = package if group == "." else source_root / group
         required.extend(folder / name for name in names)
@@ -108,12 +158,21 @@ def main() -> None:
         if not source.is_file():
             raise FileNotFoundError(source)
         destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source, destination)
+        if source.suffix.lower() == ".json":
+            normalized = portable_tree(json.loads(source.read_text(encoding="utf-8")))
+            destination.write_text(json.dumps(normalized, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        elif source.suffix.lower() in {".md", ".tsv", ".txt"}:
+            destination.write_text(portable_text(source.read_text(encoding="utf-8")), encoding="utf-8")
+        else:
+            shutil.copy2(source, destination)
         staged.append(destination)
 
     for name in WEBSITE_FILES:
         copy_file(web / name, output / "atlas" / name)
-    copy_file(web / "release_candidate_manifest.json", output / "atlas" / "upstream_candidate_manifest.json")
+
+    for name in FIGURE_FILES:
+        target = f"Fig{name[3]}.png" if name.startswith("Fig") else name
+        copy_file(figure_root / name, output / "figures" / "main" / target)
 
     for group, names in SOURCE_GROUPS.items():
         for name in names:
@@ -128,7 +187,7 @@ def main() -> None:
     for source_name, target_name in WORKBOOKS.items():
         copy_file(package / source_name, output / "supplementary_workbooks" / target_name)
 
-    readme = """# Nature Microbiology release candidate v20261024
+    readme = f"""# Nature Microbiology release candidate {RELEASE_ID}
 
 **Internal candidate only. Not published, not submission-ready, and not an archive DOI.** Do not cite this directory as a public release until the corresponding author signs off the values/declarations and the final archive metadata is issued.
 
@@ -143,17 +202,25 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 ## Contents
 
 - `atlas/`: standardized predictions, four-species LOSO, source-composition comparison, Pk pair-level results, S4 runs, model/data cards and upstream freeze manifest.
+- `figures/main/`: the six exact PNGs embedded in the current internal manuscript, plus a provenance manifest. Fig. 1, Fig. 3 and Fig. 6 do not have separately verified vector originals.
 - `source_data/`: panel-level source tables for Figs. 2-6 and the final Supplementary Fig. S1-S13 analyses. Only the named final S6 v3 and final frozen Fig. 4 source package are included; intermediate pilot/model files are excluded.
 - `supplementary_workbooks/`: current internal S1-S3 workbooks, included for candidate review and still subject to author approval.
 - `release_candidate_manifest.json`: status flags and SHA-256 for every payload file.
 
 ## Limitations and release gates
 
-All gene calls and target priorities are computational hypotheses, not experimental validation. The historical v45 row-level transition data could not be verified and no transition statistic is reported. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The current production hostname is verified as `www.protoessatlas.com` via NATAPP to local port 8511, but the candidate deploy/rollback process is not verified. `public_release` is false.
+All gene calls and target priorities are computational hypotheses, not experimental validation. The historical v45 row-level transition data could not be verified and no transition statistic is reported. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The production hostname is `www.protoessatlas.com`; deploy/rollback was smoke-tested on disposable copies, while live production compatibility remains unverified. `public_release` is false.
 """
     output.mkdir(parents=True, exist_ok=True)
     (output / "README.md").write_text(readme, encoding="utf-8")
     staged.append(output / "README.md")
+
+    absolute_path_pattern = re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:[\\/]")
+    text_suffixes = {".json", ".md", ".tsv", ".txt"}
+    leaked = [p.relative_to(output).as_posix() for p in staged
+              if p.suffix.lower() in text_suffixes and absolute_path_pattern.search(p.read_text(encoding="utf-8"))]
+    if leaked:
+        raise ValueError("Absolute machine paths remain in release payload: " + ", ".join(leaked))
 
     manifest = {
         "release_id": RELEASE_ID,
@@ -165,6 +232,7 @@ All gene calls and target priorities are computational hypotheses, not experimen
         "production_website_target_verified": True,
         "production_website_deployment_process_verified": False,
         "upstream_model_freeze_manifest_sha256": sha256(web / "final_freeze_manifest.json"),
+        "portable_freeze_manifest_sha256": sha256(output / "atlas" / "final_freeze_manifest.json"),
         "payload_files": {
             p.relative_to(output).as_posix(): {"bytes": p.stat().st_size, "sha256": sha256(p)}
             for p in sorted(staged)
@@ -173,7 +241,7 @@ All gene calls and target priorities are computational hypotheses, not experimen
             "Author-level sign-off of all values and declarations is outstanding.",
             "Historical v45 row-level transition source data could not be verified.",
             "No final archive DOI has been minted.",
-            "The current production hostname and port are identified; candidate deploy/rollback and public compatibility checks remain unverified.",
+            "Deploy/rollback was smoke-tested on disposable copies; live production compatibility and public deployment remain unverified.",
             "Historical Pk test-outcome exposure makes reported evaluations retrospective, not blind.",
             "Pk human-red-cell results are homolog-projected and not A1H sequence-level predictions.",
         ],

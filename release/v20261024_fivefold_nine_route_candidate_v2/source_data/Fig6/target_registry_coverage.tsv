@@ -1,0 +1,5 @@
+species_short	species	target_set	registry_members	members_mapped_to_held_labelled_rows	held_labelled_rows
+Pf	Plasmodium_falciparum	Tier 1 direct targets	12	11	5263
+Pf	Plasmodium_falciparum	Tier 1+2 target-supported registry	47	44	5263
+Pb	Plasmodium_berghei	Tier 1+2 target-supported registry	10	6	2045
+Pk	Plasmodium_knowlesi	Tier 1+2 target-supported registry	54	49	4080
