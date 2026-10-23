@@ -1,0 +1,44 @@
+{
+  "status": "complete_post_score_sensitivity_for_frozen_nine_route_calls",
+  "stable_group_n": 184,
+  "full_exact_triplet_universe_n": 4183,
+  "threshold_and_rank_cases": 31,
+  "permutation_null_iterations": 10000,
+  "inputs_sha256": {
+    "D:\\ProtoEss_original_structure_revision_20261017\\evidence\\new_atlas_original_exact_triplets.tsv": "e74725a43a87bc17ba008ad018fc8ad06ddfb246f6fcfe9940e012534b68ace9",
+    "D:\\ProtoEss_original_structure_revision_20261017\\final_refit_results_20261023\\F4_184_refit_stable_directional_groups.tsv": "32436d28631d9ac8e8cd35f889402893d0f73ab85c6c8179cdb93b39f84553e5",
+    "D:\\ProtoEss_original_structure_revision_20261017\\final_refit_results_20261023\\manifest.json": "951066efd8b62b33333b73d9a2610d9a56ff128df24a7351ee2b70e1b6a711d7",
+    "D:\\ProtoEss_original_structure_revision_20261017\\original_directional_sensitivity_fivefold_20261019\\directionality_definition_sensitivity.tsv": "e165d985073af6e05cd58f0cfd574a0de4a963a255c337f0dabe5308b556a5f3",
+    "D:\\ProtoEss_original_structure_revision_20261017\\original_directional_sensitivity_fivefold_20261019\\manifest.json": "c8173acaf519a346dd621289dd03ebc5d183761087163728a0a222b6e3c44c50",
+    "D:\\ProtoEss_original_structure_revision_20261017\\original_directional_sensitivity_fivefold_20261019\\independent_audit.json": "284bca3cea521581239071a2c63a5c9c64dc139b960a6220aac2d9df5a044818",
+    "D:\\ProtoEss_original_structure_revision_20261017\\directionality_permutation_fivefold_20261017\\orthogroup_permutation_iterations.tsv": "46eb75bc3f5af3076a85ecf44a1003f678fc73b323bf4a8f8ec5e2647ff83996",
+    "D:\\ProtoEss_original_structure_revision_20261017\\directionality_permutation_fivefold_20261017\\orthogroup_permutation_summary.tsv": "9dc47504a0c176e7f52a6c29cdb3080d01080120eaba6802d04aa334cb2c9d8c",
+    "D:\\ProtoEss_original_structure_revision_20261017\\directionality_permutation_fivefold_20261017\\manifest.json": "ce5ac84ad14d65e3d7605eed6819e6c01fd4e992023badb8c64b3b67988bfdcf"
+  },
+  "outputs_sha256": {
+    "Figures_working/Supplementary_Fig_S6_final_v3_20261023/Supplementary_Fig_S6.pdf": "172676c3addbefaa3c10cc97b86bbf1c7d2f00904eda2009a701dda8d1a40aa3",
+    "Figures_working/Supplementary_Fig_S6_final_v3_20261023/Supplementary_Fig_S6.png": "52c9cb99a333c6117b31f3e89e2de1767f2cf038d7225932de1e7cd864b7c778",
+    "Figures_working/Supplementary_Fig_S6_final_v3_20261023/Supplementary_Fig_S6.svg": "2d94feb3a406bc2893ae79170e0a5f394386130d1bfe8cdc9a7499fcc4a8af31",
+    "Figures_working/Supplementary_Fig_S6_final_v3_20261023/Supplementary_Fig_S6.tiff": "b4071aaca0d5b72e455a6c07915fe8d0b87de7ca2d198d2618afd16c3305c010",
+    "Source_Data/Supplementary_Fig_S6_final_v3_20261023/S6_definition_sensitivity_with_184_stable_groups.tsv": "47536ebd7461ed806429dc51b6eecca8a3dea6156e00c173298fb933382e2f45",
+    "Source_Data/Supplementary_Fig_S6_final_v3_20261023/S6_permutation_null_10000.tsv": "f5fe901db4827e1a0e10b63db0016e908a00104d71b5a48537b332708652600f",
+    "Source_Data/Supplementary_Fig_S6_final_v3_20261023/S6_permutation_summary.tsv": "549d9eb73d463c2d7b162b51db64082b4210f9525fdcfa770cc25f46cd9a651e"
+  },
+  "summary": {
+    "observed_high_margin_directional_groups": 689,
+    "exact_triplets": 4183,
+    "permutation_iterations": 10000,
+    "null_mean": 2193.904,
+    "null_sd": 23.828717228933613,
+    "null_95pct_low": 2148.0,
+    "null_95pct_high": 2240.0,
+    "empirical_p_less_or_equal": 9.999000099990002e-05,
+    "interpretation": "negative control; independent species-margin re-pairing destroys observed orthology and is not evidence of evolutionary causation"
+  },
+  "limitations": [
+    "All S6 panels are post-score sensitivity/negative-control analyses and are not test-set performance or external validation.",
+    "Rank thresholds are calibrated within the same 4,183 exact-triplet universe.",
+    "The permutation null independently re-pairs species margins and destroys observed orthology; it is not evidence of evolutionary causation.",
+    "The 184-group subset was selected by the prespecified 100-refit recovery rule; sensitivity retention is conditional on that selected set."
+  ]
+}

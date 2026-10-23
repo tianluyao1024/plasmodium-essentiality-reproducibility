@@ -1,0 +1,34 @@
+{
+  "status": "source tables and original-layout figure reconciled to frozen four-species LOSO predictions; final package QA pending",
+  "completed_held_species": [
+    "Plasmodium_falciparum",
+    "Plasmodium_berghei",
+    "Plasmodium_knowlesi",
+    "Toxoplasma_gondii"
+  ],
+  "expected_held_species": [
+    "Plasmodium_falciparum",
+    "Plasmodium_berghei",
+    "Plasmodium_knowlesi",
+    "Toxoplasma_gondii"
+  ],
+  "model": "fivefold source-only LOSO with fixed LightGBM meta",
+  "bootstrap_replicates": 5000,
+  "target_annotation_used_for_model_or_threshold": false,
+  "caveats": [
+    "Target registry is post-score observational context, not prospective validation of drug efficacy.",
+    "Tg is included for LOSO performance only; no harmonized Tg target registry is available.",
+    "No rows are imputed from historical predictions."
+  ],
+  "panel_a_rows": 4,
+  "panel_bc_rows": 8,
+  "panel_d_rows": 30,
+  "package_manifest_version": "internal-working-v10-20261024",
+  "package_manifest_sha256_inputs": {
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig6\\F6a_loso_performance.tsv": "15db2772a80b0e97140ed3cd1c1cfb2a93ee369075dc6a2f5d53ca265a691dc6",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig6\\F6bc_target_enrichment.tsv": "f7032a1ccb47f186c533b6adee5639a4f74eb9a3bc4e914b4e6cdef2c31eb8d8",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig6\\F6d_target_recovery.tsv": "9984d60460d19e30180688ebfdad220e239c8dbb10d9ce1252e602be18680022",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig6\\target_gene_audit.tsv": "118e7583868f50daa38b364ce48f0eb168ae5fd6e8d237a17fad64fc5bc6755b",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig6\\target_registry_coverage.tsv": "7b7a11c4b216ce52e0eef1cbe1096def3542e1e2f43a443224537405c1845f5f"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "complete post-score no-label-reuse sensitivity; included as supplementary analysis; package QA pending",
+  "population_definition": "application metadata reuse_label is missing",
+  "n_records": 4378,
+  "n_predicted_essential": 2201,
+  "species_summary": [
+    {
+      "species": "Plasmodium_falciparum",
+      "eligible": 211,
+      "predicted_essential": 161,
+      "predicted_fraction": 0.7630331753554502
+    },
+    {
+      "species": "Plasmodium_berghei",
+      "eligible": 2856,
+      "predicted_essential": 1511,
+      "predicted_fraction": 0.52906162464986
+    },
+    {
+      "species": "Plasmodium_knowlesi",
+      "eligible": 1311,
+      "predicted_essential": 529,
+      "predicted_fraction": 0.40350877192982454
+    }
+  ],
+  "input_sha256": {
+    "D:\\ProtoEss_original_structure_revision_20261017\\original_no_reused_label_atlas_fivefold_20261019\\fivefold_label_reuse_audit.tsv": "1f2da09f634fced97a52844e6e3a3683fe79339b151717e94774617f27a7a16b"
+  },
+  "output_sha256": {
+    "S7_no_reused_original_label_predictions.tsv": "975fc727f085e2a5cbe7b25c649890f28641442da0a7c031b031dca23c1920b1",
+    "S7_species_summary.tsv": "49bdd25661157247ddc8138a412b3dfce8e2295dcb54c56bc78a8d06e6342739"
+  },
+  "limitations": [
+    "No reused original label does not imply no experimental information in any resource.",
+    "Predicted calls are model outputs, not newly observed essentiality phenotypes.",
+    "The Pk matched-species model includes an Oberstaller-label-assisted route."
+  ],
+  "output_paths": {
+    "S7_no_reused_original_label_predictions.tsv": "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S7\\S7_no_reused_original_label_predictions.tsv",
+    "S7_species_summary.tsv": "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S7\\S7_species_summary.tsv"
+  }
+}

@@ -1,0 +1,582 @@
+homology_group_id	GO_ID	GO_name
+PLH05184	GO:0005743	mitochondrial inner membrane
+PLH05184	GO:0006122	mitochondrial electron transport, ubiquinol to cytochrome c
+PLH05184	GO:0008121	quinol-cytochrome-c reductase activity
+PLH05184	GO:0009055	electron transfer activity
+PLH05184	GO:0016020	membrane
+PLH05184	GO:0016491	oxidoreductase activity
+PLH05184	GO:0022900	electron transport chain
+PLH05184	GO:0022904	respiratory electron transport chain
+PLH05184	GO:0045275	respiratory chain complex III
+PLH05184	GO:0046872	metal ion binding
+PLH05184	GO:1902600	proton transmembrane transport
+PLH03581	GO:0003735	structural constituent of ribosome
+PLH03581	GO:0005762	mitochondrial large ribosomal subunit
+PLH03581	GO:0005840	ribosome
+PLH03581	GO:0006412	translation
+PLH03581	GO:0019843	rRNA binding
+PLH03581	GO:0032543	mitochondrial translation
+PLH02782	GO:0003729	mRNA binding
+PLH02782	GO:0005685	U1 snRNP
+PLH02782	GO:0006376	mRNA splice site recognition
+PLH02782	GO:0071004	U2-type prespliceosome
+PLH01141	GO:0001731	formation of translation preinitiation complex
+PLH01141	GO:0002188	translation reinitiation
+PLH01141	GO:0003729	mRNA binding
+PLH01141	GO:0003743	translation initiation factor activity
+PLH01141	GO:0005737	cytoplasm
+PLH01141	GO:0006413	translational initiation
+PLH01141	GO:0043024	ribosomal small subunit binding
+PLH03051	GO:0000724	double-strand break repair via homologous recombination
+PLH03051	GO:0004722	protein serine/threonine phosphatase activity
+PLH03051	GO:0005634	nucleus
+PLH03051	GO:0005737	cytoplasm
+PLH03051	GO:0016787	hydrolase activity
+PLH02658	GO:0051087	protein-folding chaperone binding
+PLH02981	GO:0004305	ethanolamine kinase activity
+PLH02981	GO:0005737	cytoplasm
+PLH02981	GO:0006629	lipid metabolic process
+PLH02981	GO:0006646	phosphatidylethanolamine biosynthetic process
+PLH02981	GO:0006656	phosphatidylcholine biosynthetic process
+PLH03193	GO:0003746	translation elongation factor activity
+PLH03193	GO:0005634	nucleus
+PLH03193	GO:0005737	cytoplasm
+PLH03193	GO:0006412	translation
+PLH03193	GO:0006414	translational elongation
+PLH03034	GO:0003977	UDP-N-acetylglucosamine diphosphorylase activity
+PLH03034	GO:0006047	UDP-N-acetylglucosamine metabolic process
+PLH03034	GO:0006048	UDP-N-acetylglucosamine biosynthetic process
+PLH03034	GO:0016772	transferase activity, transferring phosphorus-containing groups
+PLH03034	GO:0070569	uridylyltransferase activity
+PLH00238	GO:0006457	protein folding
+PLH00238	GO:0006986	response to unfolded protein
+PLH00238	GO:0009408	response to heat
+PLH00238	GO:0009651	response to salt stress
+PLH00238	GO:0042542	response to hydrogen peroxide
+PLH00238	GO:0051259	protein complex oligomerization
+PLH00248	GO:0005634	nucleus
+PLH00248	GO:0005829	cytosol
+PLH00248	GO:0006457	protein folding
+PLH00248	GO:0032780	negative regulation of ATP-dependent activity
+PLH00248	GO:0051087	protein-folding chaperone binding
+PLH00248	GO:0051131	chaperone-mediated protein complex assembly
+PLH00248	GO:0051879	Hsp90 protein binding
+PLH01367	GO:0005737	cytoplasm
+PLH01367	GO:0005829	cytosol
+PLH01367	GO:0016020	membrane
+PLH01367	GO:0035627	ceramide transport
+PLH01367	GO:0120009	intermembrane lipid transfer
+PLH01367	GO:0120013	lipid transfer activity
+PLH01367	GO:1902387	ceramide 1-phosphate binding
+PLH01367	GO:1902388	ceramide 1-phosphate transfer activity
+PLH01367	GO:1902389	ceramide 1-phosphate transport
+PLH01396	GO:0005739	mitochondrion
+PLH01398	GO:0005875	microtubule associated complex
+PLH01398	GO:0047134	protein-disulfide reductase [NAD(P)H] activity
+PLH01473	GO:0005783	endoplasmic reticulum
+PLH01473	GO:0005789	endoplasmic reticulum membrane
+PLH01473	GO:0030968	endoplasmic reticulum unfolded protein response
+PLH01562	GO:0070258	inner membrane pellicle complex
+PLH02090	GO:0020011	apicoplast
+PLH02520	GO:0004045	peptidyl-tRNA hydrolase activity
+PLH02875	GO:0003824	catalytic activity
+PLH02875	GO:0005739	mitochondrion
+PLH02875	GO:0015038	glutathione disulfide oxidoreductase activity
+PLH02875	GO:0016209	antioxidant activity
+PLH02875	GO:0019153	protein-disulfide reductase (glutathione) activity
+PLH02875	GO:0098869	cellular oxidant detoxification
+PLH03031	GO:0004601	peroxidase activity
+PLH03031	GO:0005737	cytoplasm
+PLH03031	GO:0005739	mitochondrion
+PLH03031	GO:0005829	cytosol
+PLH03031	GO:0006979	response to oxidative stress
+PLH03031	GO:0008379	obsolete thioredoxin peroxidase activity
+PLH03031	GO:0016209	antioxidant activity
+PLH03031	GO:0016491	oxidoreductase activity
+PLH03031	GO:0033554	cellular response to stress
+PLH03031	GO:0042744	hydrogen peroxide catabolic process
+PLH03031	GO:0045454	cell redox homeostasis
+PLH03031	GO:0051920	peroxiredoxin activity
+PLH03031	GO:0098869	cellular oxidant detoxification
+PLH03031	GO:0140824	thioredoxin-dependent peroxiredoxin activity
+PLH05210	GO:0000151	ubiquitin ligase complex
+PLH05210	GO:0008270	zinc ion binding
+PLH02503	GO:0004601	peroxidase activity
+PLH02503	GO:0005737	cytoplasm
+PLH02503	GO:0005739	mitochondrion
+PLH02503	GO:0005829	cytosol
+PLH02503	GO:0006979	response to oxidative stress
+PLH02503	GO:0008379	obsolete thioredoxin peroxidase activity
+PLH02503	GO:0020011	apicoplast
+PLH02503	GO:0034599	cellular response to oxidative stress
+PLH02503	GO:0045454	cell redox homeostasis
+PLH02503	GO:0098869	cellular oxidant detoxification
+PLH02571	GO:0004364	glutathione transferase activity
+PLH02571	GO:0006749	glutathione metabolic process
+PLH00279	GO:0005774	vacuolar membrane
+PLH00279	GO:0005886	plasma membrane
+PLH00279	GO:0015513	high-affinity secondary active nitrite transmembrane transporter activity
+PLH00279	GO:0015650	lactate:proton symporter activity
+PLH00279	GO:0015706	nitrate transmembrane transport
+PLH00279	GO:0015707	nitrite transport
+PLH00279	GO:0016020	membrane
+PLH00279	GO:0022857	transmembrane transporter activity
+PLH00279	GO:0035873	lactate transmembrane transport
+PLH00279	GO:0055085	transmembrane transport
+PLH03264	GO:0036064	ciliary basal body
+PLH00353	GO:0000166	nucleotide binding
+PLH00353	GO:0004672	protein kinase activity
+PLH00353	GO:0004674	protein serine/threonine kinase activity
+PLH00353	GO:0004713	protein tyrosine kinase activity
+PLH00353	GO:0005524	ATP binding
+PLH00353	GO:0006468	protein phosphorylation
+PLH00353	GO:0016301	kinase activity
+PLH00353	GO:0016740	transferase activity
+PLH00353	GO:0106310	protein serine kinase activity
+PLH02889	GO:0005737	cytoplasm
+PLH02889	GO:0005829	cytosol
+PLH02889	GO:0006457	protein folding
+PLH02889	GO:0008233	peptidase activity
+PLH02889	GO:0009228	thiamine biosynthetic process
+PLH02889	GO:0019172	glyoxalase III activity
+PLH02889	GO:0051596	methylglyoxal catabolic process
+PLH02889	GO:1903189	glyoxal metabolic process
+PLH03044	GO:0002161	aminoacyl-tRNA deacylase activity
+PLH03044	GO:0005737	cytoplasm
+PLH03044	GO:0006399	tRNA metabolic process
+PLH03044	GO:0051499	D-aminoacyl-tRNA deacylase activity
+PLH03044	GO:0051500	D-tyrosyl-tRNA(Tyr) deacylase activity
+PLH03044	GO:0106026	Gly-tRNA(Ala) deacylase activity
+PLH03044	GO:0106074	aminoacyl-tRNA metabolism involved in translational fidelity
+PLH00633	GO:0005829	cytosol
+PLH00633	GO:0045048	protein insertion into ER membrane
+PLH00633	GO:0140597	protein carrier activity
+PLH00908	GO:0003674	molecular_function
+PLH00908	GO:0005575	cellular_component
+PLH01296	GO:0003756	protein disulfide isomerase activity
+PLH01296	GO:0004791	thioredoxin-disulfide reductase (NADPH) activity
+PLH01296	GO:0005634	nucleus
+PLH01296	GO:0030178	negative regulation of Wnt signaling pathway
+PLH01296	GO:0031397	negative regulation of protein ubiquitination
+PLH01296	GO:0098869	cellular oxidant detoxification
+PLH02749	GO:0007017	microtubule-based process
+PLH02749	GO:0030286	dynein complex
+PLH05189	GO:0004601	peroxidase activity
+PLH05189	GO:0005737	cytoplasm
+PLH05189	GO:0005829	cytosol
+PLH05189	GO:0006979	response to oxidative stress
+PLH05189	GO:0008379	obsolete thioredoxin peroxidase activity
+PLH05189	GO:0016209	antioxidant activity
+PLH05189	GO:0016491	oxidoreductase activity
+PLH05189	GO:0033554	cellular response to stress
+PLH05189	GO:0042744	hydrogen peroxide catabolic process
+PLH05189	GO:0045454	cell redox homeostasis
+PLH05189	GO:0051920	peroxiredoxin activity
+PLH05189	GO:0098869	cellular oxidant detoxification
+PLH00107	GO:0005737	cytoplasm
+PLH00107	GO:0006633	fatty acid biosynthetic process
+PLH00107	GO:0016836	hydro-lyase activity
+PLH00107	GO:0019171	(3R)-hydroxyacyl-[acyl-carrier-protein] dehydratase activity
+PLH00107	GO:0020011	apicoplast
+PLH00399	GO:0005789	endoplasmic reticulum membrane
+PLH00426	GO:0004128	cytochrome-b5 reductase activity, acting on NAD(P)H
+PLH00426	GO:0005737	cytoplasm
+PLH00426	GO:0016020	membrane
+PLH00426	GO:0020037	heme binding
+PLH00426	GO:0046872	metal ion binding
+PLH00482	GO:0000045	autophagosome assembly
+PLH00482	GO:0005737	cytoplasm
+PLH00482	GO:0005739	mitochondrion
+PLH00482	GO:0005789	endoplasmic reticulum membrane
+PLH00482	GO:0032977	membrane insertase activity
+PLH00482	GO:0071816	tail-anchored membrane protein insertion into ER membrane
+PLH00482	GO:0072546	EMC complex
+PLH00482	GO:0097250	mitochondrial respirasome assembly
+PLH02006	GO:0000139	Golgi membrane
+PLH02006	GO:0005794	Golgi apparatus
+PLH02006	GO:0005802	trans-Golgi network
+PLH02006	GO:0006888	endoplasmic reticulum to Golgi vesicle-mediated transport
+PLH02006	GO:0016020	membrane
+PLH02501	GO:0004081	bis(5'-nucleosyl)-tetraphosphatase (asymmetrical) activity
+PLH02501	GO:0006167	AMP biosynthetic process
+PLH02501	GO:0006754	ATP biosynthetic process
+PLH02501	GO:0008796	bis(5'-nucleosyl)-tetraphosphatase activity
+PLH02501	GO:0016787	hydrolase activity
+PLH02501	GO:0046872	metal ion binding
+PLH04238	GO:0005737	cytoplasm
+PLH04238	GO:0005868	cytoplasmic dynein complex
+PLH04238	GO:0007018	microtubule-based movement
+PLH04238	GO:0045505	dynein intermediate chain binding
+PLH04298	GO:0005634	nucleus
+PLH04298	GO:0006281	DNA repair
+PLH04298	GO:0016035	zeta DNA polymerase complex
+PLH03769	GO:0006520	amino acid metabolic process
+PLH03769	GO:0008615	pyridoxine biosynthetic process
+PLH03769	GO:0016843	amine-lyase activity
+PLH03769	GO:0036381	pyridoxal 5'-phosphate synthase (glutamine hydrolysing) activity
+PLH03769	GO:0042819	vitamin B6 biosynthetic process
+PLH03769	GO:0042823	pyridoxal 5'-phosphate biosynthetic process
+PLH05072	GO:0004601	peroxidase activity
+PLH05072	GO:0005737	cytoplasm
+PLH05072	GO:0005829	cytosol
+PLH05072	GO:0006979	response to oxidative stress
+PLH05072	GO:0008379	obsolete thioredoxin peroxidase activity
+PLH05072	GO:0009408	response to heat
+PLH05072	GO:0016209	antioxidant activity
+PLH05072	GO:0016491	oxidoreductase activity
+PLH05072	GO:0033554	cellular response to stress
+PLH05072	GO:0042262	DNA protection
+PLH05072	GO:0042744	hydrogen peroxide catabolic process
+PLH05072	GO:0045454	cell redox homeostasis
+PLH05072	GO:0046983	protein dimerization activity
+PLH05072	GO:0051920	peroxiredoxin activity
+PLH05072	GO:0098869	cellular oxidant detoxification
+PLH05072	GO:0140824	thioredoxin-dependent peroxiredoxin activity
+PLH00301	GO:0003874	6-pyruvoyltetrahydropterin synthase activity
+PLH00301	GO:0006729	tetrahydrobiopterin biosynthetic process
+PLH00326	GO:0005375	copper ion transmembrane transporter activity
+PLH00326	GO:0005886	plasma membrane
+PLH00326	GO:0016020	membrane
+PLH00326	GO:0020011	apicoplast
+PLH00326	GO:0035434	copper ion transmembrane transport
+PLH05187	GO:0000781	chromosome, telomeric region
+PLH05187	GO:0003677	DNA binding
+PLH05187	GO:0005515	protein binding
+PLH05187	GO:0005634	nucleus
+PLH05187	GO:0005677	chromatin silencing complex
+PLH05187	GO:0005730	nucleolus
+PLH05187	GO:0005737	cytoplasm
+PLH05187	GO:0005739	mitochondrion
+PLH05187	GO:0005829	cytosol
+PLH05187	GO:0006338	chromatin remodeling
+PLH05187	GO:0006355	regulation of DNA-templated transcription
+PLH05187	GO:0016233	telomere capping
+PLH05187	GO:0017136	histone deacetylase activity, NAD-dependent
+PLH05187	GO:0034979	NAD-dependent protein lysine deacetylase activity
+PLH05187	GO:0036054	protein-malonyllysine demalonylase activity
+PLH05187	GO:0036055	protein-succinyllysine desuccinylase activity
+PLH05187	GO:0061697	protein-glutaryllysine deglutarylase activity
+PLH05187	GO:0070403	NAD+ binding
+PLH05187	GO:0141218	NAD-dependent protein lysine deacylase activity
+PLH01826	GO:0000304	response to singlet oxygen
+PLH01826	GO:0004359	glutaminase activity
+PLH01826	GO:0005737	cytoplasm
+PLH01826	GO:0005829	cytosol
+PLH01826	GO:0006541	L-glutamine metabolic process
+PLH01826	GO:0008614	pyridoxine metabolic process
+PLH01826	GO:0008615	pyridoxine biosynthetic process
+PLH01826	GO:0016740	transferase activity
+PLH01826	GO:0036381	pyridoxal 5'-phosphate synthase (glutamine hydrolysing) activity
+PLH01826	GO:0042819	vitamin B6 biosynthetic process
+PLH01826	GO:0042823	pyridoxal 5'-phosphate biosynthetic process
+PLH01826	GO:1903600	glutaminase complex
+PLH02828	GO:0005737	cytoplasm
+PLH02828	GO:0005868	cytoplasmic dynein complex
+PLH02828	GO:0007018	microtubule-based movement
+PLH02828	GO:0045505	dynein intermediate chain binding
+PLH01221	GO:0020011	apicoplast
+PLH00603	GO:0016020	membrane
+PLH00603	GO:0020020	food vacuole
+PLH00603	GO:0038023	signaling receptor activity
+PLH00603	GO:0044179	hemolysis in another organism
+PLH00946	GO:0020011	apicoplast
+PLH02077	GO:0020011	apicoplast
+PLH02346	GO:0004252	serine-type endopeptidase activity
+PLH02346	GO:0006508	proteolysis
+PLH02346	GO:0016020	membrane
+PLH02536	GO:0004844	uracil DNA N-glycosylase activity
+PLH02536	GO:0005634	nucleus
+PLH02536	GO:0005739	mitochondrion
+PLH02536	GO:0006281	DNA repair
+PLH02536	GO:0006284	base-excision repair
+PLH02536	GO:0016799	hydrolase activity, hydrolyzing N-glycosyl compounds
+PLH02536	GO:0097510	base-excision repair, AP site formation via deaminated base removal
+PLH05004	GO:0000049	tRNA binding
+PLH05004	GO:0005634	nucleus
+PLH05004	GO:0006400	tRNA modification
+PLH05004	GO:0008033	tRNA processing
+PLH05004	GO:0008168	methyltransferase activity
+PLH05004	GO:0008176	tRNA (guanine(46)-N7)-methyltransferase activity
+PLH05004	GO:0030488	tRNA methylation
+PLH05004	GO:0036265	RNA (guanine-N7)-methylation
+PLH05004	GO:0043527	tRNA methyltransferase complex
+PLH05004	GO:0046500	S-adenosylmethionine metabolic process
+PLH05004	GO:0106004	tRNA (guanine-N7)-methylation
+PLH00125	GO:0000287	magnesium ion binding
+PLH00125	GO:0005737	cytoplasm
+PLH00125	GO:0005829	cytosol
+PLH00125	GO:0010323	negative regulation of isopentenyl diphosphate biosynthetic process, methylerythritol phosphate pathway
+PLH00125	GO:0016311	dephosphorylation
+PLH00125	GO:0016787	hydrolase activity
+PLH00125	GO:0016791	phosphatase activity
+PLH00125	GO:0050308	sugar-phosphatase activity
+PLH01910	GO:0020011	apicoplast
+PLH02971	GO:0001578	microtubule bundle formation
+PLH02971	GO:0005874	microtubule
+PLH02971	GO:0015631	tubulin binding
+PLH02971	GO:0032273	positive regulation of protein polymerization
+PLH02971	GO:0046785	microtubule polymerization
+PLH03052	GO:0000166	nucleotide binding
+PLH03052	GO:0004672	protein kinase activity
+PLH03052	GO:0004674	protein serine/threonine kinase activity
+PLH03052	GO:0005524	ATP binding
+PLH03052	GO:0006468	protein phosphorylation
+PLH03052	GO:0007165	signal transduction
+PLH03052	GO:0016301	kinase activity
+PLH03052	GO:0016740	transferase activity
+PLH03052	GO:0106310	protein serine kinase activity
+PLH00028	GO:0005829	cytosol
+PLH00028	GO:0005856	cytoskeleton
+PLH00028	GO:0006457	protein folding
+PLH00028	GO:0007021	tubulin complex assembly
+PLH00028	GO:0007023	post-chaperonin tubulin folding pathway
+PLH00028	GO:0015630	microtubule cytoskeleton
+PLH00028	GO:0015631	tubulin binding
+PLH00028	GO:0048487	beta-tubulin binding
+PLH00028	GO:0065003	protein-containing complex assembly
+PLH00093	GO:0003714	transcription corepressor activity
+PLH00093	GO:0005515	protein binding
+PLH00093	GO:0005634	nucleus
+PLH00093	GO:0005737	cytoplasm
+PLH00093	GO:0005829	cytosol
+PLH00093	GO:0045892	negative regulation of DNA-templated transcription
+PLH00093	GO:0070370	cellular heat acclimation
+PLH00361	GO:0005375	copper ion transmembrane transporter activity
+PLH00361	GO:0005886	plasma membrane
+PLH00361	GO:0006825	copper ion transport
+PLH00361	GO:0016020	membrane
+PLH00361	GO:0020002	host cell plasma membrane
+PLH00361	GO:0035434	copper ion transmembrane transport
+PLH01873	GO:0019941	modification-dependent protein catabolic process
+PLH02060	GO:0005737	cytoplasm
+PLH02060	GO:0012505	endomembrane system
+PLH02060	GO:0016020	membrane
+PLH02060	GO:0016192	vesicle-mediated transport
+PLH02205	GO:0004167	dopachrome isomerase activity
+PLH02205	GO:0005125	cytokine activity
+PLH02205	GO:0005576	extracellular region
+PLH02205	GO:0005737	cytoplasm
+PLH02205	GO:0007165	signal transduction
+PLH02205	GO:0016491	oxidoreductase activity
+PLH02205	GO:0020036	Maurer's cleft
+PLH02205	GO:0030430	host cell cytoplasm
+PLH02205	GO:0039722	symbiont-mediated suppression of host toll-like receptor signaling pathway
+PLH02205	GO:0042783	symbiont-mediated evasion of host immune response
+PLH02205	GO:0046789	host cell surface receptor binding
+PLH02205	GO:0050178	phenylpyruvate tautomerase activity
+PLH02205	GO:0141025	adhesion of symbiont to host cell surface via host glycoprotein
+PLH04904	GO:0003735	structural constituent of ribosome
+PLH04904	GO:0005840	ribosome
+PLH04904	GO:0006412	translation
+PLH04904	GO:0019843	rRNA binding
+PLH00010	GO:0000139	Golgi membrane
+PLH00010	GO:0003756	protein disulfide isomerase activity
+PLH00010	GO:0005576	extracellular region
+PLH00010	GO:0005737	cytoplasm
+PLH00010	GO:0006457	protein folding
+PLH00010	GO:0016491	oxidoreductase activity
+PLH00010	GO:0016971	flavin-dependent sulfhydryl oxidase activity
+PLH00010	GO:0016972	thiol oxidase activity
+PLH00010	GO:0045454	cell redox homeostasis
+PLH00010	GO:0085029	extracellular matrix assembly
+PLH02005	GO:0005737	cytoplasm
+PLH02005	GO:0005868	cytoplasmic dynein complex
+PLH02005	GO:0007018	microtubule-based movement
+PLH02005	GO:0045505	dynein intermediate chain binding
+PLH01676	GO:0000164	protein phosphatase type 1 complex
+PLH01676	GO:0004865	protein serine/threonine phosphatase inhibitor activity
+PLH01676	GO:0005515	protein binding
+PLH01676	GO:0005634	nucleus
+PLH01676	GO:0005737	cytoplasm
+PLH01676	GO:0007059	chromosome segregation
+PLH01676	GO:0019888	protein phosphatase regulator activity
+PLH02324	GO:0004758	serine C-palmitoyltransferase activity
+PLH02324	GO:0016740	transferase activity
+PLH02324	GO:0017059	serine palmitoyltransferase complex
+PLH02324	GO:0020011	apicoplast
+PLH02324	GO:0030170	pyridoxal phosphate binding
+PLH02324	GO:0046512	sphingosine biosynthetic process
+PLH02324	GO:0046513	ceramide biosynthetic process
+PLH00087	GO:0000166	nucleotide binding
+PLH00087	GO:0004672	protein kinase activity
+PLH00087	GO:0004674	protein serine/threonine kinase activity
+PLH00087	GO:0005524	ATP binding
+PLH00087	GO:0005737	cytoplasm
+PLH00087	GO:0005829	cytosol
+PLH00087	GO:0016301	kinase activity
+PLH00087	GO:0016740	transferase activity
+PLH00087	GO:0020005	symbiont-containing vacuole membrane
+PLH00087	GO:0035556	intracellular signal transduction
+PLH01955	GO:0020011	apicoplast
+PLH02396	GO:0004596	protein-N-terminal amino-acid acetyltransferase activity
+PLH02396	GO:0006474	N-terminal protein amino acid acetylation
+PLH02396	GO:0008080	N-acetyltransferase activity
+PLH02396	GO:0016407	acetyltransferase activity
+PLH02396	GO:0016740	transferase activity
+PLH02396	GO:0016747	acyltransferase activity, transferring groups other than amino-acyl groups
+PLH02396	GO:0031416	NatB complex
+PLH02396	GO:0032956	regulation of actin cytoskeleton organization
+PLH02458	GO:0005829	cytosol
+PLH02458	GO:0005975	carbohydrate metabolic process
+PLH02458	GO:0006072	glycerol-3-phosphate metabolic process
+PLH02458	GO:0009331	glycerol-3-phosphate dehydrogenase (FAD) complex
+PLH02458	GO:0016616	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor
+PLH02458	GO:0042803	protein homodimerization activity
+PLH02458	GO:0046168	glycerol-3-phosphate catabolic process
+PLH02458	GO:0047952	glycerol-3-phosphate dehydrogenase [NAD(P)+] activity
+PLH02458	GO:0051287	NAD binding
+PLH02458	GO:0141152	glycerol-3-phosphate dehydrogenase (NAD+) activity
+PLH02779	GO:0003774	cytoskeletal motor activity
+PLH02779	GO:0005515	protein binding
+PLH02779	GO:0005737	cytoplasm
+PLH02779	GO:0005930	axoneme
+PLH02200	GO:0020011	apicoplast
+PLH02801	GO:0008270	zinc ion binding
+PLH02872	GO:0005737	cytoplasm
+PLH02872	GO:0009570	chloroplast stroma
+PLH02872	GO:0016226	iron-sulfur cluster assembly
+PLH02872	GO:0020011	apicoplast
+PLH02872	GO:0030674	protein-macromolecule adaptor activity
+PLH02872	GO:0051536	iron-sulfur cluster binding
+PLH02872	GO:0051537	2 iron, 2 sulfur cluster binding
+PLH02872	GO:0051604	protein maturation
+PLH00428	GO:0009055	electron transfer activity
+PLH00428	GO:0016020	membrane
+PLH00428	GO:0020020	food vacuole
+PLH00428	GO:0020037	heme binding
+PLH01450	GO:0000781	chromosome, telomeric region
+PLH01450	GO:0003676	nucleic acid binding
+PLH01450	GO:0003677	DNA binding
+PLH01450	GO:0003723	RNA binding
+PLH01450	GO:0005634	nucleus
+PLH01450	GO:0005737	cytoplasm
+PLH02764	GO:0009055	electron transfer activity
+PLH02764	GO:0016491	oxidoreductase activity
+PLH02764	GO:0090524	cytochrome-b5 reductase activity, acting on NADH
+PLH03787	GO:0005737	cytoplasm
+PLH03787	GO:0051537	2 iron, 2 sulfur cluster binding
+PLH00114	GO:0000166	nucleotide binding
+PLH00114	GO:0003676	nucleic acid binding
+PLH00114	GO:0003677	DNA binding
+PLH00114	GO:0003678	DNA helicase activity
+PLH00114	GO:0004386	helicase activity
+PLH00114	GO:0005524	ATP binding
+PLH00114	GO:0005634	nucleus
+PLH00114	GO:0016020	membrane
+PLH00114	GO:0016787	hydrolase activity
+PLH00114	GO:0016818	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+PLH00114	GO:0034085	establishment of sister chromatid cohesion
+PLH04966	GO:0000209	protein polyubiquitination
+PLH04966	GO:0004842	ubiquitin-protein transferase activity
+PLH04966	GO:0005783	endoplasmic reticulum
+PLH04966	GO:0005794	Golgi apparatus
+PLH04966	GO:0006511	ubiquitin-dependent protein catabolic process
+PLH04966	GO:0043161	proteasome-mediated ubiquitin-dependent protein catabolic process
+PLH04966	GO:0061630	ubiquitin protein ligase activity
+PLH04773	GO:0016301	kinase activity
+PLH04773	GO:0016740	transferase activity
+PLH00465	GO:0003700	DNA-binding transcription factor activity
+PLH00465	GO:0005634	nucleus
+PLH00465	GO:0006355	regulation of DNA-templated transcription
+PLH01746	GO:0005737	cytoplasm
+PLH01746	GO:0005886	plasma membrane
+PLH01746	GO:0070847	core mediator complex
+PLH02159	GO:0070847	core mediator complex
+PLH00416	GO:0000166	nucleotide binding
+PLH00416	GO:0005524	ATP binding
+PLH00416	GO:0006812	monoatomic cation transport
+PLH00416	GO:0015662	P-type ion transporter activity
+PLH00416	GO:0016020	membrane
+PLH00416	GO:0016887	ATP hydrolysis activity
+PLH00416	GO:0019829	ATPase-coupled monoatomic cation transmembrane transporter activity
+PLH00416	GO:0043231	intracellular membrane-bounded organelle
+PLH00416	GO:0055085	transmembrane transport
+PLH00416	GO:0098655	monoatomic cation transmembrane transport
+PLH00416	GO:0140358	P-type transmembrane transporter activity
+PLH02614	GO:0005509	calcium ion binding
+PLH02614	GO:0005737	cytoplasm
+PLH02614	GO:0005886	plasma membrane
+PLH02614	GO:0006897	endocytosis
+PLH02614	GO:0016197	endosomal transport
+PLH02614	GO:0030674	protein-macromolecule adaptor activity
+PLH02270	GO:0000938	GARP complex
+PLH02270	GO:0005829	cytosol
+PLH02270	GO:0007030	Golgi organization
+PLH02270	GO:0007034	vacuolar transport
+PLH02270	GO:0007041	lysosomal transport
+PLH02270	GO:0016020	membrane
+PLH02270	GO:0032456	endocytic recycling
+PLH02270	GO:0042147	retrograde transport, endosome to Golgi
+PLH02270	GO:0048193	Golgi vesicle transport
+PLH02270	GO:1990745	EARP complex
+PLH02311	GO:0003677	DNA binding
+PLH02311	GO:0003916	DNA topoisomerase activity
+PLH02311	GO:0003918	DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) activity
+PLH02311	GO:0005524	ATP binding
+PLH02311	GO:0006259	DNA metabolic process
+PLH02311	GO:0006265	DNA topological change
+PLH02311	GO:0009330	DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) complex
+PLH02311	GO:0020011	apicoplast
+PLH02266	GO:0003676	nucleic acid binding
+PLH02266	GO:0003723	RNA binding
+PLH02266	GO:0020011	apicoplast
+PLH02266	GO:1990904	ribonucleoprotein complex
+PLH03442	GO:0000776	kinetochore
+PLH03442	GO:0004672	protein kinase activity
+PLH03442	GO:0004674	protein serine/threonine kinase activity
+PLH03442	GO:0005524	ATP binding
+PLH03442	GO:0007094	mitotic spindle assembly checkpoint signaling
+PLH03442	GO:0016301	kinase activity
+PLH03442	GO:0016740	transferase activity
+PLH03442	GO:0051754	meiotic sister chromatid cohesion, centromeric
+PLH04376	GO:0004843	cysteine-type deubiquitinase activity
+PLH04376	GO:0005634	nucleus
+PLH04376	GO:0005737	cytoplasm
+PLH04376	GO:0070530	K63-linked polyubiquitin modification-dependent protein binding
+PLH04376	GO:0071947	protein deubiquitination involved in ubiquitin-dependent protein catabolic process
+PLH03536	GO:0003824	catalytic activity
+PLH03536	GO:0004400	L-histidinol-phosphate:2-oxoglutarate transaminase activity
+PLH03536	GO:0005737	cytoplasm
+PLH03536	GO:0005829	cytosol
+PLH03536	GO:0006520	amino acid metabolic process
+PLH03536	GO:0006527	L-arginine catabolic process
+PLH03536	GO:0008792	arginine decarboxylase activity
+PLH03536	GO:0008923	lysine decarboxylase activity
+PLH03536	GO:0016831	carboxy-lyase activity
+PLH03536	GO:0030170	pyridoxal phosphate binding
+PLH05141	GO:0000288	nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay
+PLH05141	GO:0000932	P-body
+PLH05141	GO:0005634	nucleus
+PLH05141	GO:0017148	negative regulation of translation
+PLH05141	GO:0030015	CCR4-NOT core complex
+PLH05141	GO:0060090	molecular adaptor activity
+PLH05136	GO:0000289	nuclear-transcribed mRNA poly(A) tail shortening
+PLH05136	GO:0000932	P-body
+PLH05136	GO:0006355	regulation of DNA-templated transcription
+PLH05136	GO:0030015	CCR4-NOT core complex
+PLH02306	GO:0004672	protein kinase activity
+PLH02306	GO:0004691	cAMP-dependent protein kinase activity
+PLH02306	GO:0005524	ATP binding
+PLH02306	GO:0005634	nucleus
+PLH02306	GO:0005952	cAMP-dependent protein kinase complex
+PLH02306	GO:0007189	adenylate cyclase-activating G protein-coupled receptor signaling pathway
+PLH05143	GO:0003676	nucleic acid binding
+PLH05143	GO:0003723	RNA binding
+PLH05143	GO:0003729	mRNA binding
+PLH05143	GO:0005634	nucleus
+PLH05143	GO:0005737	cytoplasm
+PLH05132	GO:0005634	nucleus
+PLH05166	GO:0000288	nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay
+PLH05166	GO:0000932	P-body
+PLH05166	GO:0003676	nucleic acid binding
+PLH05166	GO:0004535	poly(A)-specific ribonuclease activity
+PLH05166	GO:0005634	nucleus
+PLH05166	GO:0005737	cytoplasm
+PLH05166	GO:0030014	CCR4-NOT complex
+PLH05166	GO:0030015	CCR4-NOT core complex
+PLH03831	GO:0003676	nucleic acid binding
+PLH03831	GO:0003723	RNA binding
+PLH03831	GO:0003729	mRNA binding
+PLH03831	GO:0005829	cytosol
+PLH04160	GO:0007165	signal transduction
+PLH04160	GO:0019901	protein kinase binding

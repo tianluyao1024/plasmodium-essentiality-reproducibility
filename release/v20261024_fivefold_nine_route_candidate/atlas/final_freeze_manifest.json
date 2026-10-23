@@ -1,0 +1,145 @@
+{
+  "status": "matched-species freeze verified; downstream analyses and submission package incomplete",
+  "model_version": "fivefold_nine_route_lightgbm_20261016",
+  "feature_count": 628,
+  "reduction": "no additional PCA or feature removal in current run",
+  "splitting": "Original per-species deduplicated scope; common benchmark rows were label-stratified randomly and scope-only rows assigned to training.",
+  "evaluation_constraints": [
+    "Current fitting and threshold selection do not use validation or test labels.",
+    "Previous Pk test inspection influenced the historical profile choice; not a fully blind test.",
+    "The meta-level CV reuses precomputed base OOF predictions and is not fully nested.",
+    "The fourth route uses Oberstaller labels for matched Pk training genes; this is not external human-screen validation.",
+    "This manifest covers the three matched-species models, not source-only LOSO models."
+  ],
+  "global_files": {
+    "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\run_manifest.json": "ad92a87c6cc3d8fdd7f3769c4cfb373e79752bf2cac94ee79c5960012cf44f43",
+    "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\frozen_stack_metrics.tsv": "d305161c6d30076a4cc81ee1ff8a0b149b60117a35d078096b3822f1fcf974df",
+    "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\frozen_stack_predictions.tsv": "bffdb2b7d2c97da2608c45c5191d05a8ba11936a49bc5d92e0da8e55a2aece70",
+    "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\final_evaluation\\component_predictions.tsv": "58e3998d9bc1c4d2dbaf9e798bcb0379ef23dbe68255f2b83871c9046034ce15",
+    "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\full_application\\run_manifest.json": "5539df09e8db2a8902d2c498eeb02444662b562034b1a8571c6de8f779e02aca",
+    "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\full_application\\all_three_species_nine_route_genomewide.tsv": "90e9958a8d8046afbd9dbcf3cd47f98483831161d2f5fda420f99d214c6846ac"
+  },
+  "species": {
+    "Plasmodium_falciparum": {
+      "partitions": {
+        "train": {
+          "n": 4294,
+          "essential": 2678,
+          "matrix_sha256": "75671acf6da7bee95f2399318c80875ecbdb7008ab2c228e0854cfb74aab5d91",
+          "ids_sha256": "8eb69ca9541d4edc7202ebec008098ee99c8ac88c183a7373092ad9108942909",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_falciparum\\y_train.npy",
+          "original_scope_labels_sha256": "2f506ad39b9f694645f51d123ec9495542f7cceb5e3d3897cec36dc5a7c12de6",
+          "metadata_sha256": "b87eb816d3993f97028621da5fa230d0b2ab7b589ba3b46a456416f2320c12b4"
+        },
+        "val": {
+          "n": 526,
+          "essential": 324,
+          "matrix_sha256": "0a780f516435259a67caf9785bc918967706a735c4f8760ff680a325ffbda477",
+          "ids_sha256": "6b4b1674137b0f638c5ffe72be99dd90190231f84b79b940adfdfd6498348878",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_falciparum\\y_val.npy",
+          "original_scope_labels_sha256": "69ddf33015afc344bea9782fcc34db11d3ccbc3f85518d2a6a7429f2a37faaf9",
+          "metadata_sha256": "1f5f3d841ce33f2560f4b20b6b7e1ffde6fa753f62fcf513000830c11dba754b"
+        },
+        "test": {
+          "n": 527,
+          "essential": 325,
+          "matrix_sha256": "22cbe98ede141fc5b361f233a0151f51646f331f70094aa683d2742b4062c67d",
+          "ids_sha256": "134d6c727cae3a16180105310a03ceff50d6a1f2797283505ecef0d6c0781b5e",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_falciparum\\y_test.npy",
+          "original_scope_labels_sha256": "351985441dde21f00c09930a5a402f7fa3f5fcb315d4a6fdb60eedffc65d95f7",
+          "metadata_sha256": "1803eb219cb00fa7acf9f8270174b512941adcc1b2520dd10dd0c838e1281ea5"
+        }
+      },
+      "meta_candidate": "leaves5_child20_trees200",
+      "training_cv_threshold": 0.4299999999999999,
+      "test_auroc": 0.8205940594059405,
+      "test_auprc": 0.8728263805155562,
+      "evaluation_meta_model_sha256": "1099062d457baed0f4e143ab85519e9b914cc9546ea871dfd675c4e30c1b0eb7",
+      "evaluation_cached_base_predictions_sha256": "509e95024373dce98346ed8e82046b224c8582b0a3c29e936e45158562aab38e",
+      "evaluation_transformer_epoch": 2,
+      "application_transformer_epoch": 2,
+      "application_model_directory": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\full_application\\models\\Plasmodium_falciparum"
+    },
+    "Plasmodium_berghei": {
+      "partitions": {
+        "train": {
+          "n": 1687,
+          "essential": 964,
+          "matrix_sha256": "f12f71ba1fff08a83f4075acaa8b4fef25673747755267129af09851902fe6d4",
+          "ids_sha256": "aa7dc8af11ba42421acef1f0f43cbadbb6a77fceca7ea75bf5a0a83a1613c6c6",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_berghei\\y_train.npy",
+          "original_scope_labels_sha256": "6fad0bb67d8f2f8dbb84305d3717bb908081ea3e3eff7eb5c4284498639ff820",
+          "metadata_sha256": "f464722eb76c8d4222a75093cba33657c5cf8830ca818e8fb3840ab5dea5abde"
+        },
+        "val": {
+          "n": 204,
+          "essential": 114,
+          "matrix_sha256": "a078d13a8fd8468c3ea19bbf9708a9ef53cbc0fddc4bc2d0ae7316962b1a7e29",
+          "ids_sha256": "afd270086e8b96762e571fc36d9a45d3df41d5094756137069bc422500500f3b",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_berghei\\y_val.npy",
+          "original_scope_labels_sha256": "2178655dc28337002e4f9b6760b75bc268ffe54f1cee43f539b75a04c94ff90e",
+          "metadata_sha256": "de1b04727496439da6176e32f9c9e93c42362ea30b037ab5966c6b0679a4645e"
+        },
+        "test": {
+          "n": 205,
+          "essential": 115,
+          "matrix_sha256": "cf651576747e9f72d9f36c407e7afdc048379b7e73e668fc2402804cc537d501",
+          "ids_sha256": "8f914687243bb891e0d9bfa0dcccf7b7d1d1b47b44e36c85f8aee9c4016cd69e",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_berghei\\y_test.npy",
+          "original_scope_labels_sha256": "0b97ab3b477ee80971e2c66b65f2b344c55d7099a58c011aa87e7753eafb9ade",
+          "metadata_sha256": "1a188202227df83d3831e8662544b362af345d7fdfcb9210dd1eb165332b8562"
+        }
+      },
+      "meta_candidate": "leaves3_child30_trees300",
+      "training_cv_threshold": 0.4149999999999999,
+      "test_auroc": 0.8740096618357488,
+      "test_auprc": 0.8964012622941426,
+      "evaluation_meta_model_sha256": "fb184e473e760ee2deada294c028f8f95bee583a0fd61370f55c078cec087a9a",
+      "evaluation_cached_base_predictions_sha256": "47d44daff70737224e3b4da35aefb63249adf548c06c8a617c71ffcbf574ace2",
+      "evaluation_transformer_epoch": 21,
+      "application_transformer_epoch": 21,
+      "application_model_directory": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\full_application\\models\\Plasmodium_berghei"
+    },
+    "Plasmodium_knowlesi": {
+      "partitions": {
+        "train": {
+          "n": 3284,
+          "essential": 1602,
+          "matrix_sha256": "d413cd552b5a2a7a16f210cda329aa3fb35eaedf87519514d683db5710a787f9",
+          "ids_sha256": "e1fed58bcb4608cdce42b01f40e25e67b2d2e8e6419163f0ebf2b64b3a6ea975",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_knowlesi\\y_train.npy",
+          "original_scope_labels_sha256": "c2421f5a058bd615a02d168392ab212f41dc397091cb309eb600f2000f25f916",
+          "metadata_sha256": "ac8a83658e9b4781cf2b4ed55d2d8b6ad75841cdf3e43804d57baf776922a483"
+        },
+        "val": {
+          "n": 408,
+          "essential": 199,
+          "matrix_sha256": "16464caf5123258b402b5e856639dfdc143e6783f9aeb0112f3dbf48ed4ad23a",
+          "ids_sha256": "408071744332352895ca38e93b2b1ccc3e15496104ca1a82c2872c85f5bf88b1",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_knowlesi\\y_val.npy",
+          "original_scope_labels_sha256": "f22830da05566e52aa5184d3b8d47c19691665844f3cbe9cec1ef08548f7cad3",
+          "metadata_sha256": "62b222fa1ac56168feca8daaaba9c88f00e6d555003af51449ab6d7ebf1bb810"
+        },
+        "test": {
+          "n": 407,
+          "essential": 198,
+          "matrix_sha256": "3ec1fe1e70153d34ebc2d367b3b2dacdc1ead3c424072e2754b191c0619f6b45",
+          "ids_sha256": "97c1f3168394f4e62283593b1704398caeace059b08da10924b9d6607354b97e",
+          "original_scope_labels_path": "C:\\Users\\tly\\Desktop\\\u690d\u7269\\\u6c34\u7a3b\u65e5\u672c\\eukaryote_model_datasets\\scope_feature_sets_v2\\within_species\\Plasmodium_knowlesi\\y_test.npy",
+          "original_scope_labels_sha256": "089accc0053e325d2a89c0cc9570e3c3c4be185e0592db3622912b4764670222",
+          "metadata_sha256": "6d2aa792b5b455e4b8a6ae00bced4b0a222c5cd278065635479f0b643fa525e6"
+        }
+      },
+      "meta_candidate": "leaves3_child30_trees300",
+      "training_cv_threshold": 0.5399999999999999,
+      "test_auroc": 0.9151080179788316,
+      "test_auprc": 0.9209502849754174,
+      "evaluation_meta_model_sha256": "93af890d79654247998b67a581422ecb487438b1f971f22df50250a18c35bf54",
+      "evaluation_cached_base_predictions_sha256": "179a0a98a91137bd60876da928dced3495399688fc91e83f48072613dd75cc78",
+      "evaluation_transformer_epoch": 9,
+      "application_transformer_epoch": 14,
+      "application_model_directory": "D:\\ProtoEss_feature_matrix_repair_20261015\\nine_route_v3_5fold_fixed_params_20261016\\full_application\\models\\Plasmodium_knowlesi"
+    }
+  },
+  "artifact_caveat": "Evaluation meta models and cached component predictions are saved; independent existence and reproducibility of every evaluation base-model artifact has not yet been established. Full-proteome application models are separate refits, including a different Pk Transformer epoch."
+}

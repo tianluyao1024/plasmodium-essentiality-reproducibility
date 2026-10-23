@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "groups": 4183,
+  "shared_candidate_groups": 1861,
+  "observed_registry_members": 85,
+  "reproduced_draws": 100000,
+  "empirical_p_greater_equal": 9.99990000099999e-06,
+  "limitations": [
+    "Registry is the original v34 source, not a current comprehensive registry.",
+    "Whole-triplet uniform sampling preserves eligibility and group size but not other biological covariates.",
+    "Registry evidence is post-score and does not establish drug efficacy or causality.",
+    "Historical test exposure and Pk human-screen route caveats remain."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "60-run sensitivity complete; awaiting full-package and journal figure QA",
+  "design": "four held species x three source-training label-exchange fractions x five seeds",
+  "model": "audited five-fold source-only LOSO stack with fixed LightGBM meta-learner",
+  "fractions": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "seeds": [
+    20260824,
+    20260825,
+    20260826,
+    20260827,
+    20260828
+  ],
+  "runs": 60,
+  "validation_and_held_labels_unchanged": true,
+  "zero_noise_baseline": "frozen four-species F3a source-only LOSO results; not refit",
+  "error_bars": "sample standard deviation across five label-exchange seeds, not a confidence interval",
+  "interpretation": "Label-noise sensitivity only; not matched-species nine-route performance, independent validation or a causal estimate.",
+  "sha256": {
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S4_label_uncertainty_20261024\\S4_fivefold_all_runs.tsv": "856bd3da6c14b2e4095682ec98d89a27197c9c5139f6dba19f579740e2585fa3",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S4_label_uncertainty_20261024\\S4_fivefold_summary.tsv": "412317208c9a08018fa69da1d9c4f8b732d5fcd3c4136c5eca6706280d1f805b",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S4_label_uncertainty_20261024\\S4_fivefold_summary_with_baseline.tsv": "86306160d2c9362debdc66208e0594b38695e94f037a0a3b7588dab02c2c3f89",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Figures_working\\Supplementary_Fig_S4_label_uncertainty_20261024.png": "ce53a3fcc6065f82389dbadd9667f9b09d937e15e3cc6e96e15d49338917e2a2",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Figures_working\\Supplementary_Fig_S4_label_uncertainty_20261024.pdf": "c52fa3a6bfa90224ca6b17132cc30127058ad486b5e2ecbe92c39170ae3b0edd",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Figures_working\\Supplementary_Fig_S4_label_uncertainty_20261024.svg": "86b0a1e8e66c618005eaa7eb4132000a5832fbcf563b6907770e15aef15924c1",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Figures_working\\Supplementary_Fig_S4_label_uncertainty_20261024.tiff": "275cea8996f420a41f42fa051fa5e0a20f957ec8206749b2fdc3bb99bf29715d"
+  }
+}

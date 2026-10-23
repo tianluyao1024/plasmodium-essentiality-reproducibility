@@ -1,0 +1,53 @@
+{
+  "release_id": "v20261024_frozen_naturemicrobiology_candidate",
+  "status": "offline_internal_candidate_not_published",
+  "created_local_date": "2026-10-24",
+  "model_version": "fivefold_nine_route_lightgbm_frozen_2026-10-17_internal_v10",
+  "feature_count": 628,
+  "split_policy": "original 95%-redundancy-reduced label-stratified random train/validation/test split",
+  "matched_species_metrics_test_auroc_auprc": {
+    "Pf": [
+      0.821,
+      0.873
+    ],
+    "Pb": [
+      0.874,
+      0.896
+    ],
+    "Pk": [
+      0.915,
+      0.921
+    ]
+  },
+  "loso_species_included": [
+    "Pf",
+    "Pb",
+    "Pk",
+    "Tg"
+  ],
+  "pk_human_red_cell_analysis": "retrospective homolog projection; not A1H sequence-level; not blind validation",
+  "label_exchange_sensitivity_runs": 60,
+  "source_freeze_manifest_sha256": "6e5c2935ff8000fa520e1634165a41cf01173a9e7da948a0702e95928c778930",
+  "files_sha256": {
+    "DATA_DICTIONARY.md": "bd4859cc93a3b6b9b536c4b13aa1487ec8a82fbf7c627855db7d41432132a251",
+    "final_freeze_manifest.json": "6e5c2935ff8000fa520e1634165a41cf01173a9e7da948a0702e95928c778930",
+    "loso_metrics.tsv": "dfaac483c313034b89d1a8db2edc8c43a57d8296cdef07b1b18f8ff1dc6b70c5",
+    "MODEL_CARD.md": "8e4a634d32042fde0782a00873e5a6db6e1e11434156b987b724283142d569ef",
+    "pk_dual_screen_gene_pairs.tsv": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c",
+    "pk_dual_screen_summary.tsv": "ed64f09b0dd4f59962ce3659bc6025d7d1e749f30df50e840b0553de98666b43",
+    "predictions.tsv": "03f638c3dead3d4ee7a56d0993e0f19321b76840229747ca9cbef1e3db669fd5",
+    "README.md": "25fcf19ed7d6dd9ed449d718011fea408ed24b5f309b5bd0f1c5c51ff52ef164",
+    "s4_label_exchange_runs.tsv": "ccb5fa226acea96b3799587c1bf6a8535bcab9d383da2ceda74b088537233d55",
+    "s4_label_exchange_summary.tsv": "86306160d2c9362debdc66208e0594b38695e94f037a0a3b7588dab02c2c3f89",
+    "source_composition_metrics.tsv": "cad44d0df09c7b9bb69054a4f474091d48532f0c80a188c27098f3f81fe38378"
+  },
+  "public_release": false,
+  "deployment_target_verified": false,
+  "archive_doi": null,
+  "limitations": [
+    "Historical Pk outcome exposure means the matched-species test estimates are not blind.",
+    "LOSO and human-red-cell condition analyses are retrospective and not prospective external validation.",
+    "The Pk projection uses homolog mapping without A1H-specific sequence features.",
+    "Predictions and target priorities are computational hypotheses, not experimental validation."
+  ]
+}

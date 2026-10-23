@@ -1,0 +1,17 @@
+{
+  "status": "panels a-c audited against frozen five-fold predictions; panel d reallocation sensitivity is documented separately; package-wide QA pending",
+  "model": "five-fold nine-route LightGBM using the frozen raw 628-feature matrix",
+  "threshold_selection": "training-only cross-validation; no test-set threshold tuning",
+  "caveat": "Test data were not used in this frozen fit, but historical test exposure precludes claiming a fully blind study.",
+  "panel_a_rows": 3,
+  "panel_b_rows": 18,
+  "panel_c_rows": 33,
+  "panel_d": "15 audited allocation runs in Source_Data/Fig2d_sensitivity; sensitivity only, with overlap and test-reallocation limitations",
+  "test_blinding_caveat": "Historical outcome inspection during model development precludes a fully blind evaluation claim.",
+  "package_manifest_version": "internal-working-v10-20261024",
+  "package_manifest_sha256_inputs": {
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig2\\F2a_performance.tsv": "98878de3c91836f3c0ad4e964ccfb0d5ef70b91a0989c53f7c4d1a40a6081960",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig2\\F2b_branch_benchmarks.tsv": "fce0776158a7394427c249842b44dca6741b70af7dc4228f4c4ce9b959aaf7de",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Fig2\\F2c_calibration.tsv": "e114a8ad13f747d29b629b5688b7e950dd2d678adfaf728b66f2945e7c358fb3"
+  }
+}

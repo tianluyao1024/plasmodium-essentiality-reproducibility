@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 *.log
 predictions.tsv
+!release/v20261024_fivefold_nine_route_candidate/atlas/predictions.tsv

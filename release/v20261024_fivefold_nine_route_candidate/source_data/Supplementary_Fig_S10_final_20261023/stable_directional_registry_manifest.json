@@ -1,0 +1,38 @@
+{
+  "status": "post-score sensitivity; not validation or causal evidence",
+  "inputs_sha256": {
+    "D:\\ProtoEss_original_structure_revision_20261017\\final_refit_results_20261023\\F4_184_refit_stable_directional_groups.tsv": "32436d28631d9ac8e8cd35f889402893d0f73ab85c6c8179cdb93b39f84553e5",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S10_final_20261023\\s10_triplet_eligibility_universe.tsv": "76222e42f22c3f1bddaf571c3e3fc2b313859f53c13c281bc3ec1a5459241e35",
+    "D:\\ProtoEss_NatureMicrobiology_submission_20261020_working_v10\\Source_Data\\Supplementary_Fig_S10_final_20261023\\manifest.json": "4d68b716dd7256f2a53ab38f8d1f7cd43cc0a5f8b3e057a8e39f220833872115"
+  },
+  "outputs_sha256": {
+    "stable_directional_registry_group_members.tsv": "bfbc48241d940f9f0fa83182d079b3f109eefce6dfd5b9985f11fe026d9bdf36",
+    "stable_directional_registry_null_draws.tsv": "1bad21b40e9a3b6b3e3554395190afdb1bf219a84ffbbe3d918617fa79e41ea5",
+    "stable_directional_registry_null_summary.tsv": "ab995f64d68795910a46facfc3cdcfed8ce8cbd0547dbdcd4bf1b4c7eb8ccc4e"
+  },
+  "script_sha256": "e04a5ec26a25fb45d7f7d8858c162f619716593276512f222289cee65ab5df63",
+  "summary": {
+    "analysis": "post-score registry-member sensitivity for 184 paired-refit-stable directional groups",
+    "registry_snapshot": "source-v34; limited historical target registry, not comprehensive",
+    "eligible_triplets": 4183,
+    "selected_stable_groups": 184,
+    "members_per_triplet": 3,
+    "observed_registry_supported_members": 3,
+    "stable_groups_with_any_supported_member": 2,
+    "registry_supported_members_across_universe": 106,
+    "null_draws": 100000,
+    "seed": 20261024,
+    "null_mean": 4.65833,
+    "null_sd": 2.8991956926804106,
+    "null_q025": 0.0,
+    "null_q975": 11.0,
+    "empirical_p_enrichment_greater_equal": 0.7510624893751062,
+    "empirical_p_two_sided_absolute_deviation": 0.6300736992630074,
+    "interpretation": "No evidence of additional registry-member enrichment; post-score context, not independent validation.",
+    "limitations": [
+      "The source-v34 registry is limited and is not a comprehensive target census.",
+      "Uniform whole-triplet sampling preserves triplet size and eligibility but not other biological covariates.",
+      "Registry support is post-score context and does not establish target validity, drug efficacy or causality."
+    ]
+  }
+}

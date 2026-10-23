@@ -1,0 +1,8 @@
+file	contents	figure_panel	interpretation
+Fig4a_species_calls.tsv	Frozen species-level predicted-essential and nonessential counts	a	Model calls, not experimental phenotype counts
+Fig4b_triplet_funnel.tsv	Counts at each exact-triplet and paired-refit filter stage	b	Frozen calls and prespecified refit stability criteria
+Fig4c_directional_pattern_counts.tsv	Candidate and stable groups by frozen directional pattern	c	Directional patterns are model-derived hypotheses
+Fig4d_refit_recovery.tsv	455 candidate groups and their recovery frequency across 100 paired refits	d	Recovery frequency is a stability statistic, not a confidence interval
+Fig4d_recovery_histogram.tsv	Ten-bin counts used to draw the Fig. 4d recovery histogram	d	Bins span recovery frequency 0 to 1
+Fig4e_orthomcl_support_by_triplet.tsv	All exact triplets with OrthoMCL support and stable-group flags	e	Orthology context, not experimental validation
+Fig4e_orthomcl_support_summary.tsv	Panel e plotted numerator and denominator values	e	Percentages are descriptive

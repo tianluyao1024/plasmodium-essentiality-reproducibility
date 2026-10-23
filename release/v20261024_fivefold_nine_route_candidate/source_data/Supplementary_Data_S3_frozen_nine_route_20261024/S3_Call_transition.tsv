@@ -1,0 +1,2 @@
+status	reason	policy
+not_recomputed	No verified row-level v45 prediction file with matching gene IDs, call definition and threshold was available.	Do not infer v45-to-frozen transitions from aggregate counts or a different model version.

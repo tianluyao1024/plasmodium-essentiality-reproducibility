@@ -1,0 +1,4 @@
+cohort	groups	Pk_predicted_E	Pk_predicted_NE	Pk_predicted_E_fraction
+Full-model high-margin directional	689	110	579	0.15965166908563136
+Annotation-exclusion-retained candidates	455	77	378	0.16923076923076924
+Dual-model refit-stable	184	23	161	0.125

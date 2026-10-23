@@ -1,0 +1,2 @@
+paired_genes	discordant_calls	discordance_fraction	wilson_95_ci_low	wilson_95_ci_high	continuous_score_spearman_rho	continuous_score_bootstrap_95_ci_low	continuous_score_bootstrap_95_ci_high	interpretation
+3482	435	0.12492820218265364	0.11435770072513073	0.13632537512431597	0.7616021762228862	0.747	0.775	Retrospective homolog projection; screens differ in strain, red-cell source and procedure; not A1H sequence-level or blind validation
