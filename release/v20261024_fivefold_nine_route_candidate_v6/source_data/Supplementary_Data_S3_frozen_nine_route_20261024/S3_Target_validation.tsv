@@ -1,0 +1,4 @@
+species_short	proteome_genes	predicted_essential	registry_targets	recovered_registry_targets	registry_target_recall
+Pf	5318	3184	47	44	0.9361702127659575
+Pb	4945	2729	10	10	1.0
+Pk	5328	2205	54	46	0.8518518518518519

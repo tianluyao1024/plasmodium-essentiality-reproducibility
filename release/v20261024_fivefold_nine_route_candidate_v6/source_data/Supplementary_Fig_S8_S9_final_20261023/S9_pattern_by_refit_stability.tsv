@@ -1,0 +1,12 @@
+new_pattern	final_refit_stable	groups
+E/E/NE	False	65
+E/E/NE	True	8
+E/NE/E	False	13
+E/NE/E	True	5
+E/NE/NE	False	105
+E/NE/NE	True	142
+NE/E/E	False	38
+NE/E/E	True	18
+NE/E/NE	False	47
+NE/E/NE	True	11
+NE/NE/E	False	3

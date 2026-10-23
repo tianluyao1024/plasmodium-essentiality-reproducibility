@@ -1,0 +1,55 @@
+{
+  "status": "complete: 15 audited reallocations (five per species); supplementary sensitivity only",
+  "statistics": "arithmetic mean and sample standard deviation across five allocations; not a confidence interval",
+  "allocation_dependence": "Allocations reuse overlapping gene records and are not independent biological experiments.",
+  "limitations": [
+    "Some original main-test records enter regrouped training.",
+    "Other-species source labels may include target homologs.",
+    "The baseline uses target-species training labels only; some nine-route inputs use other species' labels.",
+    "Nine-route input model differs from the original five-branch logistic model."
+  ],
+  "input_sha256": {
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260821/Plasmodium_falciparum/manifest.json": "ae4274c64dc31e929fdd1494ed36add2ef33bd2eba2c341e8a5b68ed00184a04",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260821/Plasmodium_falciparum/audit.json": "e497fb1a854a03dbf5a6da12636045487115b068485e4b04b2cf5c24b14e6895",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260822/Plasmodium_falciparum/manifest.json": "1738e9f400c6d3ec18ec74a3917d5051653056cc8fd5245edee18a0a713fddd4",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260822/Plasmodium_falciparum/audit.json": "e67e276825ef504d40bc0dd0d983d9d98dd254dc1b2e079a5c3e91aa7b8ad7bd",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260823/Plasmodium_falciparum/manifest.json": "801d5166f7f1b075f8dbc3e8f13d463dd5c16d639871253ab450fe3a1c6eb4bf",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260823/Plasmodium_falciparum/audit.json": "8840e4cd67de25747c9a0909a3dee414ea9ce2cd6e7a2e6ffdd1574649ecfea7",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260824/Plasmodium_falciparum/manifest.json": "16772fe990eb67dbb5630a8dce566f65a1439ad49a964665f16582d4778202bc",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260824/Plasmodium_falciparum/audit.json": "288e1ead6d90d7dae07a09978e434c81a626522eab6e93d4aa6e113292f79b12",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260825/Plasmodium_falciparum/manifest.json": "855495b866c0137fe5a2b731db4b47279c388259bba799262823da368d5b26e8",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260825/Plasmodium_falciparum/audit.json": "f1a96f844bce0cabfcbe408e61d36a1c0419018fa72ff1596f441baef1178806",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260821/Plasmodium_berghei/manifest.json": "8e519098103913ec4a336c7d6f630c33c36efb62e45e93e671dcebaba4dc463d",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260821/Plasmodium_berghei/audit.json": "41a34a76c4ae2f4121797048a4b40e61c99eeea21307d2b44739833cabdb6393",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260822/Plasmodium_berghei/manifest.json": "e3dd4cdccae43f6b3916761b4878e5baa88d53944351475ffe04e29ba257dd04",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260822/Plasmodium_berghei/audit.json": "9e7a8aba658a4420e31f5f4c9b555ef7061a6befff7b3e104626112f8da5b39a",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260823/Plasmodium_berghei/manifest.json": "6b55ca0095a8ce9db9e5e01313b62b8b75bc890296ea32c3326e53dea1a35f00",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260823/Plasmodium_berghei/audit.json": "6fc1c7cb62e382ba74a540b3fbb2b0f28317e3d9573aa029cf42b2df5a32a730",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260824/Plasmodium_berghei/manifest.json": "2f4263523dd8ab4bc6a7f441f8fdb288aba29253a8d892b32e7005ff4bda321e",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260824/Plasmodium_berghei/audit.json": "8e5a6af31716b3b60caaf8323aa548596c433433e29880fe280164e482f68285",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260825/Plasmodium_berghei/manifest.json": "a276b7cc36e13260da49649cf2dc0897042e9dc326ae997b4b54968604e45e1d",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260825/Plasmodium_berghei/audit.json": "8ac2b5b49ef718aa779a571febcfd886a262b4c96862eb05c11e4150370ccd9a",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260821/Plasmodium_knowlesi/manifest.json": "31eceff4765b919c464a2a71e1ec55a0361f28f3c5755518082e9f0dafbfd140",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260821/Plasmodium_knowlesi/audit.json": "c6183bbc995063e8fc9aa2ca46d0f3e80816a038eba14a33b234e9575f66d134",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260822/Plasmodium_knowlesi/manifest.json": "1af3b0f344957709bae06d83312aff3b1b0d9361fbb163916f1dc6d9bcc8b25f",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260822/Plasmodium_knowlesi/audit.json": "47dbc9f10d29858a2ab97cdb7fe574dbda66ea91da1bc8b43be2243e65e632e6",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260823/Plasmodium_knowlesi/manifest.json": "f9bfa3c0c2b797bc868baf4077a6ef60d9353ae34a8ee7ff21ac07430b2d959b",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260823/Plasmodium_knowlesi/audit.json": "81a720ce6b7e1447a1e4e6a04a802e6a5933a0c29b70d70282e58b48cd92be49",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260824/Plasmodium_knowlesi/manifest.json": "3effa6c231c5937a6201439cf69d3f458b996ac3c6d1580fbe6469ab21d9148f",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260824/Plasmodium_knowlesi/audit.json": "b021c1069e8cf5fa8b5dd60b546a3f7258a12405b500ff448cde32b2ade25b30",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_20261019/seed_20260825/Plasmodium_knowlesi/manifest.json": "ff1996af95fc11dddfcd2674bccf1a1be207fef683f5c74fd5d7cb6e6a2fe1ea",
+    "upstream/original_revision/fig2d_regrouped_nine_route_evaluation_audit_20261019/seed_20260825/Plasmodium_knowlesi/audit.json": "5df38914f810a1da6b9275f8a4a43b8556c6f6d26e2406ac47b4eac38971a3f1"
+  },
+  "script_sha256": "a7b4c77e4edfc2d4a67ed58291c56763eeeafea263113eab79067f19ba727fee",
+  "output_sha256": {
+    "upstream/original_revision/fig2d_regrouped_nine_route_five_allocations_20261019/F2d_five_allocation_summary.tsv": "29735c9a9adc1642b62ed7191e75395c49c7e6d3afbace843184323f3b8340fd",
+    "upstream/original_revision/fig2d_regrouped_nine_route_five_allocations_20261019/F2d_per_allocation.tsv": "28a2788c4c2c80d628c5abe165627ffc5e92016114bfebc30f63634b539738b4"
+  },
+  "run_count": 15,
+  "not_a_performance_claim": true,
+  "package_manifest_version": "internal-working-v10-20261024",
+  "package_manifest_sha256_inputs": {
+    "package/Source_Data/Fig2d_sensitivity/F2d_five_allocation_summary.tsv": "29735c9a9adc1642b62ed7191e75395c49c7e6d3afbace843184323f3b8340fd",
+    "package/Source_Data/Fig2d_sensitivity/F2d_per_allocation.tsv": "28a2788c4c2c80d628c5abe165627ffc5e92016114bfebc30f63634b539738b4"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "status": "internal figure exports extracted from current manuscript; not submission-cleared",
+  "source_docx": "01_Main_Manuscript_INTERNAL_WORKING_NOT_FOR_SUBMISSION.docx",
+  "source_docx_sha256": "7698719f131c2b1e30abe173c62d459330bf0d5bd6814f6e223d27de0d6d59c8",
+  "figures": [
+    {
+      "figure": "Fig1",
+      "docx_media": "word/media/image7.png",
+      "pixel_size": [
+        4278,
+        2418
+      ],
+      "display_size_inches": [
+        6.35,
+        3.589
+      ],
+      "effective_dpi": [
+        673.7,
+        673.7
+      ],
+      "embedded_png_sha256": "7eb8b747b672f1fdddf8f9106991735a5f2fff598898fd990f2ed378632df71d",
+      "exports": {
+        "Fig1_as_embedded.png": "7eb8b747b672f1fdddf8f9106991735a5f2fff598898fd990f2ed378632df71d",
+        "Fig1_as_embedded.tiff": "51740650ef4b779069b393e9887c794e01825ac1cc42ba6b3ae4d4673d51b093",
+        "Fig1_as_embedded.pdf": "11564cbdef563ab2b4c120c64a4f886e408c5cdf987c4cbe42fc4f3c12e55591"
+      }
+    },
+    {
+      "figure": "Fig2",
+      "docx_media": "word/media/image8.png",
+      "pixel_size": [
+        4320,
+        3300
+      ],
+      "display_size_inches": [
+        6.35,
+        4.851
+      ],
+      "effective_dpi": [
+        680.3,
+        680.3
+      ],
+      "embedded_png_sha256": "bc1eae9c0b7d6b116e524c2374f4aef575ccdcdd0f3b820560bc3812ef547acc",
+      "exports": {
+        "Fig2_as_embedded.png": "bc1eae9c0b7d6b116e524c2374f4aef575ccdcdd0f3b820560bc3812ef547acc",
+        "Fig2_as_embedded.tiff": "836df99f3debc97d27c010bda283a8aef319eab57615e34b1a11d52c743260c5",
+        "Fig2_as_embedded.pdf": "0d0ef811ded20517133b8e731431d5b33743962843f703fc90b2b0b8fa7a517c"
+      }
+    },
+    {
+      "figure": "Fig3",
+      "docx_media": "word/media/image9.png",
+      "pixel_size": [
+        2194,
+        1715
+      ],
+      "display_size_inches": [
+        6.35,
+        4.964
+      ],
+      "effective_dpi": [
+        345.5,
+        345.5
+      ],
+      "embedded_png_sha256": "6945c09694e306e8d4bd2423dac9cb47ad8011eae49eb5e706282d63d29b51e8",
+      "exports": {
+        "Fig3_as_embedded.png": "6945c09694e306e8d4bd2423dac9cb47ad8011eae49eb5e706282d63d29b51e8",
+        "Fig3_as_embedded.tiff": "c7daa3c5ea76170752ed3ee7bd2986107ac28213b9433c87c3c016955c3981ec",
+        "Fig3_as_embedded.pdf": "8d39447cd682314dddbb653b2c7f510019c5a99db9e64133d2d77c5aaaa3d3c1"
+      }
+    },
+    {
+      "figure": "Fig4",
+      "docx_media": "word/media/image11.png",
+      "pixel_size": [
+        4600,
+        2840
+      ],
+      "display_size_inches": [
+        6.45,
+        3.982
+      ],
+      "effective_dpi": [
+        713.2,
+        713.2
+      ],
+      "embedded_png_sha256": "ac9f90b4043b6d04a938104fd2c220575f80e9ba79123de17e065c52cd6e35d9",
+      "exports": {
+        "Fig4_as_embedded.png": "ac9f90b4043b6d04a938104fd2c220575f80e9ba79123de17e065c52cd6e35d9",
+        "Fig4_as_embedded.tiff": "bac506dd773e2538e35aa572663c7b992be2350433436af2df4ad30c07a08fdf",
+        "Fig4_as_embedded.pdf": "d3fd2eebc457e7011e7873477f2226307dd6c74a88160070bc9d2015507de232"
+      }
+    },
+    {
+      "figure": "Fig5",
+      "docx_media": "word/media/image12.png",
+      "pixel_size": [
+        2900,
+        2288
+      ],
+      "display_size_inches": [
+        6.45,
+        5.089
+      ],
+      "effective_dpi": [
+        449.6,
+        449.6
+      ],
+      "embedded_png_sha256": "b405c0613b9e5731ea1dec2c213a74df264dc530c8a91ad48052df96c02c3305",
+      "exports": {
+        "Fig5_as_embedded.png": "b405c0613b9e5731ea1dec2c213a74df264dc530c8a91ad48052df96c02c3305",
+        "Fig5_as_embedded.tiff": "50786f0802877bfc231b350d43fb01e4db609c195c86e89f3b0cda0973eeec4b",
+        "Fig5_as_embedded.pdf": "ce64ec712222539c97bef87171c6f2207eb40a816a3e382b2526ca7aeb93308a"
+      }
+    },
+    {
+      "figure": "Fig6",
+      "docx_media": "word/media/image10.png",
+      "pixel_size": [
+        2330,
+        1735
+      ],
+      "display_size_inches": [
+        6.55,
+        4.877
+      ],
+      "effective_dpi": [
+        355.7,
+        355.7
+      ],
+      "embedded_png_sha256": "dbb91787f4c80c22d367699d6d3d04e6fd2d10225616f12ffcf6b6de32497d1e",
+      "exports": {
+        "Fig6_as_embedded.png": "dbb91787f4c80c22d367699d6d3d04e6fd2d10225616f12ffcf6b6de32497d1e",
+        "Fig6_as_embedded.tiff": "1655c5f06f297dd7cc17019621ce326e17391ede449c06a1efac27eb07b248bf",
+        "Fig6_as_embedded.pdf": "393ed5d5eac6ff1a260846c0946fc335a0c9effcbbf54823ae72c38c717aad6e"
+      }
+    }
+  ],
+  "notes": [
+    "Exports preserve the exact raster artwork embedded in the current DOCX.",
+    "PDF and TIFF are wrappers/encodings of embedded raster pixels, not vector originals.",
+    "Figures 1, 3 and 6 have no separately verified vector source in the audited figure folders."
+  ]
+}

@@ -1,0 +1,13 @@
+species_short	call_transition	genes
+Pf	retained_predicted_essential	3101
+Pf	no_longer_predicted_essential	654
+Pf	newly_predicted_essential	83
+Pf	unchanged_nonessential	1480
+Pb	retained_predicted_essential	2444
+Pb	no_longer_predicted_essential	254
+Pb	newly_predicted_essential	285
+Pb	unchanged_nonessential	1962
+Pk	retained_predicted_essential	2103
+Pk	no_longer_predicted_essential	586
+Pk	newly_predicted_essential	102
+Pk	unchanged_nonessential	2537

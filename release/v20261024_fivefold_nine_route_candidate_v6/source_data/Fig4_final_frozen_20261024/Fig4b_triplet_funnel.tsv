@@ -1,0 +1,7 @@
+stage	orthogroups	definition
+Exact 1:1:1 triplets	4183	Exact matched-species orthogroup universe
+Predicted E/E/E	1861	Frozen nine-route calls
+Directional	1325	At least one E and one NE call
+High-margin directional	689	Frozen minimum absolute margin criterion
+Retained after annotation exclusion	455	Same strong direction in annotation-excluded model
+Stable in both models	184	Reference pattern recovered in >=80/100 paired refits by both models

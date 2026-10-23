@@ -1,0 +1,11 @@
+field	value
+input_atlas	Frozen v20261017 five-fold nine-route LightGBM genome-wide predictions
+model_version	fivefold_nine_route_lightgbm_20261016
+feature_count	628
+genes_scored	15591
+predicted_essential	8118
+known_target_handling	Registry joined only after frozen scoring; not used for model fitting, thresholds or priority class.
+priority_definition	High: predicted essential + |margin|>=0.10 + lower human-risk context + supported druggability; Medium: remaining strong-margin predicted-essential records with qualifying human-risk/tractability context; Low: other predicted-essential records. This is post-score computational prioritization.
+structure_and_docking	Existing row-level context retained; newly eligible records flagged; no new structure/docking result inferred.
+call_transition	Retrospective binary-call comparison against the archived v45 five-branch atlas; exact 15,591 record_id match. Summary in S3_Call_transition.tsv; gene-level scores, version-specific thresholds and calls in S3_v45_to_frozen_nine_route_gene_level.tsv. This is model-version context, not validation or experimental evidence; scores are not treated as directly comparable calibrated probabilities.
+status	Internal working copy; no public release.
