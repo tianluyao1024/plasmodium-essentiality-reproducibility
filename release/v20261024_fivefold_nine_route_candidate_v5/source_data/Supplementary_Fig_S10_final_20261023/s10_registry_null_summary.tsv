@@ -1,0 +1,2 @@
+eligible_triplets	candidate_triplets	candidate_members	registry_supported_members_observed	null_mean	null_sample_sd	null_q025	null_q975	empirical_p_greater_equal	null_expectation_analytic	null_sd_analytic	permutations	seed
+4183	1861	5583	85	47.18238	7.012801817354694	34.0	61.0	9.99990000099999e-06	47.158976810901265	7.016768202163332	100000	20260831

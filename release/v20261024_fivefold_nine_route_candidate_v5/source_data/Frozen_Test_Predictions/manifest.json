@@ -1,0 +1,27 @@
+{
+  "artifact": "frozen_test_predictions.tsv",
+  "purpose": "recompute the three frozen matched-species test AUROC/AUPRC metrics",
+  "source_artifact": "frozen_stack_predictions.tsv",
+  "source_sha256": "bffdb2b7d2c97da2608c45c5191d05a8ba11936a49bc5d92e0da8e55a2aece70",
+  "filter": "split == test; no training or validation predictions exported",
+  "label_derivation": "record_id token 2; essential=1, nonessential/non-essential=0",
+  "rows_by_species": {
+    "Plasmodium_falciparum": {
+      "n": 527,
+      "positive": 325,
+      "negative": 202
+    },
+    "Plasmodium_berghei": {
+      "n": 205,
+      "positive": 115,
+      "negative": 90
+    },
+    "Plasmodium_knowlesi": {
+      "n": 407,
+      "positive": 198,
+      "negative": 209
+    }
+  },
+  "output_sha256": "12e16f784301c0588f5d2f0e7040874c057485867eb40a5c1425fc2d3f230c8d",
+  "output_bytes": 107196
+}

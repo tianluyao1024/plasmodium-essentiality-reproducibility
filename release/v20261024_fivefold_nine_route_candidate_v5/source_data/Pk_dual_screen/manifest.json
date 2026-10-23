@@ -1,0 +1,59 @@
+{
+  "status": "included in internal Supplementary Information; scientific analysis audited; journal-specific figure approval and package-wide QA pending",
+  "core_conclusion": "Both screens are broadly concordant but disagree on a subset; projected source-only LOSO predictions can be compared to human-RBC calls.",
+  "archetype": "quantitative grid",
+  "backend": "Python matplotlib",
+  "n_unique_gene_pairs": 3482,
+  "n_discordant": 435,
+  "input_sha256": {
+    "upstream/original_revision/pk_human_fivefold_loso/aligned_gene_predictions.tsv": "834567d952af3dfbb46281f2276ce7702c40747fcd55b00d439d16834e0d245d",
+    "upstream/original_revision/pk_human_fivefold_loso/screen_performance.tsv": "1bc678169136cd99a423b830f402e2a95d9a5877d5e142aaf1b45b4a6afa33ee",
+    "upstream/original_revision/pk_dualscreen_continuous_scores_20261018/continuous_score_association.tsv": "a77c31d13f56eb4aac407943ef5d5372ec909db332f051814c01ae881fa7887c"
+  },
+  "output_sha256": {
+    "upstream/original_revision/pk_dualscreen_supplement_working_v3_20261018/source_gene_pairs.tsv": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c",
+    "upstream/original_revision/pk_dualscreen_supplement_working_v3_20261018/Pk_dualscreen_supplement_working.svg": "57e08c7731a64a99214cb50ed99756d8c2ceee43f99508654b484fcc8fda5159",
+    "upstream/original_revision/pk_dualscreen_supplement_working_v3_20261018/Pk_dualscreen_supplement_working.pdf": "dfa385f80b7bfdbbec9714ece6020cf2c62767dd03d50f62f65c142fda8574f1",
+    "upstream/original_revision/pk_dualscreen_supplement_working_v3_20261018/Pk_dualscreen_supplement_working.png": "26df007e3ddfeabdc6dd117dbd305a31960176f689e49f98f881f6d45bdaff32",
+    "upstream/original_revision/pk_dualscreen_supplement_working_v3_20261018/Pk_dualscreen_supplement_working.tiff": "5cb1abd169b2c7139018e5a94624b28170e1bcefffcb32260ddbccaa1ff3c996"
+  },
+  "script_sha256": "6cf4e837a9dce2293a0da83eb97896d6a71e6615cbe8602084fbd5f23a296ad8",
+  "selection": "Only unique 1:1 mapped, definite-call screen pairs with existing held PKNH labels are plotted; exactly 3482 genes in each panel.",
+  "limitations": [
+    "Retrospective human-screen condition projection using PKNH, not A1H, sequence features.",
+    "Screen conditions differ in host red cells, parasite strain and experimental procedures; causal host effect cannot be isolated.",
+    "Human-screen data and some test results were previously inspected; this is not blind or prospective validation.",
+    "Absolute margin is threshold distance, not calibrated uncertainty.",
+    "Other-species labels and global unlabelled clustering limit cold-start interpretation.",
+    "Journal-specific sizing, accessibility and final submission QA remain pending."
+  ],
+  "discordance_fraction": 0.12492820218265364,
+  "continuous_spearman_rho": 0.7616021762228862,
+  "package_artifacts": {
+    "source_gene_pairs.tsv": {
+      "path": "package/Source_Data/Pk_dual_screen/source_gene_pairs.tsv",
+      "sha256": "7e7612c8136b1fe49985020101555739079bcd004ee1ad2360465d3d2676b45c",
+      "bytes": 903507
+    },
+    "Pk_dualscreen_supplement_working.svg": {
+      "path": "package/Source_Data/Pk_dual_screen/Pk_dualscreen_supplement_working.svg",
+      "sha256": "57e08c7731a64a99214cb50ed99756d8c2ceee43f99508654b484fcc8fda5159",
+      "bytes": 152178
+    },
+    "Pk_dualscreen_supplement_working.pdf": {
+      "path": "package/Source_Data/Pk_dual_screen/Pk_dualscreen_supplement_working.pdf",
+      "sha256": "dfa385f80b7bfdbbec9714ece6020cf2c62767dd03d50f62f65c142fda8574f1",
+      "bytes": 93109
+    },
+    "Pk_dualscreen_supplement_working.png": {
+      "path": "package/Source_Data/Pk_dual_screen/Pk_dualscreen_supplement_working.png",
+      "sha256": "26df007e3ddfeabdc6dd117dbd305a31960176f689e49f98f881f6d45bdaff32",
+      "bytes": 388147
+    },
+    "Pk_dualscreen_supplement_working.tiff": {
+      "path": "package/Source_Data/Pk_dual_screen/Pk_dualscreen_supplement_working.tiff",
+      "sha256": "5cb1abd169b2c7139018e5a94624b28170e1bcefffcb32260ddbccaa1ff3c996",
+      "bytes": 1578276
+    }
+  }
+}

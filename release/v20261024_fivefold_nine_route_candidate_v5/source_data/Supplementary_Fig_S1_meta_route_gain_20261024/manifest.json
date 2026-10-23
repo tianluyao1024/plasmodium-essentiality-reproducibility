@@ -1,0 +1,56 @@
+{
+  "status": "recomputed_from_frozen_nine_route_lightgbm_meta_models",
+  "analysis": "LightGBM meta-model split gain and split counts across its nine probability inputs",
+  "scope": "descriptive model-internal input attribution; not raw-feature importance, SHAP, ablation, or causal evidence",
+  "models": {
+    "Pf": {
+      "model_sha256": "1099062d457baed0f4e143ab85519e9b914cc9546ea871dfd675c4e30c1b0eb7",
+      "config_sha256": "930a200b8c30cea1710f65b76f682d22e80638f34ca3fae716567ffdf2b2b63f"
+    },
+    "Pb": {
+      "model_sha256": "fb184e473e760ee2deada294c028f8f95bee583a0fd61370f55c078cec087a9a",
+      "config_sha256": "284bab033f4e78f15e4c371cc3cdd4fd539228fabc06aa2487e27ee17a60f055"
+    },
+    "Pk": {
+      "model_sha256": "93af890d79654247998b67a581422ecb487438b1f971f22df50250a18c35bf54",
+      "config_sha256": "7d4139c279ca1301c543a64f144179fc647d3ee93e70e28276c63e635c57e06a"
+    }
+  },
+  "source_table": "S1_meta_route_gain_and_split_counts.tsv",
+  "source_table_sha256": "fb15d0134a13347373c6e4c20be0954c81188590b275fc5c2f4fbcbc0453dc1f",
+  "figure_exports": [
+    {
+      "path": "Supplementary_Fig_S1_meta_route_gain.pdf",
+      "sha256": "32dcf224f80cefc6717b2682fcb8a91fdd60d5036844c5e03bdd1dd70f52fd43",
+      "bytes": 45303
+    },
+    {
+      "path": "Supplementary_Fig_S1_meta_route_gain.png",
+      "sha256": "1e5c51b7c84c72590b1b96f74b7211a1da5947b2c4c9c50efd8f266d6cc2e66e",
+      "bytes": 211488
+    },
+    {
+      "path": "Supplementary_Fig_S1_meta_route_gain.svg",
+      "sha256": "192e14f80d78e5c47c9ad016ad1728ecf91c977082ceab6da6742549d909c679",
+      "bytes": 23348
+    },
+    {
+      "path": "Supplementary_Fig_S1_meta_route_gain.tiff",
+      "sha256": "cc48918878667cbf1bcdcb2987a5a08fa767effe3003979c9e379edb6df35bae",
+      "bytes": 23020142
+    }
+  ],
+  "input_order": [
+    "strict_within_species",
+    "plasmodium_only_label_assisted",
+    "cross_species_label_assisted",
+    "cross_species_with_pk_oberstaller_labels",
+    "lgbm",
+    "catboost",
+    "species_expert_lgbm",
+    "species_prior",
+    "transformer"
+  ],
+  "data_use": "saved model/config artifacts only; no validation or test labels were accessed",
+  "normalization": "gain divided by the sum of nine route gains within each species"
+}

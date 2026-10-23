@@ -1,0 +1,26 @@
+species_short	target_priority	post_score_structure_status	genes	requires_new_structure_or_docking
+Pb	High	existing_docking_reusable	8	See per-gene atlas field; no new docking results inferred
+Pb	High	not_structure_screened	262	See per-gene atlas field; no new docking results inferred
+Pb	High	structure_screened_no_pocket_pass	1	See per-gene atlas field; no new docking results inferred
+Pb	Low	not_structure_screened	920	See per-gene atlas field; no new docking results inferred
+Pb	Low	structure_screened_no_pocket_pass	2	See per-gene atlas field; no new docking results inferred
+Pb	Medium	existing_docking_reusable	6	See per-gene atlas field; no new docking results inferred
+Pb	Medium	not_structure_screened	1527	See per-gene atlas field; no new docking results inferred
+Pb	Medium	structure_screened_no_pocket_pass	3	See per-gene atlas field; no new docking results inferred
+Pf	High	existing_docking_reusable	10	See per-gene atlas field; no new docking results inferred
+Pf	High	not_structure_screened	278	See per-gene atlas field; no new docking results inferred
+Pf	High	pocket_pass_without_saved_docking	1	See per-gene atlas field; no new docking results inferred
+Pf	Low	existing_docking_reusable	1	See per-gene atlas field; no new docking results inferred
+Pf	Low	not_structure_screened	1123	See per-gene atlas field; no new docking results inferred
+Pf	Low	structure_screened_no_pocket_pass	2	See per-gene atlas field; no new docking results inferred
+Pf	Medium	existing_docking_reusable	2	See per-gene atlas field; no new docking results inferred
+Pf	Medium	not_structure_screened	1765	See per-gene atlas field; no new docking results inferred
+Pf	Medium	structure_screened_no_pocket_pass	2	See per-gene atlas field; no new docking results inferred
+Pk	High	existing_docking_reusable	10	See per-gene atlas field; no new docking results inferred
+Pk	High	not_structure_screened	200	See per-gene atlas field; no new docking results inferred
+Pk	High	structure_screened_no_pocket_pass	1	See per-gene atlas field; no new docking results inferred
+Pk	Low	not_structure_screened	863	See per-gene atlas field; no new docking results inferred
+Pk	Low	structure_screened_no_pocket_pass	1	See per-gene atlas field; no new docking results inferred
+Pk	Medium	existing_docking_reusable	4	See per-gene atlas field; no new docking results inferred
+Pk	Medium	not_structure_screened	1122	See per-gene atlas field; no new docking results inferred
+Pk	Medium	structure_screened_no_pocket_pass	4	See per-gene atlas field; no new docking results inferred

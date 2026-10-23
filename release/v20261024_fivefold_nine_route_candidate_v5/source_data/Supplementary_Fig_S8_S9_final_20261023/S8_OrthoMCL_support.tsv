@@ -1,0 +1,3 @@
+cohort	groups	supported	support_fraction	support_definition
+All exact triplets	4183	3804	90.93951709299546	All three genes occur in a shared external OrthoMCL 6.21 group
+Refit-stable directional groups	184	163	88.58695652173914	All three genes occur in a shared external OrthoMCL 6.21 group

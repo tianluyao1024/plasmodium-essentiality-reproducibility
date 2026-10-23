@@ -1,0 +1,2 @@
+comparison	n_stable	n_control	stable_median_identity	control_median_identity	median_paired_difference	mann_whitney_U	mann_whitney_p_two_sided	paired_wilcoxon_p_two_sided_sensitivity	matching
+stable_vs_length_matched_EEE	184	184	0.5938541109160796	0.7430017095443404	-0.1115621039540699	10822.0	2.1792069388585015e-09	1.7409476235839363e-12	one-to-one Hungarian assignment minimizing absolute difference in mean protein length; no reuse

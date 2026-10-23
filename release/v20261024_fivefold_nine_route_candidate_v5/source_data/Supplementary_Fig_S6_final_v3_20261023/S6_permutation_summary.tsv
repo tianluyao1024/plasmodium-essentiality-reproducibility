@@ -1,0 +1,2 @@
+observed_high_margin_directional_groups	exact_triplets	permutation_iterations	null_mean	null_sd	null_95pct_low	null_95pct_high	empirical_p_less_or_equal	interpretation
+689	4183	10000	2193.904	23.828717228933613	2148.0	2240.0	9.999000099990002e-05	negative control; independent species-margin re-pairing destroys observed orthology and is not evidence of evolutionary causation

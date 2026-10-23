@@ -1,0 +1,92 @@
+{
+  "model_version": "fivefold_nine_route_lightgbm_20261016",
+  "feature_count": 628,
+  "atlas_rows": 15591,
+  "predicted_essential": 8118,
+  "per_species": [
+    {
+      "species_short": "Pf",
+      "proteome_genes": 5318,
+      "predicted_essential": 3184,
+      "registry_targets": 47,
+      "recovered_registry_targets": 44,
+      "registry_target_recall": 0.9361702127659575
+    },
+    {
+      "species_short": "Pb",
+      "proteome_genes": 4945,
+      "predicted_essential": 2729,
+      "registry_targets": 10,
+      "recovered_registry_targets": 10,
+      "registry_target_recall": 1.0
+    },
+    {
+      "species_short": "Pk",
+      "proteome_genes": 5328,
+      "predicted_essential": 2205,
+      "registry_targets": 54,
+      "recovered_registry_targets": 46,
+      "registry_target_recall": 0.8518518518518519
+    }
+  ],
+  "priority_counts": [
+    {
+      "species_short": "Pb",
+      "target_priority": "High",
+      "genes": 271
+    },
+    {
+      "species_short": "Pb",
+      "target_priority": "Low",
+      "genes": 922
+    },
+    {
+      "species_short": "Pb",
+      "target_priority": "Medium",
+      "genes": 1536
+    },
+    {
+      "species_short": "Pf",
+      "target_priority": "High",
+      "genes": 289
+    },
+    {
+      "species_short": "Pf",
+      "target_priority": "Low",
+      "genes": 1126
+    },
+    {
+      "species_short": "Pf",
+      "target_priority": "Medium",
+      "genes": 1769
+    },
+    {
+      "species_short": "Pk",
+      "target_priority": "High",
+      "genes": 211
+    },
+    {
+      "species_short": "Pk",
+      "target_priority": "Low",
+      "genes": 864
+    },
+    {
+      "species_short": "Pk",
+      "target_priority": "Medium",
+      "genes": 1130
+    }
+  ],
+  "registry_rows": 111,
+  "registry_recovered": 100,
+  "shared_eee_members": 5583,
+  "annotations_used_for_scoring": false,
+  "historical_transition": "not recomputed; comparable row-level historical calls not verified",
+  "input_sha256": {
+    "package/05_Supplementary_Data_S3_post_score_evidence_context_INTERNAL_v10.xlsx": "ddf56f25b5d87ef17e8dadfc7d7bf5101adde54be77c51c0c898d1ac16a5a1dd",
+    "upstream/original_revision/final_freeze_manifest.json": "6e5c2935ff8000fa520e1634165a41cf01173a9e7da948a0702e95928c778930",
+    "external/ProtoEss_Reviewer_Inputs_v46/eukaryote_model_results/reviewer_context/target_registry_members.tsv": "47b082ab59f5eb71e15aa65ab68308cd56dc8e300a581716067da79e9623d516"
+  },
+  "output_sha256": {
+    "package/05_Supplementary_Data_S3_post_score_evidence_context_INTERNAL_v11.xlsx": "6047cd8ed948367fea4c9336be00867d15053bc25a904860bf3591c710b311ed"
+  }
+}

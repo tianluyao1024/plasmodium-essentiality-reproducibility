@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path, PurePosixPath, PureWindowsPath
 
 
-RELEASE_ID = "v20261024_fivefold_nine_route_candidate_v2"
+RELEASE_ID = "v20261024_fivefold_nine_route_candidate_v5"
 WEBSITE_FILES = [
     "predictions.tsv",
     "loso_metrics.tsv",
@@ -24,7 +24,12 @@ WEBSITE_FILES = [
 ]
 FIGURE_ROOT = "Figures_exported_from_current_manuscript_INTERNAL"
 FIGURE_FILES = [*(f"Fig{i}_as_embedded.png" for i in range(1, 7)), "figure_export_manifest.json"]
+REPRODUCTION_SCRIPTS = [
+    "verify_nature_microbiology_candidate_release_20261024.py",
+    "extract_and_verify_manuscript_figures.py",
+]
 SOURCE_GROUPS = {
+    "Frozen_Test_Predictions": ["frozen_test_predictions.tsv", "manifest.json"],
     "Fig2": ["F2a_performance.tsv", "F2b_branch_benchmarks.tsv", "F2c_calibration.tsv", "manifest.json"],
     "Fig2d_sensitivity": ["F2d_five_allocation_summary.tsv", "F2d_per_allocation.tsv", "manifest.json"],
     "Fig3": ["F3a_LOSO.tsv", "F3bc_full_stack_bootstrap.tsv", "F3bc_shared_bootstrap.tsv",
@@ -142,6 +147,7 @@ def main() -> None:
     required = [web / name for name in WEBSITE_FILES]
     figure_root = package / FIGURE_ROOT
     required.extend(figure_root / name for name in FIGURE_FILES)
+    required.extend(repo / "formal_reproduction" / "code" / name for name in REPRODUCTION_SCRIPTS)
     for group, names in SOURCE_GROUPS.items():
         folder = package if group == "." else source_root / group
         required.extend(folder / name for name in names)
@@ -160,9 +166,9 @@ def main() -> None:
         destination.parent.mkdir(parents=True, exist_ok=True)
         if source.suffix.lower() == ".json":
             normalized = portable_tree(json.loads(source.read_text(encoding="utf-8")))
-            destination.write_text(json.dumps(normalized, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            destination.write_bytes((json.dumps(normalized, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
         elif source.suffix.lower() in {".md", ".tsv", ".txt"}:
-            destination.write_text(portable_text(source.read_text(encoding="utf-8")), encoding="utf-8")
+            destination.write_bytes(portable_text(source.read_bytes().decode("utf-8")).encode("utf-8"))
         else:
             shutil.copy2(source, destination)
         staged.append(destination)
@@ -173,6 +179,9 @@ def main() -> None:
     for name in FIGURE_FILES:
         target = f"Fig{name[3]}.png" if name.startswith("Fig") else name
         copy_file(figure_root / name, output / "figures" / "main" / target)
+
+    for name in REPRODUCTION_SCRIPTS:
+        copy_file(repo / "formal_reproduction" / "code" / name, output / "code" / name)
 
     for group, names in SOURCE_GROUPS.items():
         for name in names:
@@ -193,7 +202,7 @@ def main() -> None:
 
 ## Frozen analysis
 
-The matched-species atlas uses the frozen five-fold nine-route LightGBM, the original 628 raw features, and the original 95%-redundancy-reduced, label-stratified random train/validation/test partitions. No PCA or manual `homology30/50` feature removal was applied. Matched-species test AUROC/AUPRC are Pf 0.821/0.873, Pb 0.874/0.896, and Pk 0.915/0.921. Historical inspection of held Pk outcomes means these are not blind estimates.
+The matched-species atlas uses the frozen five-fold nine-route LightGBM, the original 628 raw features, and the original 95%-redundancy-reduced, label-stratified random train/validation/test partitions. No PCA or manual `homology30/50` feature removal was applied. Matched-species test AUROC/AUPRC are Pf 0.821/0.873, Pb 0.874/0.896, and Pk 0.915/0.921. Test-only row-level probabilities and labels are supplied to recompute these metrics; train and validation predictions are not included. Historical inspection of held Pk outcomes means these are not blind estimates.
 
 The source-only four-species LOSO table includes Pf, Pb, Pk and Tg. It is retrospective, not prospective external validation. Source-composition comparisons, Fig. 2d allocations, and the 60-run S4 label-exchange analysis are sensitivity analyses, not replacement main-test estimates.
 
@@ -202,10 +211,17 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 ## Contents
 
 - `atlas/`: standardized predictions, four-species LOSO, source-composition comparison, Pk pair-level results, S4 runs, model/data cards and upstream freeze manifest.
+- `source_data/Frozen_Test_Predictions/`: test-only row-level probabilities and labels used to recompute the main AUROC/AUPRC values; no train/validation predictions are included.
 - `figures/main/`: the six exact PNGs embedded in the current internal manuscript, plus a provenance manifest. Fig. 1, Fig. 3 and Fig. 6 do not have separately verified vector originals.
+- `code/verify_nature_microbiology_candidate_release_20261024.py`: independently checks payload hashes/portability and recomputes the headline frozen metrics, LOSO species, Fig. 2d allocation count, Pk discordance interval, refit-stable group count and S4 run count. This audits frozen outputs; it does not retrain the model from the full feature matrices.
+- `code/extract_and_verify_manuscript_figures.py`: extracts the exact six embedded image objects from a supplied manuscript DOCX and verifies them against the included figure manifest. This is image extraction, not recreation of vector plots; no separate vector originals are verified for Figs. 1, 3 and 6.
 - `source_data/`: panel-level source tables for Figs. 2-6 and the final Supplementary Fig. S1-S13 analyses. Only the named final S6 v3 and final frozen Fig. 4 source package are included; intermediate pilot/model files are excluded.
 - `supplementary_workbooks/`: current internal S1-S3 workbooks, included for candidate review and still subject to author approval.
 - `release_candidate_manifest.json`: status flags and SHA-256 for every payload file.
+
+## Reproduce the frozen package audit
+
+From this directory, run `python code/verify_nature_microbiology_candidate_release_20261024.py --release-dir .`. To re-extract the exact embedded figure images, supply the internal manuscript DOCX separately: `python code/extract_and_verify_manuscript_figures.py --docx PATH_TO_MANUSCRIPT.docx --figure-manifest figures/main/figure_export_manifest.json --output-dir FIGURE_EXPORTS`.
 
 ## Limitations and release gates
 
