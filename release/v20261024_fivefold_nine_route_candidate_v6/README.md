@@ -1,6 +1,6 @@
 # Nature Microbiology release candidate v20261024_fivefold_nine_route_candidate_v6
 
-**Internal candidate only. Not published, not submission-ready, and not an archive DOI.** Do not cite this directory as a public release until the corresponding author signs off the values/declarations and the final archive metadata is issued.
+**Public review candidate branch, not a formal archive release and not a journal submission.** The v6 Git branch is public and the candidate overlay is deployed on the ProtoEss Atlas. Do not cite it as the final version of record: author sign-off, final declarations and archive metadata are still pending.
 
 ## Frozen analysis
 
@@ -27,4 +27,4 @@ From this directory, run `python code/verify_nature_microbiology_candidate_relea
 
 ## Limitations and release gates
 
-All gene calls and target priorities are computational hypotheses, not experimental validation. A retrospective v45 five-branch to frozen nine-route comparison is included in Supplementary Data 3: all 15,591 unique gene records match, with 7,648 essential calls retained, 1,494 removed, 470 added and 5,979 remaining nonessential. Scores use version-specific thresholds and are not interpreted as directly comparable calibrated probabilities. This is model-version context, not validation or experimental evidence. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The production hostname is `www.protoessatlas.com`; deploy/rollback was smoke-tested on disposable copies, while live production compatibility remains unverified. `public_release` is false.
+All gene calls and target priorities are computational hypotheses, not experimental validation. A retrospective v45 five-branch to frozen nine-route comparison is included in Supplementary Data 3: all 15,591 unique gene records match, with 7,648 essential calls retained, 1,494 removed, 470 added and 5,979 remaining nonessential. Scores use version-specific thresholds and are not interpreted as directly comparable calibrated probabilities. This is model-version context, not validation or experimental evidence. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The candidate overlay is deployed at `www.protoessatlas.com`; rollback snapshots are retained. `public_release` remains false because no final archive DOI/tag has been issued.
