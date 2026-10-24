@@ -27,6 +27,8 @@ The current candidate is `release/v20261024_fivefold_nine_route_candidate_v7/`, 
 
 The v7 review candidate is deployed in the separate **Revision candidate** tab at https://www.protoessatlas.com. It remains a public review candidate, not a formal archive release or journal submission: no candidate-specific DOI or release tag has been issued. Historical Pk outcome exposure means matched-species test estimates are retrospective rather than blind. The 100-repeat directional-stability tables are hash/value-audited saved outputs, not 100 freshly rerun fits; repeats 0 and 1 were freshly reproduced in the separate append-only audit addendum.
 
+Deployment timing and checks are recorded in [the v7 deployment addendum](docs/REVIEW_CANDIDATE_V7_DEPLOYMENT_ADDENDUM_20261025.md), which supersedes the build-time deployment wording in the v7 directory README without changing the frozen candidate bundle.
+
 All-author approval of the manuscript and public release is recorded. The official Nature Portfolio Reporting Summary and remaining journal declarations still require completion and verification before formal submission or archival publication. Do not cite this review candidate as a DOI-backed final archive.
 
 ## Paired-refit provenance
