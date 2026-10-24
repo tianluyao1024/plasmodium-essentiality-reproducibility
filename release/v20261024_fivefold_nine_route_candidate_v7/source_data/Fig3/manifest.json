@@ -1,0 +1,27 @@
+{
+  "status": "four-species source-only LOSO panels and paired source-composition analyses complete; final package QA pending",
+  "figure_design": "original Fig. 3a-d",
+  "models_audited": 14,
+  "panel_a": "four full all-other-species models; fixed source-validation threshold",
+  "intervals": "1000 class-stratified bootstrap replicates for panel a; paired comparisons use 2000",
+  "shared_control": "four species one-hot features, source expert and prevalence branches omitted",
+  "limits": [
+    "Historical outcome inspection means this is not prospective blind evaluation.",
+    "Global unlabeled sequence clusters include held-species proteins.",
+    "Source-species expert and prior branches use unseen-species fallbacks at evaluation.",
+    "Changes after adding Tg are retrospective source-composition associations, not a causal estimate."
+  ],
+  "panel_a_rows": 4,
+  "full_stack_source_composition_rows": 6,
+  "shared_feature_control_rows": 6,
+  "figure_framework": "original Fig. 3a-d; source-only five-fold stack with fixed LightGBM meta-model",
+  "interpretation": "LOSO metrics are distinct from matched-species nine-route results; adding Tg is a retrospective source-composition comparison, not a causal effect.",
+  "package_manifest_version": "internal-working-v10-20261024",
+  "package_manifest_sha256_inputs": {
+    "package/Source_Data/Fig3/F3a_LOSO.tsv": "b7d1824f3cf4c376c09479190c3533f3350b5b431b9f266683eb9e972d74ac4d",
+    "package/Source_Data/Fig3/F3bc_full_stack_bootstrap.tsv": "686c924836e1b1e714a2861920dd2515a40838c8c6e588dfcbdf86484108c667",
+    "package/Source_Data/Fig3/F3bc_shared_bootstrap.tsv": "bfb8e03eadc9d57a3b805115be24eda23804bf2a823c356af384ad583e218cc0",
+    "package/Source_Data/Fig3/F3d_full_stack_metrics.tsv": "d001fe9e71e1950fddeb20ad2509d505eace05fba7178f8c9b1d10ba268f53e7",
+    "package/Source_Data/Fig3/F3d_shared_metrics.tsv": "b4de9d6fa82608629deaec523d03605e1d6e0719af95dd790f62b9a1e110e4f0"
+  }
+}

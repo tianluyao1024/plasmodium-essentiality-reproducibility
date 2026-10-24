@@ -1,0 +1,71 @@
+{
+  "status": "recomputed from frozen fivefold LOSO predictions and frozen nine-route atlas calls",
+  "loso_model": "fivefold source-only LightGBM meta; all-other-species source composition",
+  "matched_atlas_model": "fivefold_nine_route_lightgbm_20261016",
+  "evidence_set_membership_source": "external/ProtoEss_NatureCommunications_v62_tables/ProtoEss_NatureCommunications_v62_tables/Upload_Files/08_Source_Data.xlsx",
+  "evidence_set_scope": "Only evidence-set labels and gene IDs inherited; prior scores and results not reused.",
+  "s2_draws": 10000,
+  "s2_seed": 20261024,
+  "s2_matching": "Frozen matched-species call and protein length; continuous LOSO score excluded from matching.",
+  "annotation_density_matching": "Not performed; the current LOSO held-prediction artifact does not contain a verified comparable annotation-density measure.",
+  "s2_coverage": [
+    {
+      "analysis_set": "Pf direct",
+      "n_evidence_members_in_legacy_snapshot": 12,
+      "n_mapped_current_held_predictions": 11,
+      "n_not_mapped_current_held_predictions": 1
+    },
+    {
+      "analysis_set": "Pf extended",
+      "n_evidence_members_in_legacy_snapshot": 47,
+      "n_mapped_current_held_predictions": 44,
+      "n_not_mapped_current_held_predictions": 3
+    },
+    {
+      "analysis_set": "Pb target-supported",
+      "n_evidence_members_in_legacy_snapshot": 10,
+      "n_mapped_current_held_predictions": 6,
+      "n_not_mapped_current_held_predictions": 4
+    },
+    {
+      "analysis_set": "Pk target-supported",
+      "n_evidence_members_in_legacy_snapshot": 54,
+      "n_mapped_current_held_predictions": 49,
+      "n_not_mapped_current_held_predictions": 5
+    }
+  ],
+  "s5": [
+    {
+      "species_short": "Pf",
+      "proteome_genes_scored": 5318,
+      "registry_members": 47,
+      "registry_members_predicted_essential": 44,
+      "registry_recovery_fraction": 0.9361702127659575,
+      "model_version": "fivefold_nine_route_lightgbm_20261016",
+      "context_boundary": "Registry joined after frozen scoring; descriptive recovery, not independent or prospective validation."
+    },
+    {
+      "species_short": "Pb",
+      "proteome_genes_scored": 4945,
+      "registry_members": 10,
+      "registry_members_predicted_essential": 10,
+      "registry_recovery_fraction": 1.0,
+      "model_version": "fivefold_nine_route_lightgbm_20261016",
+      "context_boundary": "Registry joined after frozen scoring; descriptive recovery, not independent or prospective validation."
+    },
+    {
+      "species_short": "Pk",
+      "proteome_genes_scored": 5328,
+      "registry_members": 54,
+      "registry_members_predicted_essential": 46,
+      "registry_recovery_fraction": 0.8518518518518519,
+      "model_version": "fivefold_nine_route_lightgbm_20261016",
+      "context_boundary": "Registry joined after frozen scoring; descriptive recovery, not independent or prospective validation."
+    }
+  ],
+  "input_sha256": {
+    "package/05_Supplementary_Data_S3_post_score_evidence_context_INTERNAL_v11.xlsx": "6047cd8ed948367fea4c9336be00867d15053bc25a904860bf3591c710b311ed",
+    "external/ProtoEss_NatureCommunications_v62_tables/ProtoEss_NatureCommunications_v62_tables/Upload_Files/08_Source_Data.xlsx": "a609f9452c278fcab3a84bd8e358bb52aaee90f5ea77bca5b3c9e5b2cd02b116"
+  },
+  "interpretation": "Post-score concordance/recovery only; not independent validation, pharmacological validation, or evidence of binding/efficacy/safety."
+}

@@ -1,0 +1,46 @@
+{
+  "status": "training_only_meta_inputs_packaged",
+  "model_version": "fivefold_nine_route_lightgbm_frozen_2026-10-17_internal_v10",
+  "rows": 9265,
+  "input_count": 9,
+  "input_order": [
+    "strict_within_species",
+    "plasmodium_only_label_assisted",
+    "cross_species_label_assisted",
+    "cross_species_with_pk_oberstaller_labels",
+    "lgbm",
+    "catboost",
+    "species_expert_lgbm",
+    "species_prior",
+    "transformer"
+  ],
+  "feature_values": "base-model training OOF probabilities; float32 round-trip",
+  "validation_or_test_labels_included": false,
+  "validation_or_test_rows_included": false,
+  "source_scope_oof_sha256": "ff46c69bdbe4109a0e2e952c6b882201c5de79c4ae7aef9ebab7050addb3cbd1",
+  "species": {
+    "Plasmodium_falciparum": {
+      "n_train": 4294,
+      "ids_sha256": "06eee91389abc53fba5643fa8daf8e65c848f47d914b983ac72ffa5423483598",
+      "labels_sha256": "b65de2185d46992eeac4f2843ba7cb72f9c1afca14eaadf91ca52c3fe90804af",
+      "source_train_metadata_sha256": "b87eb816d3993f97028621da5fa230d0b2ab7b589ba3b46a456416f2320c12b4",
+      "source_branch_oof_sha256": "04786fd52bb150c73430e644dd501e6d7a5249bd9bf933f26943a785247757be"
+    },
+    "Plasmodium_berghei": {
+      "n_train": 1687,
+      "ids_sha256": "c824a93bd1d33c1f55e1fd1a9bcc10920211839d7ffe749082cf348e499d0725",
+      "labels_sha256": "1bae0b5e5b814288309a338604c7fd1edf88015974a8117a3011b742ff656ae4",
+      "source_train_metadata_sha256": "f464722eb76c8d4222a75093cba33657c5cf8830ca818e8fb3840ab5dea5abde",
+      "source_branch_oof_sha256": "b75d69375bd881651de4d93eab8e1a8cdce2abc80becbe70f20d3a45c3049147"
+    },
+    "Plasmodium_knowlesi": {
+      "n_train": 3284,
+      "ids_sha256": "54c7f617be4a83921d4b554bd6ca329c3ec557e97e1df43e7db28961869604a2",
+      "labels_sha256": "90f7ec5bb4164982f836d6839e491b3eac60cc874d6c3760dbcf75333966973d",
+      "source_train_metadata_sha256": "ac8a83658e9b4781cf2b4ed55d2d8b6ad75841cdf3e43804d57baf776922a483",
+      "source_branch_oof_sha256": "2c4376b2edf001f57f722d6444d3c44a7ebfc1ea0de0028deb1906d650374db8"
+    }
+  },
+  "output_sha256": "7fa4f030c0c8aba92307975ca5b53cc36d33c65e54a3d06330e4e79a4b28a676",
+  "limitation": "These compact OOF inputs support refitting the nine-route meta learner only. They do not regenerate the base routes or their fold-local features from the 628-dimensional matrices."
+}

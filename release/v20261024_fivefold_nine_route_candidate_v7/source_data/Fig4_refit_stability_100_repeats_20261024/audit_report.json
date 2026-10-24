@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "hash and value audit of saved paired-refit outputs; does not rerun model fitting",
+  "repeats": 100,
+  "paired_result_files_checked": 100,
+  "candidate_groups_per_repeat": 455,
+  "unique_candidate_groups": 455,
+  "stable_groups_at_or_above_threshold": 184,
+  "stability_threshold": 0.8,
+  "unique_source_snapshot_hashes": 1,
+  "source_snapshot_sha256": [
+    "64d862d063114160d3fc03e2bbd38fba8c811e5d5c5698df7711e46da23d92b3"
+  ],
+  "aggregate_and_frozen_fig4_rows_match": true,
+  "failures": [],
+  "reproducibility_boundary": "This package verifies saved repeat outputs and their aggregate against frozen Fig. 4. It does not refit models. The exact orchestration command for all 100 fitting repeats is not pinned in the archived run manifests; do not claim a full refit reproduction."
+}

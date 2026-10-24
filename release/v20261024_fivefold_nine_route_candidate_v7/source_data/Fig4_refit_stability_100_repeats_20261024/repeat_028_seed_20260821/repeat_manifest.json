@@ -1,0 +1,11 @@
+{
+  "repeat": 28,
+  "seed": 20260821,
+  "training_fraction": 0.8,
+  "candidate_groups": 455,
+  "reference_pattern_recovered_by_both": 305,
+  "recovery_rule": "Both models recover the original E/NE pattern; no repeat-specific margin filter.",
+  "source_snapshot_sha256": "64d862d063114160d3fc03e2bbd38fba8c811e5d5c5698df7711e46da23d92b3",
+  "paired_result_sha256": "d6d12a82ee320906cfebd7dd50370b9641647a301ba2d95998d1c53007d7bbec",
+  "original_repeat_manifest_sha256": "efec359edb9e07aa561d9be49dc23fbed1dd2153916cc6ac5c1466f83a3801d1"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "audited_figure_level_source_data_for_frozen_fig4",
+  "figure": "Fig. 4 panels a-e",
+  "model_version": "internal_v10_frozen_fivefold_nine_route_lightgbm_2026-10-17",
+  "input_sha256": {
+    "F4a_gene_calls.tsv": "8c02a8c402a4dbbe6c45836e551e8684e8e9c5833298ddf4c1094f2c8601d139",
+    "new_atlas_original_exact_triplets.tsv": "e74725a43a87bc17ba008ad018fc8ad06ddfb246f6fcfe9940e012534b68ace9",
+    "F4_455_directional_candidates_100_refit_recovery.tsv": "a8044d8bf2d8904895ecfccdab540b1258ce0583e5c509d894e27291118ec208",
+    "original_orthomcl_context_by_group.tsv": "b86dbd3a5c1e15039d2b829d2269ac7f95abac37818eb6956174e0bbbef0c99e",
+    "F4_184_refit_stable_directional_groups.tsv": "32436d28631d9ac8e8cd35f889402893d0f73ab85c6c8179cdb93b39f84553e5"
+  },
+  "output_sha256": {
+    "Fig4a_species_calls.tsv": "10908f337549e8f8e8fec58f7fbfdd0dc9392aab5a9018e01b93dc4520947a18",
+    "Fig4b_triplet_funnel.tsv": "f0df0d92f227ceb1e4232e424c3528dea4493191c1c022647c9859d88389a569",
+    "Fig4c_directional_pattern_counts.tsv": "2cd4e819edad33efbd18947a57a3d33db4913a6b46587277af077d43a488bbd3",
+    "Fig4d_recovery_histogram.tsv": "ddc28a505fcedff3527570764c561967e2a009c6dd36438e52d54e0fa90c5623",
+    "Fig4d_refit_recovery.tsv": "a8044d8bf2d8904895ecfccdab540b1258ce0583e5c509d894e27291118ec208",
+    "Fig4e_orthomcl_support_by_triplet.tsv": "f40b524f786dbab5b9b24fc5a762d6cfaa08497f0b81702aa2a45247fecb3a05",
+    "Fig4e_orthomcl_support_summary.tsv": "fd9b390f3bc7cd432e85c89806cd950289eea5e3b7d936561a036e65beae5ab3",
+    "README.tsv": "184821b6629f6ac7ca6c9baa4a25e7ad5afb024ab3c56f2ccc5a4df13607f21d"
+  },
+  "audits": {
+    "matched_species_counts": {
+      "Pf": 3184,
+      "Pb": 2729,
+      "Pk": 2205
+    },
+    "funnel_counts": [
+      4183,
+      1861,
+      1325,
+      689,
+      455,
+      184
+    ],
+    "candidate_groups": 455,
+    "stable_groups": 184,
+    "orthomcl_support": {
+      "all_exact_triplets": [
+        3804,
+        4183
+      ],
+      "stable_groups": [
+        163,
+        184
+      ]
+    },
+    "test_or_validation_labels_read": false
+  },
+  "limitations": [
+    "Predicted-essential calls and directional groups are model-derived, not experimental phenotypes.",
+    "The 80/100 threshold defines refit stability and is not an independent validation metric.",
+    "Historical held-out outcomes were inspected during model development; this is not blind validation."
+  ]
+}

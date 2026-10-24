@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "scope": "meta-model refit from packaged training-only base OOF probabilities; base routes are not refit",
+  "training_input_sha256": "7fa4f030c0c8aba92307975ca5b53cc36d33c65e54a3d06330e4e79a4b28a676",
+  "test_prediction_rows": 1139,
+  "max_abs_test_probability_difference_from_frozen": 1.1102230246251565e-16,
+  "test_metrics_recomputed": [
+    {
+      "species": "Plasmodium_falciparum",
+      "n_test": 527,
+      "AUROC": 0.8205940594059405,
+      "AUPRC": 0.8728263805155562,
+      "threshold": 0.42999999999999994,
+      "candidate": "leaves5_child20_trees200"
+    },
+    {
+      "species": "Plasmodium_berghei",
+      "n_test": 205,
+      "AUROC": 0.8740096618357488,
+      "AUPRC": 0.8964012622941426,
+      "threshold": 0.4149999999999999,
+      "candidate": "leaves3_child30_trees300"
+    },
+    {
+      "species": "Plasmodium_knowlesi",
+      "n_test": 407,
+      "AUROC": 0.9151080179788316,
+      "AUPRC": 0.9209502849754174,
+      "threshold": 0.5399999999999999,
+      "candidate": "leaves3_child30_trees300"
+    }
+  ],
+  "models": {
+    "Plasmodium_falciparum": {
+      "candidate": "leaves5_child20_trees200",
+      "threshold": 0.42999999999999994,
+      "n_train": 4294
+    },
+    "Plasmodium_berghei": {
+      "candidate": "leaves3_child30_trees300",
+      "threshold": 0.4149999999999999,
+      "n_train": 1687
+    },
+    "Plasmodium_knowlesi": {
+      "candidate": "leaves3_child30_trees300",
+      "threshold": 0.5399999999999999,
+      "n_train": 3284
+    }
+  },
+  "validation_test_labels_used_for_fit_or_threshold": false,
+  "historical_test_exposure": "Metrics remain retrospective; prior project iterations inspected held-out Pk outcomes."
+}

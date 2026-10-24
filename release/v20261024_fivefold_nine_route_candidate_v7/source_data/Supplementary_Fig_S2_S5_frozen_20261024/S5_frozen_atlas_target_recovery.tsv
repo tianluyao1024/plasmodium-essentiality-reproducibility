@@ -1,0 +1,4 @@
+species_short	proteome_genes_scored	registry_members	registry_members_predicted_essential	registry_recovery_fraction	model_version	context_boundary
+Pf	5318	47	44	0.9361702127659575	fivefold_nine_route_lightgbm_20261016	Registry joined after frozen scoring; descriptive recovery, not independent or prospective validation.
+Pb	4945	10	10	1.0	fivefold_nine_route_lightgbm_20261016	Registry joined after frozen scoring; descriptive recovery, not independent or prospective validation.
+Pk	5328	54	46	0.8518518518518519	fivefold_nine_route_lightgbm_20261016	Registry joined after frozen scoring; descriptive recovery, not independent or prospective validation.
