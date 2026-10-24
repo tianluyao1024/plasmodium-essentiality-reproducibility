@@ -1,0 +1,814 @@
+{
+  "status": "100 completed repeats integrity-verified",
+  "verified_repeat_count": 100,
+  "required_repeat_count": 100,
+  "unverified_or_incomplete_repeat_count": 0,
+  "missing_repeat_indices": [],
+  "source_snapshot_sha256": "64d862d063114160d3fc03e2bbd38fba8c811e5d5c5698df7711e46da23d92b3",
+  "summariser_sha256": "08a09978b74e677b995c233062dd1cbad4343ff464a3873aa4a530e7a1aa3129",
+  "audit_script_sha256": "cb92716e1d1d0f3f21e40f444903c52824fc3ba967705cbfb7c0977743ee36cd",
+  "test_or_validation_labels_read_by_this_audit": false,
+  "repeats": [
+    {
+      "repeat": 0,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 314,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 1,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 336,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 2,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 339,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 3,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 338,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 4,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 326,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 5,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 339,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 6,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 319,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 7,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 340,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 8,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 307,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 9,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 303,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 10,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 326,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 11,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 320,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 12,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 281,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 13,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 333,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 14,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 304,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 15,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 308,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 16,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 335,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 17,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 311,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 18,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 339,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 19,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 339,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 20,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 319,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 21,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 324,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 22,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 309,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 23,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 325,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 24,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 316,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 25,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 301,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 26,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 351,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 27,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 339,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 28,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 305,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 29,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 318,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 30,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 344,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 31,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 306,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 32,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 322,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 33,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 345,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 34,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 320,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 35,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 346,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 36,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 307,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 37,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 335,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 38,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 321,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 39,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 338,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 40,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 332,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 41,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 348,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 42,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 305,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 43,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 324,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 44,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 314,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 45,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 323,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 46,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 319,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 47,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 323,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 48,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 305,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 49,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 319,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 50,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 317,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 51,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 295,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 52,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 335,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 53,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 320,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 54,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 289,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 55,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 301,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 56,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 283,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 57,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 309,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 58,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 342,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 59,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 332,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 60,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 327,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 61,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 310,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 62,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 353,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 63,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 333,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 64,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 328,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 65,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 320,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 66,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 353,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 67,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 347,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 68,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 314,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 69,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 321,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 70,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 316,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 71,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 309,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 72,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 313,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 73,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 308,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 74,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 323,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 75,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 338,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 76,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 295,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 77,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 339,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 78,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 331,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 79,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 325,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 80,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 330,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 81,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 323,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 82,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 361,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 83,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 329,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 84,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 314,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 85,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 350,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 86,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 285,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 87,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 325,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 88,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 306,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 89,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 332,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 90,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 308,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 91,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 325,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 92,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 351,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 93,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 328,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 94,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 315,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 95,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 349,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 96,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 322,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 97,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 304,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 98,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 340,
+      "verified": true,
+      "failures": []
+    },
+    {
+      "repeat": 99,
+      "status": "one complete paired repeat; not the 100-repeat stability result",
+      "candidate_groups": 455,
+      "recovered_by_both": 342,
+      "verified": true,
+      "failures": []
+    }
+  ],
+  "note": "Integrity verification does not make an interim subset a final stability estimate. Missing or incomplete repeats are not included."
+}
