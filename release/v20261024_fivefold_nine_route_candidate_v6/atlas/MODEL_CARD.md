@@ -1,6 +1,6 @@
 # ProtoEss Atlas v20261024 release candidate
 
-**Status: internal release candidate only; not public, not a blind validation release, and not submission-ready.**
+**Status: public review candidate; not a blind validation release, formal archive release, or submission-ready package.**
 
 ## Matched-species atlas
 
@@ -12,7 +12,7 @@ The source-only five-fold stack includes Pf, Pb, Pk and *Toxoplasma gondii*. Out
 
 ## Pk red-cell condition comparison
 
-The package contains 3,482 one-to-one gene pairs with definite calls in the Elsworth and Oberstaller screens; 435 calls differ (12.49%; Wilson 95% CI is provided in the summary table). The continuous scores are positively associated (Spearman rho 0.7616). This is a retrospective homolog projection using PKNH features, not an A1H sequence-level prediction. The two screens also differ in parasite strain and experimental procedure, so discordance cannot be attributed to host red-cell source alone.
+The package contains 3,482 one-to-one gene pairs with definite calls in the Elsworth and Oberstaller screens; 435 calls differ (12.49%; Wilson 95% CI is provided in the summary table). The continuous scores are positively associated (Spearman rho 0.7616). This is a retrospective homolog projection using PKNH features, not an A1H sequence-level prediction, blind evaluation or independent external validation: Oberstaller labels were used in one historical matched-Pk training route. The two screens also differ in parasite strain and experimental procedure, so discordance cannot be attributed to host red-cell source alone.
 
 ## Interpretation
 

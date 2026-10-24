@@ -10,7 +10,7 @@ Saved LightGBM meta-models and nine-route probability inputs for validation/test
 
 The source-only four-species LOSO table includes Pf, Pb, Pk and Tg. It is retrospective, not prospective external validation. Source-composition comparisons, Fig. 2d allocations, and the 60-run S4 label-exchange analysis are sensitivity analyses, not replacement main-test estimates.
 
-The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435 discordant labels (12.49%; Wilson interval in the table). The human-red-cell comparison is a retrospective homolog projection, not an A1H sequence-level or blind prediction; the source screens also differ in strain and procedure.
+The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435 discordant labels (12.49%; Wilson interval in the table). The human-red-cell comparison is a retrospective homolog projection, not an A1H sequence-level prediction, blind evaluation or independent external validation: Oberstaller labels were used in one historical matched-Pk training route. The source screens also differ in strain and procedure, so the disagreement cannot be attributed to red-cell source alone.
 
 The Fig. 4 stability package now includes all 100 saved paired-refit recovery tables for 455 directional candidates. A verifier re-hashes every result and recomputes the group recovery counts; the 80/100 rule yields the same 184 stable groups as the aggregate and frozen Fig. 4 table. This audits saved outputs, not the fitting run. The exact orchestration command for all 100 refits is not pinned in the run manifests, so this is not full refit reproduction.
 
