@@ -8,7 +8,7 @@ The recovered five-fold runner was executed for *Plasmodium falciparum*, *P. ber
 
 Across the 455 frozen annotation-retained directional groups, both model variants recovered the reference call pattern in 339 groups for repeat 2, matching the archived repeat-2 summary. This is a single paired refit, not an independent biological screen, prospective prediction or stability estimate.
 
-The machine-readable audit is `fresh_repeat2_reproduction_audit_20261025.json` (SHA-256 `edc9685985f90c702cde6d6a83789bac68043cadf69704c1ff3d6971bc139346`). The paired-summary SHA-256 is `5ddbe99411a24d5858424720d5a5c784f4935d67c0327ed312678eee7c533da7`; the source-snapshot SHA-256 is `08be5ba0d8b03d33e46c8c951a84fa181b22ca7e883d5c2be5f359e3458697b6`.
+The machine-readable audit is `fresh_repeat2_reproduction_audit_20261025.json` (SHA-256 `e68ccdc30a765c5097d602eed469fff3f0ff7d0cfa94ae1ff3f9ffed8025660f`). The paired-summary SHA-256 is `5ddbe99411a24d5858424720d5a5c784f4935d67c0327ed312678eee7c533da7`; the source-snapshot SHA-256 is `08be5ba0d8b03d33e46c8c951a84fa181b22ca7e883d5c2be5f359e3458697b6`.
 
 ## Partial 3/100 aggregation
 
