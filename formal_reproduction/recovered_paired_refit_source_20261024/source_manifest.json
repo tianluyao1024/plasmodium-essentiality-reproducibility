@@ -1,0 +1,129 @@
+{
+  "snapshot_id": "recovered_paired_refit_source_20261024",
+  "status": "100 saved repeat summaries integrity-verified; saved outputs, not 100 fresh refits",
+  "runner_sha256": "e57a51258c9ec09876a10fecb3e5dcceea3fb4283c95ab80a02c6a866098317f",
+  "source_snapshot_sha256": "64d862d063114160d3fc03e2bbd38fba8c811e5d5c5698df7711e46da23d92b3",
+  "summariser_sha256": "08a09978b74e677b995c233062dd1cbad4343ff464a3873aa4a530e7a1aa3129",
+  "saved_output_integrity_report": {
+    "path": "saved_output_integrity_report_20261024.json",
+    "bytes": 23903,
+    "sha256": "c4d4b62c59ce2bd73c59c3216fff1f6e88a23b04ff1519a532b945f4fbb5053d"
+  },
+  "verified_repeat_count": 100,
+  "required_repeat_count": 100,
+  "missing_repeat_count": 0,
+  "validation_or_test_labels_read_by_integrity_audit": false,
+  "fresh_end_to_end_repeats_in_current_revision": 1,
+  "files": [
+    {
+      "path": "code/aggregate_paired_nine_route_repeats_20261017.py",
+      "bytes": 4868,
+      "sha256": "476ad605db5c3cbb4c838a447d1cd8288fe7ca12969b8f3a0082912656da983b"
+    },
+    {
+      "path": "code/audit_existing_paired_refits_20261020.py",
+      "bytes": 3868,
+      "sha256": "cb92716e1d1d0f3f21e40f444903c52824fc3ba967705cbfb7c0977743ee36cd"
+    },
+    {
+      "path": "code/audit_nine_route_application_refit_20261017.py",
+      "bytes": 4610,
+      "sha256": "f490145e83455b6ff4502379b8bb744d86032c6c6ea2f40ea587dc836e6d7a2f"
+    },
+    {
+      "path": "code/audit_nine_route_paired_refit_20261017.py",
+      "bytes": 3822,
+      "sha256": "5124ae1affeb0289c4c7e3ec33641d13d83356fe84d77676d6c74b911f0be6ae"
+    },
+    {
+      "path": "code/build_repaired_application_matrices.py",
+      "bytes": 20355,
+      "sha256": "2e4a4a45cec27bccf2d5b9b671149d80a993efc24b2de3953efd9b77895c6d0c"
+    },
+    {
+      "path": "code/build_strict_oof_dynamic_stack.py",
+      "bytes": 14192,
+      "sha256": "cb5cbc38b4f6e801fd4f57c9111c6a2906ab5368fc890cef169882ab34aeeb78"
+    },
+    {
+      "path": "code/compare_homology_label_scopes.py",
+      "bytes": 20373,
+      "sha256": "62f7c15e0ccd7fa79d29097a86ebe795014a4980285071d6baf62187e21d0cf2"
+    },
+    {
+      "path": "code/feature_profiles.py",
+      "bytes": 4242,
+      "sha256": "beba85aa49f110773d7e0537f08c075b4b72c83dd2820a5c7baa525696ab4907"
+    },
+    {
+      "path": "code/final_evaluate_all_species_nine_route_20261016.py",
+      "bytes": 9227,
+      "sha256": "2bff176e5b0dce50e9b7136a109533846d99d38836602bac2b741518508b0740"
+    },
+    {
+      "path": "code/nine_route_refit_partitions_20261017.py",
+      "bytes": 5819,
+      "sha256": "a5ef8e82e4df31d583a85680bb434914aef30ea42fcab5fc5be112873058dac1"
+    },
+    {
+      "path": "code/protoess_safe_homology.py",
+      "bytes": 8587,
+      "sha256": "a92227e14e58247ec710c537786f7d63e4b79cfb2e44b3c4daa0c7a9de529e76"
+    },
+    {
+      "path": "code/run_nine_route_refit_oof_20261017.py",
+      "bytes": 5824,
+      "sha256": "47fd4842054f7920160ea1f2e8954715528f8bbde55b4c58288b75dbd4febe42"
+    },
+    {
+      "path": "code/run_paired_nine_route_repeats_20261017.py",
+      "bytes": 7055,
+      "sha256": "e57a51258c9ec09876a10fecb3e5dcceea3fb4283c95ab80a02c6a866098317f"
+    },
+    {
+      "path": "code/score_all_species_nine_route_application_20261016.py",
+      "bytes": 26593,
+      "sha256": "5f9e346a48e552792898d619f9d17a2cd17dde9566c32f94a6413bc3d8cac1a4"
+    },
+    {
+      "path": "code/score_nine_route_refit_application_20261017.py",
+      "bytes": 11875,
+      "sha256": "c46381292e0d80f2dfe0756fc60429534ffc3a9a302155809655bd3457b72ef7"
+    },
+    {
+      "path": "code/snapshot_nine_route_refit_sources_20261017.py",
+      "bytes": 5505,
+      "sha256": "1fbae7803b4df859d3b04e1f7b58198c6178267d288dff75b52ea81cde6c583d"
+    },
+    {
+      "path": "code/summarise_paired_nine_route_repeat_20261017.py",
+      "bytes": 5180,
+      "sha256": "08a09978b74e677b995c233062dd1cbad4343ff464a3873aa4a530e7a1aa3129"
+    },
+    {
+      "path": "code/test_paired_nine_route_repeat_20261017.py",
+      "bytes": 1277,
+      "sha256": "40143d497b5e31d91bdabff9b4b96cfb9897b48579ee2ce12d959bc3b647b1a0"
+    },
+    {
+      "path": "code/train_scope_strict_oof_stack.py",
+      "bytes": 10999,
+      "sha256": "2a8a86cee9658ec6f4fdd6819e79c6164fdd7bbebd2d23c23f4c42aa2f928ba1"
+    },
+    {
+      "path": "code/train_scope_transformer_oof.py",
+      "bytes": 8953,
+      "sha256": "b3cd81799846f38593e1d4d6c3350a968873254a55e0aa6dc447088330f2c5d9"
+    },
+    {
+      "path": "code/train_unified_transformer_fusion.py",
+      "bytes": 9579,
+      "sha256": "24f47ecdf24fa62b5cbbcd4231ceebf05ea625647d2b8c545e7d606be2aea6d5"
+    },
+    {
+      "path": "code/tune_oof_probability_lightgbm_meta_20261016.py",
+      "bytes": 16656,
+      "sha256": "9bf50176ca32b4d19392a3f9128c46911d95aeb1fff5f197c9ee4a49eff06f1f"
+    }
+  ]
+}
