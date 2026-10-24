@@ -75,8 +75,8 @@
       "sha256": "425a0dd705a86a4d5ad4ce9d7bc50b4c64b8b38094bb5ca11742dcac17a872a8"
     },
     "code/reproduce_meta_stack_from_oof_inputs_20261024.py": {
-      "bytes": 6189,
-      "sha256": "f4260185194b3c824ce17b80922150f9a6530bbd42de73c15a34c81f719eaad0"
+      "bytes": 6183,
+      "sha256": "db79f779514e6ec50350dd8abc0cf9c2fcf44dade14b6887091f354544019467"
     },
     "code/verify_frozen_meta_model_inference_20261024.py": {
       "bytes": 5524,
@@ -1382,3 +1382,4 @@
   "public_website_candidate_overlay": "https://www.protoessatlas.com",
   "candidate_overlay_deployed": true
 }
+
