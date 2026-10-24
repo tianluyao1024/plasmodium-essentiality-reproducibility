@@ -1,6 +1,6 @@
 # Nature Microbiology release candidate v20261024_fivefold_nine_route_candidate_v6
 
-**Public review candidate branch, not a formal archive release and not a journal submission.** The v6 Git branch is public and the candidate overlay is deployed on the ProtoEss Atlas. Do not cite it as the final version of record: author sign-off, final declarations and archive metadata are still pending.
+**Public review candidate branch, not a formal archive release and not a journal submission.** The authors have confirmed approval of the current manuscript and public release. Do not cite this candidate as the final version of record: final declarations, the official Reporting Summary and archive metadata are still pending.
 
 ## Frozen analysis
 
@@ -30,7 +30,7 @@ The Fig. 4 stability package now includes all 100 saved paired-refit recovery ta
 - `code/extract_and_verify_manuscript_figures.py`: extracts the exact six embedded image objects from a supplied manuscript DOCX and verifies them against the included figure manifest. This is image extraction, not recreation of vector plots; no separate vector originals are verified for Figs. 1, 3 and 6.
 - `code/reproduce_main_figures_from_source.py`: redraws six main figures from the 21 packaged panel-level source tables into `reproduced_source_figures/`. The output folder includes a runtime/input/output SHA-256 manifest. This is a source-data-driven redraw, not model fitting and not a replacement for the manuscript-matched PNGs in `figures/main/`; the exact embedded images remain unchanged.
 - `source_data/`: panel-level source tables for Figs. 2-6 and the final Supplementary Fig. S1-S13 analyses. Only the named final S6 v3 and final frozen Fig. 4 source package are included; intermediate pilot/model files are excluded.
-- `supplementary_workbooks/`: current internal S1-S3 workbooks, included for candidate review and still subject to author approval.
+- `supplementary_workbooks/`: current S1-S3 workbooks included in the author-approved public candidate; final declaration and archive checks remain separate release gates.
 - `release_candidate_manifest.json`: status flags and SHA-256 for every payload file.
 
 ## Reproduce the frozen package audit
@@ -39,4 +39,4 @@ From this directory, run `python code/verify_nature_microbiology_candidate_relea
 
 ## Limitations and release gates
 
-All gene calls and target priorities are computational hypotheses, not experimental validation. A retrospective v45 five-branch to frozen nine-route comparison is included in Supplementary Data 3: all 15,591 unique gene records match, with 7,648 essential calls retained, 1,494 removed, 470 added and 5,979 remaining nonessential. Scores use version-specific thresholds and are not interpreted as directly comparable calibrated probabilities. This is model-version context, not validation or experimental evidence. Corresponding-author approval, final declaration/reporting-summary review and archive DOI remain outstanding. The candidate overlay is deployed at `www.protoessatlas.com`; rollback snapshots are retained. `public_release` remains false because no final archive DOI/tag has been issued.
+All gene calls and target priorities are computational hypotheses, not experimental validation. A retrospective v45 five-branch to frozen nine-route comparison is included in Supplementary Data 3: all 15,591 unique gene records match, with 7,648 essential calls retained, 1,494 removed, 470 added and 5,979 remaining nonessential. Scores use version-specific thresholds and are not interpreted as directly comparable calibrated probabilities. This is model-version context, not validation or experimental evidence. Author approval for the manuscript and public release is confirmed. Competing-interest and other submission declarations, the official Reporting Summary, and archive DOI/tag remain outstanding. The candidate overlay is deployed at `www.protoessatlas.com`; rollback snapshots are retained. `public_release` remains false because no final archive DOI/tag has been issued.

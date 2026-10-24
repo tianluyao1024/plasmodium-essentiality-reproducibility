@@ -1,6 +1,6 @@
 {
   "release_id": "v20261024_fivefold_nine_route_candidate_v6",
-  "payload_count": 117,
+  "payload_count": 340,
   "payload_hashes_and_portability": "passed",
   "main_test_metrics": {
     "Pf": {

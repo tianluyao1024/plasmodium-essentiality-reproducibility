@@ -1,0 +1,5 @@
+/.gitattributes text eol=lf
+release/v20261024_fivefold_nine_route_candidate_v6/**/*.json text eol=lf
+release/v20261024_fivefold_nine_route_candidate_v6/**/*.md text eol=lf
+release/v20261024_fivefold_nine_route_candidate_v6/**/*.py text eol=lf
+release/v20261024_fivefold_nine_route_candidate_v6/**/*.tsv text eol=lf

@@ -107,7 +107,7 @@ def main() -> None:
         "failures": failures,
         "reproducibility_boundary": manifest["reproducibility_boundary"],
     }
-    (evidence / "audit_report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    (evidence / "audit_report.json").write_bytes((json.dumps(report, indent=2) + "\n").encode("utf-8"))
     print(json.dumps(report, indent=2))
     if failures:
         raise SystemExit(1)

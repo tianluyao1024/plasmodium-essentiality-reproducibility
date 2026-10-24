@@ -4,3 +4,4 @@ __pycache__/
 *.log
 predictions.tsv
 !release/v20261024_fivefold_nine_route_candidate/atlas/predictions.tsv
+!release/v20261024_fivefold_nine_route_candidate_v6/atlas/predictions.tsv

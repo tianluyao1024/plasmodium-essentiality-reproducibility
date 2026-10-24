@@ -6,6 +6,6 @@
   "reference_pattern_recovered_by_both": 323,
   "recovery_rule": "Both models recover the original E/NE pattern; no repeat-specific margin filter.",
   "source_snapshot_sha256": "64d862d063114160d3fc03e2bbd38fba8c811e5d5c5698df7711e46da23d92b3",
-  "paired_result_sha256": "26725094199fe195ccfc3e0b1ee8e59130d8ec9a1cfa0feddf7b5f982f1e18aa",
+  "paired_result_sha256": "19fa404058ff43b65e5aa36b0d9fe2aee277a83fd52b85952698e9cefa06d5fb",
   "original_repeat_manifest_sha256": "92647c0e9b6a561b76caa3ea7f1561a11291cc2bd429cf334d0519a7d031a705"
 }

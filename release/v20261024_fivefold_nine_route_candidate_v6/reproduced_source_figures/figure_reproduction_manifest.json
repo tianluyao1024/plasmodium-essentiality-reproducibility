@@ -11,108 +11,108 @@
   "input_files": [
     {
       "path": "Fig2/F2a_performance.tsv",
-      "bytes": 941,
-      "sha256": "98878de3c91836f3c0ad4e964ccfb0d5ef70b91a0989c53f7c4d1a40a6081960"
+      "bytes": 937,
+      "sha256": "09b3044093411d5224466b91dcfbf69aab1cc1f950d4f17a177458f9df68403d"
     },
     {
       "path": "Fig2/F2b_branch_benchmarks.tsv",
-      "bytes": 2626,
-      "sha256": "fce0776158a7394427c249842b44dca6741b70af7dc4228f4c4ce9b959aaf7de"
+      "bytes": 2607,
+      "sha256": "547c276c9e47a1387a20dc336fe60c19af510932208c1938f0ba37d45dc787b9"
     },
     {
       "path": "Fig2/F2c_calibration.tsv",
-      "bytes": 2471,
-      "sha256": "e114a8ad13f747d29b629b5688b7e950dd2d678adfaf728b66f2945e7c358fb3"
+      "bytes": 2437,
+      "sha256": "d2bcc365820cb8e4e4edae221b000ffa17894e99d9e6c19153e36019d2a3dbe5"
     },
     {
       "path": "Fig2d_sensitivity/F2d_five_allocation_summary.tsv",
-      "bytes": 729,
-      "sha256": "29735c9a9adc1642b62ed7191e75395c49c7e6d3afbace843184323f3b8340fd"
+      "bytes": 725,
+      "sha256": "651de0492f70c7c40fc867858851331eb75e2930a486436d4512a8036754812b"
     },
     {
       "path": "Fig3/F3a_LOSO.tsv",
-      "bytes": 2641,
-      "sha256": "b7d1824f3cf4c376c09479190c3533f3350b5b431b9f266683eb9e972d74ac4d"
+      "bytes": 2636,
+      "sha256": "148a2db6a2dbd2d49fb76a90149f827623b750ff92f0cf41b249abfe5ba545fa"
     },
     {
       "path": "Fig3/F3bc_full_stack_bootstrap.tsv",
-      "bytes": 1316,
-      "sha256": "686c924836e1b1e714a2861920dd2515a40838c8c6e588dfcbdf86484108c667"
+      "bytes": 1309,
+      "sha256": "cf71df4c5542d1483c026ecd637510ef4080b9e6a4c109f3fa6b74aa6c555c49"
     },
     {
       "path": "Fig3/F3bc_shared_bootstrap.tsv",
-      "bytes": 1320,
-      "sha256": "bfb8e03eadc9d57a3b805115be24eda23804bf2a823c356af384ad583e218cc0"
+      "bytes": 1313,
+      "sha256": "0ceaca365993abef4032a066d858559a897a001b401f85a35c8d4f49779a4ae1"
     },
     {
       "path": "Fig3/F3d_full_stack_metrics.tsv",
-      "bytes": 1608,
-      "sha256": "d001fe9e71e1950fddeb20ad2509d505eace05fba7178f8c9b1d10ba268f53e7"
+      "bytes": 1601,
+      "sha256": "5cc9dbd2dbd19f43b4cf910fd37946ffb815fdede2861e62e3ca653a7db6ba99"
     },
     {
       "path": "Fig3/F3d_shared_metrics.tsv",
-      "bytes": 1838,
-      "sha256": "b4de9d6fa82608629deaec523d03605e1d6e0719af95dd790f62b9a1e110e4f0"
+      "bytes": 1831,
+      "sha256": "24e4b9033e39e000140d3f24219f613abfa7f185eb1b3f7f9980042fb5a18b78"
     },
     {
       "path": "Fig4_final_frozen_20261024/Fig4a_species_calls.tsv",
-      "bytes": 100,
-      "sha256": "10908f337549e8f8e8fec58f7fbfdd0dc9392aab5a9018e01b93dc4520947a18"
+      "bytes": 96,
+      "sha256": "a14716912074b5af5852b92d436657641c5f905698192119ca9f8a3df377af56"
     },
     {
       "path": "Fig4_final_frozen_20261024/Fig4b_triplet_funnel.tsv",
-      "bytes": 452,
-      "sha256": "f0df0d92f227ceb1e4232e424c3528dea4493191c1c022647c9859d88389a569"
+      "bytes": 445,
+      "sha256": "51662eea29190418d446bcfe840020669d8b600a02aacb1b073571124297f4fd"
     },
     {
       "path": "Fig4_final_frozen_20261024/Fig4c_directional_pattern_counts.tsv",
-      "bytes": 185,
-      "sha256": "2cd4e819edad33efbd18947a57a3d33db4913a6b46587277af077d43a488bbd3"
+      "bytes": 178,
+      "sha256": "a608c90965d2508c7fc633a2f4d1022021b96b34ed0a04f9f6ed44abc873d974"
     },
     {
       "path": "Fig4_final_frozen_20261024/Fig4d_recovery_histogram.tsv",
-      "bytes": 242,
-      "sha256": "ddc28a505fcedff3527570764c561967e2a009c6dd36438e52d54e0fa90c5623"
+      "bytes": 231,
+      "sha256": "d768ec9e5bfebf3097df677587168f642b431949759e0861da8c9e5647852e4e"
     },
     {
       "path": "Fig4_final_frozen_20261024/Fig4e_orthomcl_support_summary.tsv",
-      "bytes": 150,
-      "sha256": "fd9b390f3bc7cd432e85c89806cd950289eea5e3b7d936561a036e65beae5ab3"
+      "bytes": 147,
+      "sha256": "d585dca1e5b67f215976ef7c7ac115e5c8d46899ab4aa4a95656faac5036c8f5"
     },
     {
       "path": "Figure5_context_recomputed_20261023_final/Fig5_sequence_identity_matched_groups.tsv",
-      "bytes": 28880,
-      "sha256": "b12bc8f9c7f5a99c25e3610520b45dcdcf4719e335e4e7656afcfd0e3d52bc78"
+      "bytes": 28511,
+      "sha256": "0bdad019a5bcf833acc2ea5f3f37296160d7790c351b2bb6945ab2fd0df39d38"
     },
     {
       "path": "Figure5_context_recomputed_20261023_final/Fig5_sequence_identity_statistics.tsv",
-      "bytes": 438,
-      "sha256": "2cc528622e170c51e3d8f23785e7a7f3529899de07b934f6612ba9ecf5c6110e"
+      "bytes": 436,
+      "sha256": "9a3eaab97dfbbb762580bc937b874901a83421df543b9934a5b05e1b9b0d681c"
     },
     {
       "path": "Figure5_context_recomputed_20261023_final/Fig5_GO_enrichment_FDR05.tsv",
-      "bytes": 525,
-      "sha256": "d46b403e10a9b122b1be55ae53cfcfe3a1d5a6b4dc6e44362ca73c74ac2dab9e"
+      "bytes": 521,
+      "sha256": "df50154d1ab6b12cc009598b021d01dc267b0440285adeae773d29a173a5ace8"
     },
     {
       "path": "Figure5_context_recomputed_20261023_final/Fig5_stable_group_evidence_matrix.tsv",
-      "bytes": 81624,
-      "sha256": "11cd4e4457e8b6dbec1e073f2e83f85f03de280cb49b3f10a78f35332a7d0770"
+      "bytes": 81439,
+      "sha256": "3b46f51f7dd4ad9ef9a5a936c665476b826b230a14b66d479fc4d11f8770b15a"
     },
     {
       "path": "Fig6/F6a_loso_performance.tsv",
-      "bytes": 1065,
-      "sha256": "15db2772a80b0e97140ed3cd1c1cfb2a93ee369075dc6a2f5d53ca265a691dc6"
+      "bytes": 1060,
+      "sha256": "85cdfaa215d32db04e3274a19a447373bd31822e639062347e55c1121c0ba664"
     },
     {
       "path": "Fig6/F6bc_target_enrichment.tsv",
-      "bytes": 3024,
-      "sha256": "f7032a1ccb47f186c533b6adee5639a4f74eb9a3bc4e914b4e6cdef2c31eb8d8"
+      "bytes": 3015,
+      "sha256": "f3d898e7b61d2aefadd0f94a4b4c9a9d6f0440f5c95dfd62f50cba069f7078dc"
     },
     {
       "path": "Fig6/F6d_target_recovery.tsv",
-      "bytes": 2672,
-      "sha256": "9984d60460d19e30180688ebfdad220e239c8dbb10d9ce1252e602be18680022"
+      "bytes": 2641,
+      "sha256": "8da7a302e9c5f58986b0e67eab97f860010287aeba157770a3152f88e2a306e8"
     }
   ],
   "figures": [
