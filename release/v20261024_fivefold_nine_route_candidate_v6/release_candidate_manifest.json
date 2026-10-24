@@ -11,8 +11,8 @@
   "portable_freeze_manifest_sha256": "5f027e84bb61ffb48a826f513f831e19a7458af93be76901561f46a9faf6e4ba",
   "payload_files": {
     "atlas/DATA_DICTIONARY.md": {
-      "bytes": 1051,
-      "sha256": "bd4859cc93a3b6b9b536c4b13aa1487ec8a82fbf7c627855db7d41432132a251"
+      "bytes": 1483,
+      "sha256": "0a8daaffb80b48cbc35a98942f9354acbe76767155e78ce5fa5ba682f9bf2a35"
     },
     "atlas/final_freeze_manifest.json": {
       "bytes": 10129,
@@ -23,8 +23,8 @@
       "sha256": "dfaac483c313034b89d1a8db2edc8c43a57d8296cdef07b1b18f8ff1dc6b70c5"
     },
     "atlas/MODEL_CARD.md": {
-      "bytes": 1877,
-      "sha256": "8e4a634d32042fde0782a00873e5a6db6e1e11434156b987b724283142d569ef"
+      "bytes": 2395,
+      "sha256": "ec20b3acc9280244a7f368662b0544b2bce35ea22a2a28b5c709d9eaedec9f71"
     },
     "atlas/pk_dual_screen_gene_pairs.tsv": {
       "bytes": 903507,
@@ -54,9 +54,17 @@
       "bytes": 1714,
       "sha256": "cae483486bad87c20ff6be68c5a6df863196b60beb3be707e1100e4df4db889b"
     },
+    "code/refresh_v6_payload_manifest.py": {
+      "bytes": 1341,
+      "sha256": "5a82766136c5fa53217d0f5e648d98d6e507b3d17ee832f43743d2bf8941fd60"
+    },
     "code/reproduce_main_figures_from_source.py": {
       "bytes": 19359,
       "sha256": "425a0dd705a86a4d5ad4ce9d7bc50b4c64b8b38094bb5ca11742dcac17a872a8"
+    },
+    "code/verify_frozen_meta_model_inference_20261024.py": {
+      "bytes": 5524,
+      "sha256": "a6b60a6439e430aff16fb2d23821c1423fc735c4c16e2abea92137cd4613b6bc"
     },
     "code/verify_nature_microbiology_candidate_release_20261024.py": {
       "bytes": 15753,
@@ -91,8 +99,8 @@
       "sha256": "991c446b0f5a5a858894d026d32ac73ffc4eabe0dba26f5f3ec75b010f9594a6"
     },
     "README.md": {
-      "bytes": 5187,
-      "sha256": "f331a801e300420463b44121dc2f6993e8f48608a4fb96192f166c0077d787a7"
+      "bytes": 6224,
+      "sha256": "34f2c0f36263df6bb20705982f891cd55a44adb667ce650d00357e3daed49fb4"
     },
     "reproduced_source_figures/Fig1.png": {
       "bytes": 171089,
@@ -281,6 +289,34 @@
     "source_data/Frozen_Test_Predictions/manifest.json": {
       "bytes": 866,
       "sha256": "d8f9a329c5f3e1a2065dbf060684f54b6aef5a669f3c8f183759be7a9163a7af"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/model_inputs_validation_test.tsv": {
+      "bytes": 432812,
+      "sha256": "19a3e35d419d363383b2138a9d1ae5516835a65908f6395344ff25d707ff62f7"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_berghei.joblib": {
+      "bytes": 147878,
+      "sha256": "fb184e473e760ee2deada294c028f8f95bee583a0fd61370f55c078cec087a9a"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_berghei.json": {
+      "bytes": 790,
+      "sha256": "284bab033f4e78f15e4c371cc3cdd4fd539228fabc06aa2487e27ee17a60f055"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_falciparum.joblib": {
+      "bytes": 143142,
+      "sha256": "1099062d457baed0f4e143ab85519e9b914cc9546ea871dfd675c4e30c1b0eb7"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_falciparum.json": {
+      "bytes": 795,
+      "sha256": "930a200b8c30cea1710f65b76f682d22e80638f34ca3fae716567ffdf2b2b63f"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_knowlesi.joblib": {
+      "bytes": 148726,
+      "sha256": "93af890d79654247998b67a581422ecb487438b1f971f22df50250a18c35bf54"
+    },
+    "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_knowlesi.json": {
+      "bytes": 791,
+      "sha256": "7d4139c279ca1301c543a64f144179fc647d3ee93e70e28276c63e635c57e06a"
     },
     "source_data/Pk_dual_screen/FIGURE_QA_AND_LEGEND.md": {
       "bytes": 3356,

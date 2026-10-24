@@ -17,3 +17,7 @@ The package contains 3,482 one-to-one gene pairs with definite calls in the Elsw
 ## Interpretation
 
 All scores and target priorities are computational hypotheses, not experimental essentiality, binding, efficacy, safety or clinical evidence. The release candidate has no archive DOI or public-release checksum yet.
+
+## Reproduction boundary
+
+The release includes each species' saved LightGBM meta-model and the nine precomputed route probabilities for its validation and test records. The packaged inference verifier replays the final validation/test probabilities from those inputs and reproduces the test metrics. This does not refit the five-fold base routes, rebuild their fold-local dynamic features, regenerate training OOF inputs or refit the meta-model. Do not describe this as end-to-end model-training reproducibility.
