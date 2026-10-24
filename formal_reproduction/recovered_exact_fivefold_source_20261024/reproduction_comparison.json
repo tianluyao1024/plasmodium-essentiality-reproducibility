@@ -1,0 +1,280 @@
+{
+  "audit_date": "2026-10-24",
+  "status": "exact five-fold base-branch reconstruction verified; meta profile-selection replay is diagnostic only",
+  "runner": {
+    "path": "[LOCAL_PATH_REDACTED]",
+    "sha256": "5416cfbea33a9635b25b454b124bb69af9a26518151b8c00b6af861ccedac89d",
+    "matches_frozen_recorded_sha256": true
+  },
+  "protocol": {
+    "species": 3,
+    "folds_per_species": 5,
+    "fold_seed": 42,
+    "raw_feature_count": 628,
+    "raw_values_no_pca_or_feature_selection": true,
+    "dynamic_features_fold_local": [
+      "homology30/50",
+      "MMseqs",
+      "PPI"
+    ],
+    "test_arrays_ids_metadata_or_labels_opened": false
+  },
+  "frozen_five_base_branch_outputs": {
+    "Plasmodium_falciparum": {
+      "oof_branches.npy": {
+        "shape": [
+          4294,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      },
+      "val_branches.npy": {
+        "shape": [
+          526,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      },
+      "val_branches_by_fold.npy": {
+        "shape": [
+          5,
+          526,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      }
+    },
+    "Plasmodium_berghei": {
+      "oof_branches.npy": {
+        "shape": [
+          1687,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      },
+      "val_branches.npy": {
+        "shape": [
+          204,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      },
+      "val_branches_by_fold.npy": {
+        "shape": [
+          5,
+          204,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      }
+    },
+    "Plasmodium_knowlesi": {
+      "oof_branches.npy": {
+        "shape": [
+          3284,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      },
+      "val_branches.npy": {
+        "shape": [
+          408,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      },
+      "val_branches_by_fold.npy": {
+        "shape": [
+          5,
+          408,
+          5
+        ],
+        "dtype": "float32",
+        "exact_array_match": true,
+        "max_abs_difference": 0
+      }
+    }
+  },
+  "all_compared_arrays_exact": true,
+  "meta_scope_inputs": {
+    "canonical_frozen_scope_oof": {
+      "path": "[LOCAL_PATH_REDACTED]",
+      "sha256": "ff46c69bdbe4109a0e2e952c6b882201c5de79c4ae7aef9ebab7050addb3cbd1",
+      "matches_frozen_final_evaluation_manifest": true
+    },
+    "noncanonical_scope_oof_used_in_first_diagnostic": {
+      "path": "[LOCAL_PATH_REDACTED]",
+      "sha256": "dd192519ea5ccfb29f71f5f37ae95ae9d639dd1bb7e58340302d8edc3694ed09",
+      "is_frozen_scope_oof": false
+    },
+    "scope_validation_sensitivity_input": {
+      "path": "[LOCAL_PATH_REDACTED]",
+      "sha256": "94de84e7adc2ed4157e049e26544e1ea7a0af977fac27be69ea3a32af8857ded",
+      "note": "diagnostic fold-ensemble scope predictions; not substituted for frozen test evaluation"
+    }
+  },
+  "training_only_profile_diagnostic": {
+    "selected": [
+      {
+        "species": "Plasmodium_falciparum",
+        "selected_profile": "combined_nine_base_probabilities",
+        "selected_candidate": "leaves5_child20_trees200",
+        "training_CV_AUPRC": 0.8659847456532672,
+        "training_CV_AUROC": 0.8107010243593441,
+        "balanced_training_CV_score": 0.6747610916483837,
+        "selection_rule": "max equal-weight standardized mean AUPRC/AUROC from repeated training-only CV"
+      },
+      {
+        "species": "Plasmodium_berghei",
+        "selected_profile": "three_scope_lgbm",
+        "selected_candidate": "leaves3_child30_trees300",
+        "training_CV_AUPRC": 0.9242197615407114,
+        "training_CV_AUROC": 0.908770844931121,
+        "balanced_training_CV_score": 0.5689774640979368,
+        "selection_rule": "max equal-weight standardized mean AUPRC/AUROC from repeated training-only CV"
+      },
+      {
+        "species": "Plasmodium_knowlesi",
+        "selected_profile": "four_scope_lgbm",
+        "selected_candidate": "leaves3_child30_trees300",
+        "training_CV_AUPRC": 0.9004643863482565,
+        "training_CV_AUROC": 0.9023109118952084,
+        "balanced_training_CV_score": 0.7343338757686562,
+        "selection_rule": "max equal-weight standardized mean AUPRC/AUROC from repeated training-only CV"
+      }
+    ],
+    "validation_metrics": [
+      {
+        "species": "Plasmodium_falciparum",
+        "selection": "balanced_training_CV_across_5_profiles_x_8_LightGBM_configs",
+        "validation_inference": "all_fold_matched",
+        "selected_profile": "combined_nine_base_probabilities",
+        "selected_candidate": "leaves5_child20_trees200",
+        "training_CV_AUPRC": 0.8659847456532672,
+        "training_CV_AUROC": 0.8107010243593441,
+        "validation_AUROC": 0.8044248869331377,
+        "validation_AUPRC": 0.8700130921216924,
+        "original_AUROC_reference": 0.811392,
+        "original_AUPRC_reference": 0.86572,
+        "AUROC_gap": -0.0069671130668622,
+        "AUPRC_gap": 0.0042930921216923,
+        "validation_used_for_selection": false
+      },
+      {
+        "species": "Plasmodium_falciparum",
+        "selection": "balanced_training_CV_across_5_profiles_x_8_LightGBM_configs",
+        "validation_inference": "foldmatched_branches_fullrefit_scope_sensitivity",
+        "selected_profile": "combined_nine_base_probabilities",
+        "selected_candidate": "leaves5_child20_trees200",
+        "training_CV_AUPRC": 0.8659847456532672,
+        "training_CV_AUROC": 0.8107010243593441,
+        "validation_AUROC": 0.8031032269893656,
+        "validation_AUPRC": 0.861192395071114,
+        "original_AUROC_reference": 0.811392,
+        "original_AUPRC_reference": 0.86572,
+        "AUROC_gap": -0.0082887730106343,
+        "AUPRC_gap": -0.004527604928886,
+        "validation_used_for_selection": false
+      },
+      {
+        "species": "Plasmodium_berghei",
+        "selection": "balanced_training_CV_across_5_profiles_x_8_LightGBM_configs",
+        "validation_inference": "all_fold_matched",
+        "selected_profile": "three_scope_lgbm",
+        "selected_candidate": "leaves3_child30_trees300",
+        "training_CV_AUPRC": 0.9242197615407114,
+        "training_CV_AUROC": 0.908770844931121,
+        "validation_AUROC": 0.9024366471734894,
+        "validation_AUPRC": 0.9171306781841498,
+        "original_AUROC_reference": 0.918908,
+        "original_AUPRC_reference": 0.928316,
+        "AUROC_gap": -0.0164713528265105,
+        "AUPRC_gap": -0.0111853218158501,
+        "validation_used_for_selection": false
+      },
+      {
+        "species": "Plasmodium_berghei",
+        "selection": "balanced_training_CV_across_5_profiles_x_8_LightGBM_configs",
+        "validation_inference": "foldmatched_branches_fullrefit_scope_sensitivity",
+        "selected_profile": "three_scope_lgbm",
+        "selected_candidate": "leaves3_child30_trees300",
+        "training_CV_AUPRC": 0.9242197615407114,
+        "training_CV_AUROC": 0.908770844931121,
+        "validation_AUROC": 0.9161793372319688,
+        "validation_AUPRC": 0.9289282558928073,
+        "original_AUROC_reference": 0.918908,
+        "original_AUPRC_reference": 0.928316,
+        "AUROC_gap": -0.002728662768031,
+        "AUPRC_gap": 0.0006122558928072,
+        "validation_used_for_selection": false
+      },
+      {
+        "species": "Plasmodium_knowlesi",
+        "selection": "balanced_training_CV_across_5_profiles_x_8_LightGBM_configs",
+        "validation_inference": "all_fold_matched",
+        "selected_profile": "four_scope_lgbm",
+        "selected_candidate": "leaves3_child30_trees300",
+        "training_CV_AUPRC": 0.9004643863482565,
+        "training_CV_AUROC": 0.9023109118952084,
+        "validation_AUROC": 0.9066745209300088,
+        "validation_AUPRC": 0.8943236738751122,
+        "original_AUROC_reference": 0.893703,
+        "original_AUPRC_reference": 0.900711,
+        "AUROC_gap": 0.0129715209300088,
+        "AUPRC_gap": -0.0063873261248877,
+        "validation_used_for_selection": false
+      },
+      {
+        "species": "Plasmodium_knowlesi",
+        "selection": "balanced_training_CV_across_5_profiles_x_8_LightGBM_configs",
+        "validation_inference": "foldmatched_branches_fullrefit_scope_sensitivity",
+        "selected_profile": "four_scope_lgbm",
+        "selected_candidate": "leaves3_child30_trees300",
+        "training_CV_AUPRC": 0.9004643863482565,
+        "training_CV_AUROC": 0.9023109118952084,
+        "validation_AUROC": 0.913226419177226,
+        "validation_AUPRC": 0.9002879827577749,
+        "original_AUROC_reference": 0.893703,
+        "original_AUPRC_reference": 0.900711,
+        "AUROC_gap": 0.0195234191772258,
+        "AUPRC_gap": -0.0004230172422251,
+        "validation_used_for_selection": false
+      }
+    ],
+    "interpretation": "This search reconsiders five profiles; it does not represent or replace the user-frozen all-nine-route model. Test data were not opened."
+  },
+  "frozen_test_metrics_unchanged": {
+    "Pf": {
+      "AUROC": 0.8205940594059405,
+      "AUPRC": 0.8728263805155562
+    },
+    "Pb": {
+      "AUROC": 0.8740096618357488,
+      "AUPRC": 0.8964012622941426
+    },
+    "Pk": {
+      "AUROC": 0.9151080179788316,
+      "AUPRC": 0.9209502849754174
+    }
+  },
+  "outputs": {
+    "fresh_base_rebuild_dir": "[LOCAL_PATH_REDACTED]",
+    "canonical_scope_meta_diagnostic_dir": "[LOCAL_PATH_REDACTED]"
+  }
+}
