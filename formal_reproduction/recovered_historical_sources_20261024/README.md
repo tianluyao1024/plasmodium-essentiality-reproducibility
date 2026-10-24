@@ -15,7 +15,9 @@ This folder preserves source files recovered from the local working repository a
 `source_hashes.tsv` records the expected byte size and SHA-256 of each archived source file. The pilot partition unit tests are included. To run those tests from this directory:
 
 ```powershell
+Push-Location code
 python -m unittest test_nine_route_refit_partitions_20261017.py
+Pop-Location
 ```
 
 The upstream pre-run snapshot manifest and the local 77/77 input hash audit remain in the authors' working files; no local absolute paths are embedded here.
