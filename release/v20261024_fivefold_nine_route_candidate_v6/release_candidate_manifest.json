@@ -54,6 +54,14 @@
       "bytes": 1714,
       "sha256": "cae483486bad87c20ff6be68c5a6df863196b60beb3be707e1100e4df4db889b"
     },
+    "code/META_MODEL_REFIT_BUNDLE_README.md": {
+      "bytes": 799,
+      "sha256": "fa43cb9539e37e8da33bd6828d93f5b3ec8dfca5d6f1bd76337aa5568394529b"
+    },
+    "code/package_meta_training_oof_inputs_20261024.py": {
+      "bytes": 4738,
+      "sha256": "04b4a58b29ef8e6f99bd4cc70158d696ab64104f7769193aaa74057966edd268"
+    },
     "code/package_refit_stability_evidence_20261024.py": {
       "bytes": 5647,
       "sha256": "5b2e4be3e00c2434b1d86856637fb29c4495e20bb4e6ebb18f8ca5f141bb6545"
@@ -65,6 +73,10 @@
     "code/reproduce_main_figures_from_source.py": {
       "bytes": 19359,
       "sha256": "425a0dd705a86a4d5ad4ce9d7bc50b4c64b8b38094bb5ca11742dcac17a872a8"
+    },
+    "code/reproduce_meta_stack_from_oof_inputs_20261024.py": {
+      "bytes": 6189,
+      "sha256": "f4260185194b3c824ce17b80922150f9a6530bbd42de73c15a34c81f719eaad0"
     },
     "code/verify_frozen_meta_model_inference_20261024.py": {
       "bytes": 5524,
@@ -107,8 +119,8 @@
       "sha256": "991c446b0f5a5a858894d026d32ac73ffc4eabe0dba26f5f3ec75b010f9594a6"
     },
     "README.md": {
-      "bytes": 7261,
-      "sha256": "b75dd755e3a43d1a8872b70124923e5438ebf5b38ecb52f2c5f5b34c1a15ae55"
+      "bytes": 8382,
+      "sha256": "8f8af211db95784b5170cafbb5d35cc3cde62304955598028eb8a8e06abcd955"
     },
     "reproduced_source_figures/Fig1.png": {
       "bytes": 171089,
@@ -1141,6 +1153,26 @@
     "source_data/Frozen_Test_Predictions/meta_model_replay/models/Plasmodium_knowlesi.json": {
       "bytes": 791,
       "sha256": "7d4139c279ca1301c543a64f144179fc647d3ee93e70e28276c63e635c57e06a"
+    },
+    "source_data/Meta_Training_OOF/manifest.json": {
+      "bytes": 2397,
+      "sha256": "937fd0afedf77e04d507d0b4359e4a9d5b804e5904049ce6a00ea580b601c161"
+    },
+    "source_data/Meta_Training_OOF/reproduced_meta_fit_20261024/reproduction_report.json": {
+      "bytes": 1747,
+      "sha256": "86dd6534c3305dc38b5cbdd89a8fb307ab08e8d36ae02514c06f8be3dde9e872"
+    },
+    "source_data/Meta_Training_OOF/reproduced_meta_fit_20261024/test_metrics.tsv": {
+      "bytes": 378,
+      "sha256": "f4a8662744b2f6f07ab1deef2c055945abe068eb8e949dacc64acc1038c90998"
+    },
+    "source_data/Meta_Training_OOF/reproduced_meta_fit_20261024/validation_test_predictions.tsv": {
+      "bytes": 231886,
+      "sha256": "14862edb48b0e74441fa83f404e8ab6eadf7d308e4a3db75cd02db239c1db46c"
+    },
+    "source_data/Meta_Training_OOF/training_meta_inputs.tsv": {
+      "bytes": 1709661,
+      "sha256": "7fa4f030c0c8aba92307975ca5b53cc36d33c65e54a3d06330e4e79a4b28a676"
     },
     "source_data/Pk_dual_screen/FIGURE_QA_AND_LEGEND.md": {
       "bytes": 3356,
