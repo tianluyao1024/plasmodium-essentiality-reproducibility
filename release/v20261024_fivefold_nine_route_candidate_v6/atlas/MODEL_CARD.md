@@ -21,3 +21,5 @@ All scores and target priorities are computational hypotheses, not experimental 
 ## Reproduction boundary
 
 The release includes each species' saved LightGBM meta-model and the nine precomputed route probabilities for its validation and test records. The packaged inference verifier replays the final validation/test probabilities from those inputs and reproduces the test metrics. This does not refit the five-fold base routes, rebuild their fold-local dynamic features, regenerate training OOF inputs or refit the meta-model. Do not describe this as end-to-end model-training reproducibility.
+
+The 100-repeat Fig. 4 stability outcome tables are now included and independently reconcile to the frozen 455-candidate recovery table and 184 stable-group count. The archive does not pin the complete orchestration command used for all 100 fitting repeats; the included verification checks saved outcomes and is not a refit.

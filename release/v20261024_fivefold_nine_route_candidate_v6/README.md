@@ -12,13 +12,17 @@ The source-only four-species LOSO table includes Pf, Pb, Pk and Tg. It is retros
 
 The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435 discordant labels (12.49%; Wilson interval in the table). The human-red-cell comparison is a retrospective homolog projection, not an A1H sequence-level or blind prediction; the source screens also differ in strain and procedure.
 
+The Fig. 4 stability package now includes all 100 saved paired-refit recovery tables for 455 directional candidates. A verifier re-hashes every result and recomputes the group recovery counts; the 80/100 rule yields the same 184 stable groups as the aggregate and frozen Fig. 4 table. This audits saved outputs, not the fitting run. The exact orchestration command for all 100 refits is not pinned in the run manifests, so this is not full refit reproduction.
+
 ## Contents
 
 - `atlas/`: standardized predictions, four-species LOSO, source-composition comparison, Pk pair-level results, S4 runs, model/data cards and upstream freeze manifest.
 - `source_data/Frozen_Test_Predictions/`: test-only row-level probabilities and labels used to recompute the main AUROC/AUPRC values, plus a separate validation/test meta-model inference replay package with no validation labels.
+- `source_data/Fig4_refit_stability_100_repeats_20261024/`: 100 paired-refit outcome tables (455 candidates each), sanitized repeat manifests and aggregate reference; all 45,500 group-repeat calls are checked against the aggregate and frozen Fig. 4d table. Saved-result audit only, not model refitting.
 - `figures/main/`: the six exact PNGs embedded in the current internal manuscript, plus a provenance manifest. Fig. 1, Fig. 3 and Fig. 6 do not have separately verified vector originals.
 - `code/verify_nature_microbiology_candidate_release_20261024.py`: independently checks payload hashes/portability and recomputes the headline frozen metrics, LOSO species, Fig. 2d allocation count, Pk discordance interval, refit-stable group count and S4 run count. This audits frozen outputs; it does not retrain the model from the full feature matrices.
 - `code/verify_frozen_meta_model_inference_20261024.py`: loads the archived species-specific LightGBM meta-models, applies them to the supplied nine-route validation/test probabilities, verifies test probabilities against the frozen row-level results, and recomputes AUROC/AUPRC. This is inference replay only; it does not retrain the base routes or the meta-model.
+- `code/verify_refit_stability_evidence_20261024.py`: verifies the 100 packaged paired-refit outputs against their hashes, aggregate recovery table and frozen Fig. 4d; it does not refit models.
 - `code/refresh_v6_payload_manifest.py`: refreshes byte counts and SHA-256 values for every v6 payload file except the manifest itself.
 - `code/extract_and_verify_manuscript_figures.py`: extracts the exact six embedded image objects from a supplied manuscript DOCX and verifies them against the included figure manifest. This is image extraction, not recreation of vector plots; no separate vector originals are verified for Figs. 1, 3 and 6.
 - `code/reproduce_main_figures_from_source.py`: redraws six main figures from the 21 packaged panel-level source tables into `reproduced_source_figures/`. The output folder includes a runtime/input/output SHA-256 manifest. This is a source-data-driven redraw, not model fitting and not a replacement for the manuscript-matched PNGs in `figures/main/`; the exact embedded images remain unchanged.
@@ -28,7 +32,7 @@ The Pk paired-screen analysis includes 3,482 definite-call homolog pairs and 435
 
 ## Reproduce the frozen package audit
 
-From this directory, run `python code/verify_nature_microbiology_candidate_release_20261024.py --release-dir .` and `python code/verify_frozen_meta_model_inference_20261024.py --release-dir .`. To redraw figures from the packaged source tables, run `python code/reproduce_main_figures_from_source.py --release-dir . --output-dir reproduced_source_figures_check`; the verifier checks the committed redraws against their manifest and source-table hashes. To re-extract the exact embedded figure images, supply the internal manuscript DOCX separately: `python code/extract_and_verify_manuscript_figures.py --docx PATH_TO_MANUSCRIPT.docx --figure-manifest figures/main/figure_export_manifest.json --output-dir FIGURE_EXPORTS`.
+From this directory, run `python code/verify_nature_microbiology_candidate_release_20261024.py --release-dir .`, `python code/verify_frozen_meta_model_inference_20261024.py --release-dir .` and `python code/verify_refit_stability_evidence_20261024.py --release-dir .`. To redraw figures from the packaged source tables, run `python code/reproduce_main_figures_from_source.py --release-dir . --output-dir reproduced_source_figures_check`; the verifier checks the committed redraws against their manifest and source-table hashes. To re-extract the exact embedded figure images, supply the internal manuscript DOCX separately: `python code/extract_and_verify_manuscript_figures.py --docx PATH_TO_MANUSCRIPT.docx --figure-manifest figures/main/figure_export_manifest.json --output-dir FIGURE_EXPORTS`.
 
 ## Limitations and release gates
 

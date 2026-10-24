@@ -13,5 +13,6 @@
 - `s4_label_exchange_runs.tsv` and `s4_label_exchange_summary.tsv`: source-training label-exchange sensitivity; validation and held labels remain unchanged.
 - `source_data/Frozen_Test_Predictions/meta_model_replay/model_inputs_validation_test.tsv`: 9 saved route probabilities for each validation/test gene, with no validation labels; these are inputs to final meta-model inference, not raw 628-feature matrices.
 - `source_data/Frozen_Test_Predictions/meta_model_replay/models/`: the three species-specific saved LightGBM meta-models and their input-order/threshold configuration files.
+- `source_data/Fig4_refit_stability_100_repeats_20261024/`: 100 paired-refit outcome tables for 455 groups, per-repeat provenance summaries, aggregate recovery reference and audit report. These are saved result evidence, not fitted model checkpoints.
 
 All models and analyses are retrospective. Read `MODEL_CARD.md` before interpreting values.
