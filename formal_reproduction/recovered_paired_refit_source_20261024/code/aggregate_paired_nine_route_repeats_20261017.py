@@ -43,7 +43,11 @@ def main():
         if (repeat in seen or repeat < 0 or repeat >= args.expected_repeats
                 or manifest["seed"] != args.seed or manifest["fraction"] != .8):
             raise ValueError("Duplicate or unexpected repeat")
-        candidate_hash = manifest["input_sha256"][str(ROOT.parent / "provisional_figure4_annotation_exclusion" / "single_copy_groups_full_vs_annotation_excluded.tsv")]
+        candidate_keys = [key for key in manifest["input_sha256"]
+                          if Path(key).name == "single_copy_groups_full_vs_annotation_excluded.tsv"]
+        if len(candidate_keys) != 1:
+            raise ValueError(f"Expected one frozen candidate table input: {manifest_path}")
+        candidate_hash = manifest["input_sha256"][candidate_keys[0]]
         snapshot_hash = manifest["source_snapshot_sha256"]
         if common_snapshot is None:
             common_snapshot, common_candidates, common_summariser = snapshot_hash, candidate_hash, manifest["summariser_sha256"]
