@@ -1,0 +1,76 @@
+{
+  "status": "passed_single_repeat_only",
+  "scope": "fresh end-to-end reproduction of paired repeat 3; partial 4/100 aggregation is not a final stability result",
+  "repeat": 3,
+  "species_count": 3,
+  "variants_per_species": [
+    "full",
+    "annotation_excluded"
+  ],
+  "source_snapshot_file_count": 77,
+  "source_snapshot_sha256": "08be5ba0d8b03d33e46c8c951a84fa181b22ca7e883d5c2be5f359e3458697b6",
+  "variant_results": [
+    {
+      "species": "Plasmodium_falciparum",
+      "variant": "full",
+      "oof_sha256": "6f31014222b270ac486a16545cd72eed8508709aead19fbcfec393f387edf839",
+      "application_prediction_sha256": "5e3067e124e01b168b0d7c27ef9721adf648a135b668920d21df46933dc37f8b",
+      "matches_archived_repeat3": true,
+      "max_saved_model_score_error": 1.1102230246251565e-16,
+      "training_validation_test_labels_used_for_fit_or_threshold": false
+    },
+    {
+      "species": "Plasmodium_falciparum",
+      "variant": "annotation_excluded",
+      "oof_sha256": "d1a155065c38b53b35a03ab5daf7a70be0a87eda17e764984c13411820eaf336",
+      "application_prediction_sha256": "5ba6602d82a0f899d1dcf76412ad545b7ec92889facabb3f1ab02e8724406b5b",
+      "matches_archived_repeat3": true,
+      "max_saved_model_score_error": 1.1102230246251565e-16,
+      "training_validation_test_labels_used_for_fit_or_threshold": false
+    },
+    {
+      "species": "Plasmodium_berghei",
+      "variant": "full",
+      "oof_sha256": "c9d295112e0f7688850798c90bc8b6ff88b765a84b5a2719502810dfdba1ed0c",
+      "application_prediction_sha256": "54852c79e8e9c26e8a616ed810627013b08ca5dfedd67ddef2d429024f4a6d5e",
+      "matches_archived_repeat3": true,
+      "max_saved_model_score_error": 1.1102230246251565e-16,
+      "training_validation_test_labels_used_for_fit_or_threshold": false
+    },
+    {
+      "species": "Plasmodium_berghei",
+      "variant": "annotation_excluded",
+      "oof_sha256": "510443d35000dce5b26d0fa00796d1613cefa2d6c0d00a9912ddeec3756d5e01",
+      "application_prediction_sha256": "ee99df7e7678b8b652f11fbcdf1c4b70b7eb06c7f82b1070990956e33ca34c2c",
+      "matches_archived_repeat3": true,
+      "max_saved_model_score_error": 1.1102230246251565e-16,
+      "training_validation_test_labels_used_for_fit_or_threshold": false
+    },
+    {
+      "species": "Plasmodium_knowlesi",
+      "variant": "full",
+      "oof_sha256": "ce22cfec6f470cc6e8ac08afdc4cff557c90d3273cea8be5745765456235e0ac",
+      "application_prediction_sha256": "0ce7d13b22c7308775ad2717ddf6486b4e3af86053c4a9089b999dfba71ad863",
+      "matches_archived_repeat3": true,
+      "max_saved_model_score_error": 1.1102230246251565e-16,
+      "training_validation_test_labels_used_for_fit_or_threshold": false
+    },
+    {
+      "species": "Plasmodium_knowlesi",
+      "variant": "annotation_excluded",
+      "oof_sha256": "7df6a0820f06fd87766fee586727d5fb5698e4cb04987512e83b1fd2f6c522db",
+      "application_prediction_sha256": "3b31cd7b6afc62eca07a9c39e616cc835f03325d8066f3330e68ffb41c9d510f",
+      "matches_archived_repeat3": true,
+      "max_saved_model_score_error": 1.1102230246251565e-16,
+      "training_validation_test_labels_used_for_fit_or_threshold": false
+    }
+  ],
+  "candidate_groups": 455,
+  "recovered_by_both": 338,
+  "repeat_summary_sha256": "27d3e94a6796dc90fe626ae163d1f7db2dcfe75243db6644438b3909e0fe853c",
+  "matches_archived_repeat3_summary": true,
+  "partial_aggregate_manifest_sha256": "4334a89cb84e30e918d989ee5e20c57c1798eb914cf7f5769d7931a500b46ef2",
+  "partial_recovery_median": 0.75,
+  "archived_100_repeat_refit_status": "historical saved outputs integrity-audited separately; repeats 0, 1, 2 and 3 freshly rerun",
+  "errors": []
+}
