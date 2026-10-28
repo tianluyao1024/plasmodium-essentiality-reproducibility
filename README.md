@@ -23,7 +23,7 @@ Rebuild the package and figures with `formal_reproduction/code/build_nature_micr
 
 ## 2026-10-24 replacement candidate (v7 review candidate; not a formal archive release)
 
-**Figure 6d erratum (2026-10-28):** Floating-point rounding selected one extra non-target P. knowlesi record at the nominal 30% and 70% ranking cutoffs. Target hits and plotted recall are unchanged; exact-decile Fisher P values are 0.008836105284403978 and 2.2679519449758756e-08, respectively, instead of 0.008930721774469522 and 2.3075280294857833e-08. The archived candidate bundle remains unchanged until the corrected sources and results are synchronized.
+**Figure 6d erratum (2026-10-28):** Floating-point rounding selected one extra non-target P. knowlesi record at the nominal 30% and 70% ranking cutoffs. Target hits and plotted recall are unchanged; exact-decile Fisher P values are 0.008836105284403978 and 2.2679519449758756e-08, respectively, instead of 0.008930721774469522 and 2.3075280294857833e-08. The archived candidate bundle remains unchanged until the corrected sources and results are synchronized. The [review-only correction script and table](formal_reproduction/fig6d_exact_decile_review_20261028/) reproduce the exact-decile values.
 
 **Figure 5d erratum (2026-10-28):** The v7 candidate's archived Fig. 5d incorrectly displays all 184 stable groups as having OrthoMCL support. The source table records 163 supported and 21 unsupported groups; Fig. 5a reports 163/184 correctly. This is a plotting error, not a change to the archived source table. Do not interpret Fig. 5d as evidence of universal support. The figure and downstream analyses require regeneration after the fresh 100-repeat audit; this remains a review candidate, not a formal release.
 
