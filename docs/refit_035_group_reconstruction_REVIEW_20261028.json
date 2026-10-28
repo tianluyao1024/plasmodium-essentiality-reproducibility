@@ -1,0 +1,198 @@
+{
+  "status": "pass",
+  "gate": {
+    "ready": false,
+    "completed_repeats": 35,
+    "expected_repeats": 100,
+    "candidate_groups": 455,
+    "final_stable_groups": null
+  },
+  "artifact_audit_counts": {
+    "repeats": 35,
+    "recorded_input_hashes": 350,
+    "paired_audits": 105,
+    "application_predictions": 210
+  },
+  "repeats": [
+    {
+      "repeat": 0,
+      "candidate_groups": 455,
+      "recovered_by_both": 314
+    },
+    {
+      "repeat": 1,
+      "candidate_groups": 455,
+      "recovered_by_both": 336
+    },
+    {
+      "repeat": 2,
+      "candidate_groups": 455,
+      "recovered_by_both": 339
+    },
+    {
+      "repeat": 3,
+      "candidate_groups": 455,
+      "recovered_by_both": 338
+    },
+    {
+      "repeat": 4,
+      "candidate_groups": 455,
+      "recovered_by_both": 326
+    },
+    {
+      "repeat": 5,
+      "candidate_groups": 455,
+      "recovered_by_both": 339
+    },
+    {
+      "repeat": 6,
+      "candidate_groups": 455,
+      "recovered_by_both": 319
+    },
+    {
+      "repeat": 7,
+      "candidate_groups": 455,
+      "recovered_by_both": 340
+    },
+    {
+      "repeat": 8,
+      "candidate_groups": 455,
+      "recovered_by_both": 307
+    },
+    {
+      "repeat": 9,
+      "candidate_groups": 455,
+      "recovered_by_both": 303
+    },
+    {
+      "repeat": 10,
+      "candidate_groups": 455,
+      "recovered_by_both": 326
+    },
+    {
+      "repeat": 11,
+      "candidate_groups": 455,
+      "recovered_by_both": 320
+    },
+    {
+      "repeat": 12,
+      "candidate_groups": 455,
+      "recovered_by_both": 281
+    },
+    {
+      "repeat": 13,
+      "candidate_groups": 455,
+      "recovered_by_both": 333
+    },
+    {
+      "repeat": 14,
+      "candidate_groups": 455,
+      "recovered_by_both": 304
+    },
+    {
+      "repeat": 15,
+      "candidate_groups": 455,
+      "recovered_by_both": 308
+    },
+    {
+      "repeat": 16,
+      "candidate_groups": 455,
+      "recovered_by_both": 335
+    },
+    {
+      "repeat": 17,
+      "candidate_groups": 455,
+      "recovered_by_both": 311
+    },
+    {
+      "repeat": 18,
+      "candidate_groups": 455,
+      "recovered_by_both": 339
+    },
+    {
+      "repeat": 19,
+      "candidate_groups": 455,
+      "recovered_by_both": 339
+    },
+    {
+      "repeat": 20,
+      "candidate_groups": 455,
+      "recovered_by_both": 319
+    },
+    {
+      "repeat": 21,
+      "candidate_groups": 455,
+      "recovered_by_both": 324
+    },
+    {
+      "repeat": 22,
+      "candidate_groups": 455,
+      "recovered_by_both": 309
+    },
+    {
+      "repeat": 23,
+      "candidate_groups": 455,
+      "recovered_by_both": 325
+    },
+    {
+      "repeat": 24,
+      "candidate_groups": 455,
+      "recovered_by_both": 316
+    },
+    {
+      "repeat": 25,
+      "candidate_groups": 455,
+      "recovered_by_both": 301
+    },
+    {
+      "repeat": 26,
+      "candidate_groups": 455,
+      "recovered_by_both": 351
+    },
+    {
+      "repeat": 27,
+      "candidate_groups": 455,
+      "recovered_by_both": 339
+    },
+    {
+      "repeat": 28,
+      "candidate_groups": 455,
+      "recovered_by_both": 305
+    },
+    {
+      "repeat": 29,
+      "candidate_groups": 455,
+      "recovered_by_both": 318
+    },
+    {
+      "repeat": 30,
+      "candidate_groups": 455,
+      "recovered_by_both": 344
+    },
+    {
+      "repeat": 31,
+      "candidate_groups": 455,
+      "recovered_by_both": 306
+    },
+    {
+      "repeat": 32,
+      "candidate_groups": 455,
+      "recovered_by_both": 322
+    },
+    {
+      "repeat": 33,
+      "candidate_groups": 455,
+      "recovered_by_both": 345
+    },
+    {
+      "repeat": 34,
+      "candidate_groups": 455,
+      "recovered_by_both": 320
+    }
+  ],
+  "aggregate_manifest_sha256": "ef8a8ef390415bc580162d7b0f3c224fe81a55c5a444667c4ec7f954dd3aa3f3",
+  "limitations": [
+    "This recomputes saved prediction calls and group summaries, not model fitting or feature construction.",
+    "Application scores include training proteins; this is not independent validation."
+  ]
+}
