@@ -23,6 +23,8 @@ Rebuild the package and figures with `formal_reproduction/code/build_nature_micr
 
 ## 2026-10-24 replacement candidate (v7 review candidate; not a formal archive release)
 
+**Figure 5d erratum (2026-10-28):** The v7 candidate's archived Fig. 5d incorrectly displays all 184 stable groups as having OrthoMCL support. The source table records 163 supported and 21 unsupported groups; Fig. 5a reports 163/184 correctly. This is a plotting error, not a change to the archived source table. Do not interpret Fig. 5d as evidence of universal support. The figure and downstream analyses require regeneration after the fresh 100-repeat audit; this remains a review candidate, not a formal release.
+
 The current candidate is `release/v20261024_fivefold_nine_route_candidate_v7/`, tracked by its `release_candidate_manifest.json`. It carries the frozen five-fold, nine-route LightGBM results, the original 95%-deduplicated, label-stratified random split and 628 raw features. Supplementary Data 2 was advanced to audited v12; v6 remains preserved. Four-species LOSO includes `Toxoplasma gondii`, and the P. knowlesi human-red-cell comparison remains a retrospective homolog projection, not an A1H sequence-level prediction.
 
 The v7 review candidate is deployed in the separate **Revision candidate** tab at https://www.protoessatlas.com. It remains a public review candidate, not a formal archive release or journal submission: no candidate-specific DOI or release tag has been issued. Historical Pk outcome exposure means matched-species test estimates are retrospective rather than blind. The 100-repeat directional-stability tables are hash/value-audited saved outputs, not 100 freshly rerun fits; repeats 0-4 have been freshly reproduced, while the other 95 remain archived-only.
