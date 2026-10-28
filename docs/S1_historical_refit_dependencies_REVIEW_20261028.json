@@ -1,0 +1,23 @@
+{
+  "status": "historical-consistency-check-not-fresh-result",
+  "workbook": "05_Supplementary_Data_S1_INTERNAL_WORKING_v10.xlsx",
+  "workbook_sha256": "98d480532a77c11f300a426450775487ac921c8affb1431b87c4b606465000e1",
+  "dependent_sheet_rows": {
+    "Orthogroup_calls": 4183,
+    "Refit_recovery": 455,
+    "Registry_triplet_universe": 4183,
+    "External_orthology": 184,
+    "Biology_group_context": 184,
+    "Stable_group_members": 552
+  },
+  "historical_stable_groups": 184,
+  "historical_orthology_support": {
+    "True": 163,
+    "False": 21
+  },
+  "required_followup": "Replace refit frequencies, stable membership and all dependent biology/orthology sheets and index after complete fresh 100-repeat audit.",
+  "limitations": [
+    "Checks consistency within the archived workbook, not independent model fitting or experimental evidence.",
+    "The guide and index currently use final wording for archived groups and must not be treated as the new result."
+  ]
+}
