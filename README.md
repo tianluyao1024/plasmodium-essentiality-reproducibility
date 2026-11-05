@@ -25,6 +25,7 @@ Rebuild the package and figures with `formal_reproduction/code/build_nature_micr
 
 The current manuscript-facing package is archived at [Zenodo, DOI 10.5281/zenodo.23983185](https://doi.org/10.5281/zenodo.23983185) (concept DOI: [10.5281/zenodo.23983184](https://doi.org/10.5281/zenodo.23983184)). It contains the bilingual manuscripts and Supplementary Information, Figs. 1-6 and Supplementary Figs. S1-S13, source data, the completed 100 paired-refit results, and the feature/model/sequence release.
 
+- [GitHub v1.2.0 feature extraction, model weights and sequence resources](https://github.com/tianluyao1024/plasmodium-essentiality-reproducibility/tree/idp-v1.2.0/release/IDP_v1.2.0)
 - [Feature extraction, model weights and sequence bundle](https://zenodo.org/records/23983185/files/ProtoEss_IDP_feature_model_sequences_v1.2.0.zip?download=1)
 - [Submission package: manuscripts, figures and supplementary materials](https://zenodo.org/records/23983185/files/IDP_submission_documents_figures_v1.2.0.zip?download=1)
 - [Figure-linked source data](https://zenodo.org/records/23983185/files/IDP_source_data_v1.2.0.zip?download=1)
