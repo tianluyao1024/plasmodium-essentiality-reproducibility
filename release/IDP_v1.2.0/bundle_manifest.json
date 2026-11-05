@@ -1,0 +1,456 @@
+{
+  "release": "1.2.0",
+  "scope": "feature extraction/model code, full-application weights for Pf/Pb/Pk, and available sequence resources for five species/conditions",
+  "files": [
+    {
+      "path": "DATA_NOTICE_upstream.md",
+      "bytes": 966,
+      "sha256": "d9f56ecf194683d5e33593570d92c549e80670251484e31f098842512141cfe6"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/build_strict_oof_dynamic_stack.py",
+      "bytes": 13948,
+      "sha256": "07d823871a4769ac80afdc7d031bb67447f50e78e85ae6814d8b1a6fa6fee1b4"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/predict_with_release_model.py",
+      "bytes": 1005,
+      "sha256": "7d4ec1d76a12e90e2c8e05ae2df4bd2e9d53779a425d1ee41ac6a6b2d86c58e4"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/requirements.txt",
+      "bytes": 239,
+      "sha256": "1e0f481143ce92c38b5ac86b99161101ebe7f94d7c7791d06603a149aa27fc7c"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/train_clade_loso_full_stack.py",
+      "bytes": 12446,
+      "sha256": "b0f884a5fa23a4762024d084b94e28f42159bbf5df99e9a4cafba2db148a280e"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/train_release_models.py",
+      "bytes": 3260,
+      "sha256": "913088482aabf994cb54ae935e5be75dbac3b0e81c2cea6ca016ee8e104d3e39"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/train_scope_strict_oof_stack.py",
+      "bytes": 9654,
+      "sha256": "e4ef0a6d34a7da308dc8225dfbbcd1e25eb2ee9bb13c8a7f4c341ad37ef44e9c"
+    },
+    {
+      "path": "Feature_Extraction_and_Model_Code/train_species_matched_five_branch_oof.py",
+      "bytes": 10648,
+      "sha256": "e506bc49f411cf4f2cb85b2965c5e84379228f16e4cde007c903194c12c0f549"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/catboost.cbm",
+      "bytes": 361496,
+      "sha256": "c055ab6b5d87b1db035de385984661fa72965ddb29c5d173b2c4be189c392c84"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/lgbm.joblib",
+      "bytes": 1769542,
+      "sha256": "44ee7df1576a062c4da14ce13a1364ec1d77e968063251070aae23139fbad2b1"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/lgbm.txt",
+      "bytes": 1767572,
+      "sha256": "8be0e04dd794c3faaddda22141ffcc43ac3e22a17c0e656bfe37e6f876293045"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/species_expert_Plasmodium_berghei.joblib",
+      "bytes": 1768422,
+      "sha256": "50347cf06a0f2c3a354c12d0479790982aa0c4202ac3b4e9c2c1f53df3b828bf"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/species_expert_Plasmodium_berghei.txt",
+      "bytes": 1766454,
+      "sha256": "4169a9cdeae7b32ef21fa768a317beae07fa188eb59e257c3204b305effd5957"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/species_prevalence_prior.json",
+      "bytes": 48,
+      "sha256": "22c6e84c64ca70be347a5a18a154808ea35fc449dd2fe3cd9a4fec2fbccbf030"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/five_branches/transformer.pt",
+      "bytes": 7180355,
+      "sha256": "231e6a1857eb940a7c97dd5b35669c61d1e7a912cd59fab9c20b6f0fe8095535"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/cross_species_label_assisted.joblib",
+      "bytes": 1485366,
+      "sha256": "d464f415e4f1070b9cda2c450fe849b5b3c18e8f31603cb576b761bf66db0b26"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/cross_species_label_assisted.txt",
+      "bytes": 1483378,
+      "sha256": "5b8fa1d20f237ab405dc53ec2b72a62dc56bdca9598b58563c991dde9ab6d156"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/cross_species_label_assisted_homology_scaler.npz",
+      "bytes": 631,
+      "sha256": "6753737c0a8fc9c29812089ccb52a838bf12a046c3ab1af8d00d9b88c3eb76fa"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels.joblib",
+      "bytes": 1533926,
+      "sha256": "120b9855214525e8360a5cd7f323c959c6db31b2a48cd8a3955cbd8524cf2366"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels.txt",
+      "bytes": 1531945,
+      "sha256": "a95466e5619b83aafac5102874670554d3e93ad9b08322b135ed4c2082b848dc"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels_homology_scaler.npz",
+      "bytes": 631,
+      "sha256": "77d987c5a749f172f2a793b16c7471aa836cce4af3c861abe500977b57dbd7a0"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/plasmodium_only_label_assisted.joblib",
+      "bytes": 1456326,
+      "sha256": "9a698d3413e7606c490f6fe9451c5c4f38134f941aa36f4361802bc1106d8d70"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/plasmodium_only_label_assisted.txt",
+      "bytes": 1454345,
+      "sha256": "1d21f81e13405efd5fd925d8107cbfe615e812c93551b5b9aa93473a0f90ce6e"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/plasmodium_only_label_assisted_homology_scaler.npz",
+      "bytes": 581,
+      "sha256": "8313c69747245eda0c738cff43a0ec97d66f45b148857e5387f29fe559127f4c"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/strict_within_species.joblib",
+      "bytes": 1769094,
+      "sha256": "168793df78508fa24897684795d64b880bdf5a1eff547471c6a0f83a6161c2c8"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/strict_within_species.txt",
+      "bytes": 1767101,
+      "sha256": "2c374a6ee74d8e7986f1be12a49d8e34a2a3c880cbf80806cc7a33f11b7324f8"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/base_routes/scope_routes/strict_within_species_homology_scaler.npz",
+      "bytes": 528,
+      "sha256": "c31a37b96dcafe9ac207f7e7c1b9ab79766d0b22839b805e0235689ed095cd39"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/model_config.json",
+      "bytes": 616,
+      "sha256": "929cddca288aa55653a6289a2fa996ed760d5f91b3424a3b13b5a95fd0dcd414"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/nine_route_meta_lightgbm.joblib",
+      "bytes": 147878,
+      "sha256": "fb184e473e760ee2deada294c028f8f95bee583a0fd61370f55c078cec087a9a"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_berghei/nine_route_meta_lightgbm.txt",
+      "bytes": 145900,
+      "sha256": "e21f67ae2dbcee6d5b75a3fcd93dcc7d00e888ee3eedbf0027e832ab60b5c01a"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/catboost.cbm",
+      "bytes": 361520,
+      "sha256": "3adeb5e8e2701afd96097a0e1879ad6c93210f108a9573421dbf5a3725c81238"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/lgbm.joblib",
+      "bytes": 1792902,
+      "sha256": "52a46db1283851e03c7f5a48c2a34a56fd3da84212df721489d82c75388ac999"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/lgbm.txt",
+      "bytes": 1790923,
+      "sha256": "fb3e160df219531d50409730c5d1fe9efb595d2c76c120835e0fa671f2180fbb"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/species_expert_Plasmodium_falciparum.joblib",
+      "bytes": 1792342,
+      "sha256": "f3baed14c61239966fac485ad5e5ceaeb51afd0b6b67e5b2c0066de2b84529e7"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/species_expert_Plasmodium_falciparum.txt",
+      "bytes": 1790363,
+      "sha256": "d375ed40caf65f383d6ba6389e2cf1f1f42c044d8a5787f36e3f3bac246362a1"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/species_prevalence_prior.json",
+      "bytes": 50,
+      "sha256": "42ec21362009688ab68a33eaacd16543dadc8815c3f3bbdc03c55ab13b3e8d10"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/five_branches/transformer.pt",
+      "bytes": 7180291,
+      "sha256": "9d302b3c4ae13dc4f4c658784acba81367a7454d5f1eda53009216d673545b4b"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/cross_species_label_assisted.joblib",
+      "bytes": 1794294,
+      "sha256": "53ebeef9e101d87a5562cb0095c8164d63bba9e1cc8624d3719e2fd74deb5dfe"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/cross_species_label_assisted.txt",
+      "bytes": 1792306,
+      "sha256": "c48fee49b2b8d5e86831ed8d252275370c190bfe5550abb0e7db466fbec223ff"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/cross_species_label_assisted_homology_scaler.npz",
+      "bytes": 633,
+      "sha256": "f703aa2f09aed803a6d2c7539bbf77d337eb3f3a3830a622c111b413a56ff170"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels.joblib",
+      "bytes": 1793830,
+      "sha256": "a1b83cb899b55fae4719b6b38f4223a967b3cb793a957757e1ce5c38ad768fec"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels.txt",
+      "bytes": 1791844,
+      "sha256": "07ef72247ea991d550224e74b6361a92703986a9c1d800f76f13ef225547eefa"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels_homology_scaler.npz",
+      "bytes": 633,
+      "sha256": "1430ca590709992b2e3c2e189dd693086e3269b78d18c0f57fed7770e18b195f"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/plasmodium_only_label_assisted.joblib",
+      "bytes": 1793670,
+      "sha256": "fa96a159333ca1ed0c7a77269d8e691f20c3eaf5e3814a264d53bc36e063ea9c"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/plasmodium_only_label_assisted.txt",
+      "bytes": 1791680,
+      "sha256": "ab534816f891d755a6e5a04a4a5ece935ade9289a84d156636cfae3a1a109134"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/plasmodium_only_label_assisted_homology_scaler.npz",
+      "bytes": 584,
+      "sha256": "caa0bae87ed917208b6f3a315ee312e223fad9bf152f3cc5402176cabf30b8c7"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/strict_within_species.joblib",
+      "bytes": 1792502,
+      "sha256": "c303f638bd94750f01ba25e684d481d797cf4dc33fb6b9e3835b8ec778b31bf9"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/strict_within_species.txt",
+      "bytes": 1790521,
+      "sha256": "54efc399c7aa340f977331e1cfe0f786fec116c92aade4ecb07aeea4ee592feb"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/base_routes/scope_routes/strict_within_species_homology_scaler.npz",
+      "bytes": 526,
+      "sha256": "1d746480dfd820de08827a45714dad45041b65091bf065790e9e0966f9f89e67"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/model_config.json",
+      "bytes": 620,
+      "sha256": "102f539d33d14a719c873b4c9a599235a61067df5d848bb20ab9354f48d310b5"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/nine_route_meta_lightgbm.joblib",
+      "bytes": 143142,
+      "sha256": "1099062d457baed0f4e143ab85519e9b914cc9546ea871dfd675c4e30c1b0eb7"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_falciparum/nine_route_meta_lightgbm.txt",
+      "bytes": 141156,
+      "sha256": "1218fc852217a272e987ac760d0553d887fae835c26f711da3107075d3d1ab26"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/catboost.cbm",
+      "bytes": 361424,
+      "sha256": "7292d110ddda3a8c459d1c75ddd57cf971a312255dd242eba66fd733a3aa03e3"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/lgbm.joblib",
+      "bytes": 1789494,
+      "sha256": "d55e2831f3d6b5a281f99cdf0ed944216d332acd178f475da8453cd033842b67"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/lgbm.txt",
+      "bytes": 1787525,
+      "sha256": "54b8c48286e782f77623441938a86d6b6b836c88fd46c0720f721d678a4ccc3f"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/species_expert_Plasmodium_knowlesi.joblib",
+      "bytes": 1789206,
+      "sha256": "720ec8ff525a286cbf352a47ed13a4a5d9177590aafd174bedf12831b31d91c2"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/species_expert_Plasmodium_knowlesi.txt",
+      "bytes": 1787239,
+      "sha256": "c5ac378d9a8d1e5caacab299d4e8f044a554b60df29297549a8921c98c300e87"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/species_prevalence_prior.json",
+      "bytes": 49,
+      "sha256": "b636fb63bc3d091c8425fb677cbe5a318dd5c2f49cf625adca23eff316c06562"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/five_branches/transformer.pt",
+      "bytes": 7180355,
+      "sha256": "145c02be9dd5fdc9ee680003fa3e08f65e28fa141456f9c00bb26a980489895d"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/cross_species_label_assisted.joblib",
+      "bytes": 1771030,
+      "sha256": "8652a5ef7c5b6970dd8c519ab44c64ee936901ad60ac0b6648755c77929fa89a"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/cross_species_label_assisted.txt",
+      "bytes": 1769052,
+      "sha256": "a291a41e81785d3ce729226241c37433b04436c78be023543309f9922078ae06"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/cross_species_label_assisted_homology_scaler.npz",
+      "bytes": 632,
+      "sha256": "64d69668e81397ba92c7a1898c1fb850e242bb245238f24359ae8cba66ae8310"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels.joblib",
+      "bytes": 1787542,
+      "sha256": "86a04a6eac4244f106da9c07840ff44791fbb85800fd809f0e5ed48aa3c45133"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels.txt",
+      "bytes": 1785553,
+      "sha256": "06513af74c48c57bcbeacf01a41978205b41302256d31e7332df1dfa4fdbabff"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/cross_species_with_pk_oberstaller_labels_homology_scaler.npz",
+      "bytes": 633,
+      "sha256": "d444f9b0abc50a4af4bf380c2b40808bd0bd1520b45a3ea98965cc4b6a5e5221"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/plasmodium_only_label_assisted.joblib",
+      "bytes": 1767030,
+      "sha256": "daef1e89fc7bc73beb72e5f42cf1a602ea4ffbe5235579d128229cf51e1108b7"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/plasmodium_only_label_assisted.txt",
+      "bytes": 1765052,
+      "sha256": "5c2757ff0b88e011ed8dc978c2bc37c5841f3f66610b7372e08041123adb3978"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/plasmodium_only_label_assisted_homology_scaler.npz",
+      "bytes": 584,
+      "sha256": "816803312a2ae0dcdb1ee78c84fbb406fade2e6442da0766aecfc986472b0dd5"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/strict_within_species.joblib",
+      "bytes": 1789590,
+      "sha256": "75556c2b10eee1110d8e778826fe411404c8caf6bbd25f89aa1cafce9994713b"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/strict_within_species.txt",
+      "bytes": 1787608,
+      "sha256": "f5ebc588776095560685b748f525c47765cc7832d629cb7dc8723a4d5cb55a84"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/base_routes/scope_routes/strict_within_species_homology_scaler.npz",
+      "bytes": 526,
+      "sha256": "39d5325da9e749061555df421605175b9dd73af77de55a54a3b1e344a2409b34"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/model_config.json",
+      "bytes": 617,
+      "sha256": "5f647d1efdf328f226f2ccf1ccf76a87e97d26e1e5d3e1713f157b22f1116502"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/nine_route_meta_lightgbm.joblib",
+      "bytes": 148726,
+      "sha256": "93af890d79654247998b67a581422ecb487438b1f971f22df50250a18c35bf54"
+    },
+    {
+      "path": "Model_Weights/Plasmodium_knowlesi/nine_route_meta_lightgbm.txt",
+      "bytes": 146737,
+      "sha256": "3cb08771ade6ff5c1dffda8dc1d6ffcb1c1b82e447ad7053cf06093a42c64597"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1558,
+      "sha256": "6c319b998ee3df823093cb6f3a5929421334a0bb5044002844fe382e297428b4"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_berghei/all_labelled_proteins.fasta",
+      "bytes": 1673261,
+      "sha256": "3dab276a4ae2445c94fed86ee8fa1349faf51528c4d5c9176d4e92d6779bcc9b"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_berghei/essential.cds.fasta",
+      "bytes": 3004171,
+      "sha256": "73de929cd926eb9d7968d6f38ee0a9990197f9f7c831472510e69893d21e5089"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_berghei/nonessential.cds.fasta",
+      "bytes": 2017400,
+      "sha256": "2e262d258041ba710329ae2b0948a3654cc71b172254ebe627231836cf261ce9"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_falciparum/all_labelled_proteins.fasta",
+      "bytes": 4375259,
+      "sha256": "de7016a3b9da601c3edb3b6d89bab0258d6c615ed21bbe59faa2d0b06ffafae7"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_falciparum/essential.cds.fasta",
+      "bytes": 6349404,
+      "sha256": "218ad5d10a6bb9d10758354cb37e94bfd714beed826382a4aef7a1e46487941e"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_falciparum/nonessential.cds.fasta",
+      "bytes": 6701614,
+      "sha256": "688e81cbd3eb827c93cd800c1f2d1155f3ebdaf19a1adf2900afafb395c84b64"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_knowlesi/all_labelled_proteins.fasta",
+      "bytes": 3402870,
+      "sha256": "507b43543d857316d95c0033ea88e097c15b2def352ef266c5cd92c657eb088b"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_knowlesi/essential.cds.fasta",
+      "bytes": 4805272,
+      "sha256": "1237d63fa0ed0d1bad8a5b19644bf640e3e08d3bc68c93c742cee744952b1e56"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_knowlesi/nonessential.cds.fasta",
+      "bytes": 5378777,
+      "sha256": "5c7e9b1b61fe755de866d72e34b5e3a28807d4aa41eb73169669820e6c50db60"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_knowlesi_A1H_human_RBC/PKNA1-H.1_cds_from_genomic.fna",
+      "bytes": 12414129,
+      "sha256": "da95e743145acd7a8f8be569d1d30dcc0d9a530da0e942f4b6e251fc1ca482bb"
+    },
+    {
+      "path": "Sequence_Resources/Plasmodium_knowlesi_A1H_human_RBC/PKNA1-H.1_protein.faa",
+      "bytes": 4195172,
+      "sha256": "e2f52f605ec0727d846a5f6cfed7afd80a087aaeb3eb473f98ee3d8d47b32f63"
+    },
+    {
+      "path": "Sequence_Resources/Toxoplasma_gondii/essential.cds.fasta",
+      "bytes": 9188701,
+      "sha256": "1a20d5a853c4111161cc88ea67621fa38e15a03f0dee84ba0ec6598fc2bf8176"
+    },
+    {
+      "path": "Sequence_Resources/Toxoplasma_gondii/essential.protein_translated.fasta",
+      "bytes": 3180134,
+      "sha256": "eddddee50aa50f90b4c7acc68ec571f5d6d8ce5c4dc3d63451e29fc0b4d2c3ea"
+    },
+    {
+      "path": "Sequence_Resources/Toxoplasma_gondii/nonessential.cds.fasta",
+      "bytes": 11419175,
+      "sha256": "0c7651df37fb16c52f395bef94e3f763ca0b6a76b03ba7caec9f98502d90585c"
+    },
+    {
+      "path": "Sequence_Resources/Toxoplasma_gondii/nonessential.protein_translated.fasta",
+      "bytes": 4029091,
+      "sha256": "2c6e7417e1986db91780522f2d5e25f6473110736dd4447f418f0c7b2558f230"
+    }
+  ]
+}

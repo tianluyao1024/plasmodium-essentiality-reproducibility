@@ -1,0 +1,24 @@
+{
+  "species": "Plasmodium_falciparum",
+  "profile": "combined_nine_base_probabilities",
+  "input_order": [
+    "strict_within_species",
+    "plasmodium_only_label_assisted",
+    "cross_species_label_assisted",
+    "cross_species_with_pk_oberstaller_labels",
+    "lgbm",
+    "catboost",
+    "species_expert_lgbm",
+    "species_prior",
+    "transformer"
+  ],
+  "candidate": {
+    "name": "leaves5_child20_trees200",
+    "num_leaves": 5,
+    "min_child_samples": 20,
+    "n_estimators": 200,
+    "learning_rate": 0.03,
+    "reg_lambda": 10.0
+  },
+  "threshold_from_training_cv": 0.4299999999999999
+}

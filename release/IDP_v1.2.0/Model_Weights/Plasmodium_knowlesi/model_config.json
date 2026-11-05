@@ -1,0 +1,24 @@
+{
+  "species": "Plasmodium_knowlesi",
+  "profile": "combined_nine_base_probabilities",
+  "input_order": [
+    "strict_within_species",
+    "plasmodium_only_label_assisted",
+    "cross_species_label_assisted",
+    "cross_species_with_pk_oberstaller_labels",
+    "lgbm",
+    "catboost",
+    "species_expert_lgbm",
+    "species_prior",
+    "transformer"
+  ],
+  "candidate": {
+    "name": "leaves3_child30_trees300",
+    "num_leaves": 3,
+    "min_child_samples": 30,
+    "n_estimators": 300,
+    "learning_rate": 0.02,
+    "reg_lambda": 5.0
+  },
+  "threshold_from_training_cv": 0.5399999999999999
+}
