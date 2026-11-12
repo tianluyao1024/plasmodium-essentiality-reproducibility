@@ -1,0 +1,15 @@
+species_folder	partition	genes	essential	nonessential	cds_file	protein_file
+Pf	train	4294	2678	1616	Pf\train\cds.fasta	Pf\train\protein.fasta
+Pf	validation	526	324	202	Pf\validation\cds.fasta	Pf\validation\protein.fasta
+Pf	test	527	325	202	Pf\test\cds.fasta	Pf\test\protein.fasta
+Pb	train	1687	964	723	Pb\train\cds.fasta	Pb\train\protein.fasta
+Pb	validation	204	114	90	Pb\validation\cds.fasta	Pb\validation\protein.fasta
+Pb	test	205	115	90	Pb\test\cds.fasta	Pb\test\protein.fasta
+Pk-a	train	3284	1602	1682	Pk-a\train\cds.fasta	Pk-a\train\protein.fasta
+Pk-a	validation	408	199	209	Pk-a\validation\cds.fasta	Pk-a\validation\protein.fasta
+Pk-a	test	407	198	209	Pk-a\test\cds.fasta	Pk-a\test\protein.fasta
+Tg	train	6515	2297	4218	Tg\train\cds.fasta	Tg\train\protein.fasta
+Tg	validation	814	287	527	Tg\validation\cds.fasta	Tg\validation\protein.fasta
+Tg	test	815	287	528	Tg\test\cds.fasta	Tg\test\protein.fasta
+Pk-h	essential	1891	1891	0	Pk-h\essential\cds.fasta	Pk-h\essential\protein.fasta
+Pk-h	nonessential	2937	0	2937	Pk-h\nonessential\cds.fasta	Pk-h\nonessential\protein.fasta

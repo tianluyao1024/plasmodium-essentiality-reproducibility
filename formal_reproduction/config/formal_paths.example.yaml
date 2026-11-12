@@ -1,5 +1,0 @@
-formal_input_root: C:/path/to/ProtoEss_Reviewer_Inputs
-application_feature_root: C:/path/to/ProtoEss_Reviewer_Inputs/application_feature_cache
-output_root: D:/path/to/ProtoEss_Reproduction_Output
-seed: 42
-transformer_batch_size: 64
