@@ -1,0 +1,12 @@
+{
+  "scope": "matched_pk",
+  "group": "kmer_graph",
+  "query_shape": [
+    4950,
+    128
+  ],
+  "train_records": 3284,
+  "validation_records": 256,
+  "max_abs_training_replay_error": 6.67572021484375e-06,
+  "target_screen_labels_used": false
+}

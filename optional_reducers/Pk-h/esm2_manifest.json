@@ -1,0 +1,12 @@
+{
+  "scope": "matched_pk",
+  "group": "esm2",
+  "query_shape": [
+    4950,
+    128
+  ],
+  "train_records": 3284,
+  "validation_records": 256,
+  "max_abs_training_replay_error": 1.1444091796875e-05,
+  "target_screen_labels_used": false
+}
